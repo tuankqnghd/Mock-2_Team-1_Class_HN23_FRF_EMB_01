@@ -13,13 +13,21 @@
  * Definition
 ********************************************************************/
 
+#define MODE_BLINK             (1)
+#define MODE_FLASH             (2)
+
+typedef unsigned int uint32;
+typedef unsigned char uint8;
+
 /*********************************************************************
 * Variable
 *********************************************************************/
-const Clock_ConfigType UserConfig_Clock = {
-  .clock_type = CLOCK_SOURCE_EXTERNAL,
-  .outdiv1 = OUTDIV1_08,
-};
+
+volatile uint8 mode = MODE_FLASH;
+
+volatile uint8 LED_status = 0;
+
+void myTimer_Handler(uint8_t Channel);
 
 const Port_ConfigType  UserConfig_PortC3 = {
   .Mux = PORT_MUX_GPIO, 
@@ -35,6 +43,22 @@ const Port_ConfigType  UserConfig_PortE29 = {
   .Mux = PORT_MUX_GPIO, 
 };
 
+PIT_ConfigType UserConfig_PIT_CHANNEL_0 = {
+  .Channel      = PIT_CHANNEL_0,
+  .FreezeMode   = PIT_MODE_RUN,
+  .IntEnable    = PIT_INTERRUPT_ENABLE,
+  .PeriodTime   = 200,  // 200ms
+  .Callback     = &myTimer_Handler,
+};
+
+PIT_ConfigType UserConfig_PIT_CHANNEL_1 = {
+  .Channel      = PIT_CHANNEL_1,
+  .FreezeMode   = PIT_MODE_RUN,
+  .IntEnable    = PIT_INTERRUPT_ENABLE,
+  .PeriodTime   = 100,  // 100ms
+  .Callback     = &myTimer_Handler,
+};
+
 /*static boolean status = false;*/
 
 /*********************************************************************
@@ -47,41 +71,84 @@ const Port_ConfigType  UserConfig_PortE29 = {
 
 
 
-void Systick_Init_100ms(void)
+void PORTC_PORTD_IRQHandler(void)
 {
-  // Configure Clock & Clock Source
-  // Core Clock - 1MHz
-  Clock_Init(&UserConfig_Clock);
-    
-  // Configure System timer
-  SysTick->CTRL |= (1 << 2);
-  SysTick->LOAD = 100000u; // 200ms
+  // Check if interupt from Port C.3 
+  if ((PORTC->ISFR & (1 << 3)) != 0)
+  {
+    // Clear ISF flag
+    PORT_EXTI_ClearFlag (PORTC, 3);
+  
+    // Delay for debouncing
+    uint32 count = 4000;
+    while(--count);
+
+    // Check button state
+    if (READ_BTN1() == 0) 
+    {
+      if (mode == MODE_BLINK) 
+      {
+        mode = MODE_FLASH;
+        PIT_TimerControl(PIT_CHANNEL_0, 0);
+        PIT_TimerControl(PIT_CHANNEL_1, 1);
+      } 
+      else if (mode == MODE_FLASH)
+      {
+        mode = MODE_BLINK;
+        PIT_TimerControl(PIT_CHANNEL_0, 1);
+        PIT_TimerControl(PIT_CHANNEL_1, 0);
+      }
+    }
+  }
 }
 
 
 
-void SysDelay_100ms(void)
+void myTimer_Handler(uint8_t Channel)
 {
-  // Start Counter - ENABLE
-  SysTick->VAL = 0u;
-  SysTick->CTRL |= (1 << 0);
-    
-  // Wait COUNTFLAG = 1
-  while ((SysTick->CTRL & (1 << 16)) == 0 );
-  SysTick->CTRL &= ~(1 << 0);
+  if (Channel == 0) // Blink mode
+  {
+    if (LED_status == 0)
+    {
+      // Turn on both of 2 lED
+      GPIO_ClearPin(FGPIOE, 29);
+      GPIO_ClearPin(FGPIOD, 5);
+      
+      LED_status = 1;
+    }
+    else if (LED_status == 1)
+    {
+      // Turn of both of 2 LED
+      GPIO_SetPin(FGPIOE, 29);
+      GPIO_SetPin(FGPIOD, 5);
+      
+      LED_status = 0;
+    }
+  }
+  if (Channel == 1) // Flash mode
+  {
+    if (LED_status == 0)
+    {
+      // Turn on red led, turn of blue led
+      GPIO_ClearPin(FGPIOE, 29);
+      GPIO_SetPin(FGPIOD, 5);
+      
+      LED_status = 1;
+    }
+    else if (LED_status == 1)
+    {
+      // Turn off red led, turn on blue led
+      GPIO_SetPin(FGPIOE, 29);
+      GPIO_ClearPin(FGPIOD, 5);
+      
+      LED_status = 0;
+    }
+  }
 }
 
 
 
-void SysDelay_200ms(void)
-{
-  SysDelay_100ms();
-  SysDelay_100ms();
-}
-
-
-
-void RED_LED_Init(void)
+void RED_LED_Config(void)
 {
   // Enable clock for PORTE, GPIOE
   SIM->SCGC5 |= SIM_SCGC5_PORTE(1);  
@@ -95,7 +162,7 @@ void RED_LED_Init(void)
 
 
 
-void BLUE_LED_Init(void)
+void BLUE_LED_Config(void)
 {
   // Enable clock for PORTD, GPIOD
   SIM->SCGC5 |= SIM_SCGC5_PORTD(1);  
@@ -109,7 +176,7 @@ void BLUE_LED_Init(void)
 
 
 
-void BTN1_Init(void)
+void BTN1_Config(void)
 {
   // Enable Clock for Port C
   SIM->SCGC5 |= SIM_SCGC5_PORTC(1);
@@ -119,50 +186,31 @@ void BTN1_Init(void)
   
   // PinC.3 = Input
   GPIO_Init(GPIOC, 3, GPIO_IO_INPUT);
+  
+  // Setup interupt for Port C & Port D, priority lever = 0
+  PORT_EXTI_Config(PORTC_PORTD_IRQn, 0);
 }
 
 
 
-void LED_Blink_Mode(void)
-{
-  // Turn on
-  GPIO_ClearPin(FGPIOE, 29);
-  GPIO_ClearPin(FGPIOD, 5);
-  
-  // Delay 200ms
-  SysDelay_200ms();
-  
-  // Turn off
-  GPIO_SetPin(FGPIOE, 29);
-  GPIO_SetPin(FGPIOD, 5);
-
-  // Delay 200ms
-  SysDelay_200ms();  
-}
-
-
-
-void LED_Flash_Mode(void)
-{
-  // Turn on red led, turn of blue led
-  GPIO_ClearPin(FGPIOE, 29);
-  GPIO_SetPin(FGPIOD, 5);
-  
-  // Delay 100ms
-  SysDelay_100ms();
-  
-  // Turn off red led, turn on blue led
-  GPIO_SetPin(FGPIOE, 29);
-  GPIO_ClearPin(FGPIOD, 5);
-
-  // Delay 100ms
-  SysDelay_100ms();  
-}
-
-
-
-uint8_t READ_BTN1()
+uint8_t READ_BTN1(void)
 {
   return ((FGPIOC->PDIR & (1 << 3)) >> 3);
 }
+
+
+
+void PIT_Config_LED_Blink(void)
+{
+  PIT_Init(&UserConfig_PIT_CHANNEL_0);
+  
+  PIT_Init(&UserConfig_PIT_CHANNEL_1);
+  
+  // Enable Interupt
+  NVIC_EnableIRQ(PIT_IRQn);
+  
+  // Set Priority
+  NVIC_SetPriority(PIT_IRQn, 1);
+}
+
 

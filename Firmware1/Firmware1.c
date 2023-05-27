@@ -12,16 +12,13 @@
 /********************************************************************
  * Definition
 ********************************************************************/
-#define MODE_BLINK (1)
-#define MODE_FLASH (2)
 
 /*********************************************************************
 * Variable
 *********************************************************************/
+
 typedef unsigned int uint32;
 typedef unsigned char uint8;
-
-volatile uint8 mode = MODE_BLINK;
 
 /*static boolean status = false;*/
 
@@ -33,60 +30,21 @@ volatile uint8 mode = MODE_BLINK;
 * Global function 
 *********************************************************************/
 
-void PORTC_PORTD_IRQHandler(void)
-{
-  // Check if interupt from Port C.3 
-  if ((PORTC->ISFR & (1 << 3)) != 0)
-  {
-    // Clear ISF flag
-    PORT_EXTI_ClearFlag (PORTC, 3);
-  
-    // Delay for debouncing
-    uint32 count = 4000;
-    while(--count);
-
-    // Check button state
-    if (READ_BTN1() == 0) 
-    {
-      if (mode == MODE_BLINK) 
-      {
-        mode = MODE_FLASH;
-      } 
-      else 
-      {
-        mode = MODE_BLINK;
-      }
-    }
-  }
-}
-
-
-
 void main()
 {
-  Systick_Init_100ms();
-  
   // Config Red Led
-  RED_LED_Init();
+  RED_LED_Config();
   
   // Config Blue Led
-  BLUE_LED_Init();
+  BLUE_LED_Config();
   
   // Setup Button SW1
-  BTN1_Init();
-
-  // Setup interupt for Port C & Port D, priority lever = 0
-  PORT_EXTI_Config(PORTC_PORTD_IRQn, 0);
+  BTN1_Config();
+  
+  // Config for PIT
+  PIT_Config_LED_Blink();
  
   while(1)
   {
-    if (mode == MODE_BLINK)
-    {
-      LED_Blink_Mode();
-    }
-    else if (mode == MODE_FLASH)
-    {
-      LED_Flash_Mode();
-    }
   }
 }

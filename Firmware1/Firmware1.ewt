@@ -2854,12 +2854,6 @@
     <group>
         <name>source</name>
         <file>
-            <name>$PROJ_DIR$\Clock.c</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\Clock.h</name>
-        </file>
-        <file>
             <name>$PROJ_DIR$\Firmware1.c</name>
         </file>
         <file>
@@ -2873,6 +2867,12 @@
         </file>
         <file>
             <name>$PROJ_DIR$\Middleware.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\PIT.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\PIT.h</name>
         </file>
         <file>
             <name>$PROJ_DIR$\Port.c</name>

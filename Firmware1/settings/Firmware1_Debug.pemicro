@@ -4,7 +4,7 @@
         <jtag_numbits_pre_ir>_ "0"</jtag_numbits_pre_ir>
         <jtag_tap_num>_ "0"</jtag_tap_num>
         <user_specified_daisy_chain>_ "0"</user_specified_daisy_chain>
-        <CPUTARGETTYPENAME>_ "Freescale Kinetis - Autodetect"</CPUTARGETTYPENAME>
+        <CPUTARGETTYPENAME>_ "ARM Processor - Autodetect"</CPUTARGETTYPENAME>
         <USE_CYCLONEPRO_RELAYS>_ "0"</USE_CYCLONEPRO_RELAYS>
         <CyclonePro_poweroffonexit>_ "0"</CyclonePro_poweroffonexit>
         <CyclonePro_currentvoltage>_ "128"</CyclonePro_currentvoltage>

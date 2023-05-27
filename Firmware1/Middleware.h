@@ -5,39 +5,12 @@
  * Include Library
 ********************************************************************/
 #include "MKL46Z4.h"
-#include "Clock.h"
 #include "Port.h"
 #include "GPIO.h"
+#include "PIT.h"
 /********************************************************************
  * API
 ********************************************************************/
-
-
-
-/*
-* @brief config for Systick 
-*
-*@return void
-*/
-void Systick_Init_100ms(void);
-
-
-
-/*
-* @brief delay 100ms
-*
-*@return void
-*/
-void SysDelay_100ms(void);
-
-
-
-/*
-* @brief delay 200ms
-*
-*@return void
-*/
-void SysDelay_200ms(void);
 
 
 
@@ -46,7 +19,7 @@ void SysDelay_200ms(void);
 *
 *@return void
 */
-void RED_LED_Init(void);
+void RED_LED_Config(void);
 
 
 
@@ -55,7 +28,7 @@ void RED_LED_Init(void);
 *
 *@return void
 */
-void BLUE_LED_Init(void);
+void BLUE_LED_Config(void);
 
 
 
@@ -64,26 +37,7 @@ void BLUE_LED_Init(void);
 *
 *@return void
 */
-void BTN1_Init(void);
-
-
-
-/*
-* @brief blink mode: Green and Red Led blink concurrent with T = 200ms
-*
-*@return void
-*/
-void LED_Blink_Mode(void);
-
-
-
-/*
-* @brief flash mode: Green Led and Red Led flash with the cycle T = 200ms 
-* (Green Led on while Red Led off)
-*
-*@return void
-*/
-void LED_Flash_Mode(void);
+void BTN1_Config(void);
 
 
 
@@ -92,7 +46,16 @@ void LED_Flash_Mode(void);
 *
 *@return input logic of button 1: 0 is logic 0, 1 is logic 1
 */
-uint8_t READ_BTN1();
+uint8_t READ_BTN1(void);
+
+
+
+/*
+* @brief config for PIT channel 0 & channel 1 of MKL46Z4
+*
+*@return void
+*/
+void PIT_Config_LED_Blink(void);
 
 
 
