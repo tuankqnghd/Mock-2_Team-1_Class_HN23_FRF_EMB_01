@@ -19,7 +19,16 @@
 *
 *@return void
 */
-void Systick_Init(void);
+void Systick_Init_100ms(void);
+
+
+
+/*
+* @brief delay 100ms
+*
+*@return void
+*/
+void SysDelay_100ms(void);
 
 
 

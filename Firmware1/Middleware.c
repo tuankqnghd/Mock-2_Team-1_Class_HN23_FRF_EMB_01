@@ -47,25 +47,20 @@ const Port_ConfigType  UserConfig_PortE29 = {
 
 
 
-void Systick_Init(void)
+void Systick_Init_100ms(void)
 {
   // Configure Clock & Clock Source
   // Core Clock - 1MHz
   Clock_Init(&UserConfig_Clock);
-//  MCG->C1 &= ~MCG_C1_CLKS_MASK;
-//  MCG->C1 |= MCG_C1_CLKS(2);
-//  
-//  SIM->CLKDIV1 &= ~SIM_CLKDIV1_OUTDIV1_MASK;
-//  SIM->CLKDIV1 |= SIM_CLKDIV1_OUTDIV1(7);
     
   // Configure System timer
   SysTick->CTRL |= (1 << 2);
-  SysTick->LOAD = 200000u; // 200ms
+  SysTick->LOAD = 100000u; // 200ms
 }
 
 
 
-void SysDelay_200ms(void)
+void SysDelay_100ms(void)
 {
   // Start Counter - ENABLE
   SysTick->VAL = 0u;
@@ -74,6 +69,14 @@ void SysDelay_200ms(void)
   // Wait COUNTFLAG = 1
   while ((SysTick->CTRL & (1 << 16)) == 0 );
   SysTick->CTRL &= ~(1 << 0);
+}
+
+
+
+void SysDelay_200ms(void)
+{
+  SysDelay_100ms();
+  SysDelay_100ms();
 }
 
 
@@ -145,15 +148,15 @@ void LED_Flash_Mode(void)
   GPIO_ClearPin(FGPIOE, 29);
   GPIO_SetPin(FGPIOD, 5);
   
-  // Delay 200ms
-  SysDelay_200ms();
+  // Delay 100ms
+  SysDelay_100ms();
   
   // Turn off red led, turn on blue led
   GPIO_SetPin(FGPIOE, 29);
   GPIO_ClearPin(FGPIOD, 5);
 
-  // Delay 200ms
-  SysDelay_200ms();  
+  // Delay 100ms
+  SysDelay_100ms();  
 }
 
 

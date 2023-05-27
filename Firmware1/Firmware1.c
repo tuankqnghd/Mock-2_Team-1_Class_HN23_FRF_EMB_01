@@ -64,7 +64,7 @@ void PORTC_PORTD_IRQHandler(void)
 
 void main()
 {
-  Systick_Init();
+  Systick_Init_100ms();
   
   // Config Red Led
   RED_LED_Init();
