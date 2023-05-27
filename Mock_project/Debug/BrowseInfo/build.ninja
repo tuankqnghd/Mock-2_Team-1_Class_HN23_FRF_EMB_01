@@ -1,0 +1,51 @@
+##IAR Ninja build file
+
+
+#Rules
+rule COMPILER_XCL
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\XclFileGenerator.exe" $xclcommand -f "$rspfile_name"
+  description = IAR_NEW_TOOL+++COMPILER_XCL+++$in
+  rspfile = $rspfile_name
+  rspfile_content = $flags
+
+rule INDEXER
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\SourceIndexer.exe" $flags
+  depfile = $out.dep
+  description = IAR_NEW_TOOL+++INDEXER+++$out
+
+rule MAKEBROWSE
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\makeBrowseData.exe" $flags
+  description = IAR_NEW_TOOL+++MAKEBROWSE+++$out
+
+rule PDBLINK
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\PbdLink.exe" $flags
+  description = IAR_NEW_TOOL+++PDBLINK+++$out
+
+
+
+#Build steps
+build D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\source\LedBlinking.xcl : COMPILER_XCL 
+  xclcommand = -source_file D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\LedBlinking.c -xcl_file D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\source\LedBlinking.xcl -macro_file D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\source\LedBlinking.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\LedBlinking.c -D CPU_MKL46Z256VLL4 -o D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\Obj\source --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -I D$:\Study\Project_ARM\LED_Blink\CMSIS\Include\ -I D$:\Study\Project_ARM\LED_Blink\MKL46Z\ -I D$:\Study\Project_ARM\LED_Blink\source\ -Ol --predef_macros D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\source\LedBlinking.tmp
+  rspfile_name = D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\source\LedBlinking.xcl.rsp
+
+build D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\startup\system_MKL46Z4.xcl : COMPILER_XCL 
+  xclcommand = -source_file D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\MKL46Z\system_MKL46Z4.c -xcl_file D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\startup\system_MKL46Z4.xcl -macro_file D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\startup\system_MKL46Z4.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\MKL46Z\system_MKL46Z4.c -D CPU_MKL46Z256VLL4 -o D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\Obj\startup --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -I D$:\Study\Project_ARM\LED_Blink\CMSIS\Include\ -I D$:\Study\Project_ARM\LED_Blink\MKL46Z\ -I D$:\Study\Project_ARM\LED_Blink\source\ -Ol --predef_macros D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\startup\system_MKL46Z4.tmp
+  rspfile_name = D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\startup\system_MKL46Z4.xcl.rsp
+
+build D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\source\LedBlinking.pbi : INDEXER D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\source\LedBlinking.xcl |  $
+D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\LedBlinking.c
+  flags = -out=D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\source\LedBlinking.pbi -f D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\source\LedBlinking.xcl
+
+build D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\startup\system_MKL46Z4.pbi : INDEXER D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\startup\system_MKL46Z4.xcl |  $
+D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\MKL46Z\system_MKL46Z4.c
+  flags = -out=D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\startup\system_MKL46Z4.pbi -f D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\startup\system_MKL46Z4.xcl
+
+build D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\LED_Blink.pbw : MAKEBROWSE D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\LED_Blink.pbd
+  flags = D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\LED_Blink.pbd -output D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\LED_Blink.pbw
+
+build D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\LED_Blink.pbd : PDBLINK D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\source\LedBlinking.pbi |  $
+D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\startup\system_MKL46Z4.pbi
+  flags = -M D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\LED_Blink.pbd D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\source\LedBlinking.pbi D$:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\startup\system_MKL46Z4.pbi
+
