@@ -1,0 +1,110 @@
+##IAR Ninja build file
+
+
+#Rules
+rule COMPILER_XCL
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\XclFileGenerator.exe" $xclcommand -f "$rspfile_name"
+  description = IAR_NEW_TOOL+++COMPILER_XCL+++$in
+  rspfile = $rspfile_name
+  rspfile_content = $flags
+
+rule INDEXER
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\SourceIndexer.exe" $flags
+  depfile = $out.dep
+  description = IAR_NEW_TOOL+++INDEXER+++$out
+
+rule MAKEBROWSE
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\makeBrowseData.exe" $flags
+  description = IAR_NEW_TOOL+++MAKEBROWSE+++$out
+
+rule PDBLINK
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\PbdLink.exe" $flags
+  description = IAR_NEW_TOOL+++PDBLINK+++$out
+
+
+
+#Build steps
+build D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\ADC.xcl : COMPILER_XCL 
+  xclcommand = -source_file D$:\Study\Project_ARM\Firmware2\ADC.c -xcl_file D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\ADC.xcl -macro_file D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\ADC.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = D$:\Study\Project_ARM\Firmware2\ADC.c -D CPU_MKL46Z256VLL4 -o D$:\Study\Project_ARM\Firmware2\Debug\Obj\source --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -I D$:\Study\Project_ARM\Firmware2\CMSIS\Include\ -I D$:\Study\Project_ARM\Firmware2\MKL46Z\ -I D$:\Study\Project_ARM\Firmware2\source\ -Ol --predef_macros D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\ADC.tmp
+  rspfile_name = D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\ADC.xcl.rsp
+
+build D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Firmware2.xcl : COMPILER_XCL 
+  xclcommand = -source_file D$:\Study\Project_ARM\Firmware2\Firmware2.c -xcl_file D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Firmware2.xcl -macro_file D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Firmware2.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = D$:\Study\Project_ARM\Firmware2\Firmware2.c -D CPU_MKL46Z256VLL4 -o D$:\Study\Project_ARM\Firmware2\Debug\Obj\source --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -I D$:\Study\Project_ARM\Firmware2\CMSIS\Include\ -I D$:\Study\Project_ARM\Firmware2\MKL46Z\ -I D$:\Study\Project_ARM\Firmware2\source\ -Ol --predef_macros D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Firmware2.tmp
+  rspfile_name = D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Firmware2.xcl.rsp
+
+build D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\GPIO.xcl : COMPILER_XCL 
+  xclcommand = -source_file D$:\Study\Project_ARM\Firmware2\GPIO.c -xcl_file D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\GPIO.xcl -macro_file D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\GPIO.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = D$:\Study\Project_ARM\Firmware2\GPIO.c -D CPU_MKL46Z256VLL4 -o D$:\Study\Project_ARM\Firmware2\Debug\Obj\source --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -I D$:\Study\Project_ARM\Firmware2\CMSIS\Include\ -I D$:\Study\Project_ARM\Firmware2\MKL46Z\ -I D$:\Study\Project_ARM\Firmware2\source\ -Ol --predef_macros D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\GPIO.tmp
+  rspfile_name = D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\GPIO.xcl.rsp
+
+build D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Middleware.xcl : COMPILER_XCL 
+  xclcommand = -source_file D$:\Study\Project_ARM\Firmware2\Middleware.c -xcl_file D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Middleware.xcl -macro_file D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Middleware.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = D$:\Study\Project_ARM\Firmware2\Middleware.c -D CPU_MKL46Z256VLL4 -o D$:\Study\Project_ARM\Firmware2\Debug\Obj\source --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -I D$:\Study\Project_ARM\Firmware2\CMSIS\Include\ -I D$:\Study\Project_ARM\Firmware2\MKL46Z\ -I D$:\Study\Project_ARM\Firmware2\source\ -Ol --predef_macros D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Middleware.tmp
+  rspfile_name = D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Middleware.xcl.rsp
+
+build D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\PIT.xcl : COMPILER_XCL 
+  xclcommand = -source_file D$:\Study\Project_ARM\Firmware2\PIT.c -xcl_file D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\PIT.xcl -macro_file D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\PIT.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = D$:\Study\Project_ARM\Firmware2\PIT.c -D CPU_MKL46Z256VLL4 -o D$:\Study\Project_ARM\Firmware2\Debug\Obj\source --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -I D$:\Study\Project_ARM\Firmware2\CMSIS\Include\ -I D$:\Study\Project_ARM\Firmware2\MKL46Z\ -I D$:\Study\Project_ARM\Firmware2\source\ -Ol --predef_macros D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\PIT.tmp
+  rspfile_name = D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\PIT.xcl.rsp
+
+build D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Port.xcl : COMPILER_XCL 
+  xclcommand = -source_file D$:\Study\Project_ARM\Firmware2\Port.c -xcl_file D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Port.xcl -macro_file D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Port.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = D$:\Study\Project_ARM\Firmware2\Port.c -D CPU_MKL46Z256VLL4 -o D$:\Study\Project_ARM\Firmware2\Debug\Obj\source --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -I D$:\Study\Project_ARM\Firmware2\CMSIS\Include\ -I D$:\Study\Project_ARM\Firmware2\MKL46Z\ -I D$:\Study\Project_ARM\Firmware2\source\ -Ol --predef_macros D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Port.tmp
+  rspfile_name = D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Port.xcl.rsp
+
+build D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\startup\system_MKL46Z4.xcl : COMPILER_XCL 
+  xclcommand = -source_file D$:\Study\Project_ARM\Firmware2\MKL46Z\system_MKL46Z4.c -xcl_file D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\startup\system_MKL46Z4.xcl -macro_file D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\startup\system_MKL46Z4.tmp -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = D$:\Study\Project_ARM\Firmware2\MKL46Z\system_MKL46Z4.c -D CPU_MKL46Z256VLL4 -o D$:\Study\Project_ARM\Firmware2\Debug\Obj\startup --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M0+ -e --fpu=None --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -I D$:\Study\Project_ARM\Firmware2\CMSIS\Include\ -I D$:\Study\Project_ARM\Firmware2\MKL46Z\ -I D$:\Study\Project_ARM\Firmware2\source\ -Ol --predef_macros D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\startup\system_MKL46Z4.tmp
+  rspfile_name = D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\startup\system_MKL46Z4.xcl.rsp
+
+build D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\ADC.pbi : INDEXER D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\ADC.xcl |  $
+D$:\Study\Project_ARM\Firmware2\ADC.c
+  flags = -out=D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\ADC.pbi -f D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\ADC.xcl
+
+build D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Firmware2.pbi : INDEXER D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Firmware2.xcl |  $
+D$:\Study\Project_ARM\Firmware2\Firmware2.c
+  flags = -out=D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Firmware2.pbi -f D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Firmware2.xcl
+
+build D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\GPIO.pbi : INDEXER D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\GPIO.xcl |  $
+D$:\Study\Project_ARM\Firmware2\GPIO.c
+  flags = -out=D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\GPIO.pbi -f D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\GPIO.xcl
+
+build D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Middleware.pbi : INDEXER D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Middleware.xcl |  $
+D$:\Study\Project_ARM\Firmware2\Middleware.c
+  flags = -out=D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Middleware.pbi -f D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Middleware.xcl
+
+build D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\PIT.pbi : INDEXER D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\PIT.xcl |  $
+D$:\Study\Project_ARM\Firmware2\PIT.c
+  flags = -out=D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\PIT.pbi -f D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\PIT.xcl
+
+build D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Port.pbi : INDEXER D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Port.xcl |  $
+D$:\Study\Project_ARM\Firmware2\Port.c
+  flags = -out=D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Port.pbi -f D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Port.xcl
+
+build D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\startup\system_MKL46Z4.pbi : INDEXER D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\startup\system_MKL46Z4.xcl |  $
+D$:\Study\Project_ARM\Firmware2\MKL46Z\system_MKL46Z4.c
+  flags = -out=D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\startup\system_MKL46Z4.pbi -f D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\startup\system_MKL46Z4.xcl
+
+build D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\Firmware2.pbw : MAKEBROWSE D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\Firmware2.pbd
+  flags = D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\Firmware2.pbd -output D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\Firmware2.pbw
+
+build D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\Firmware2_part0.pbi : PDBLINK D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\ADC.pbi |  $
+D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Firmware2.pbi $
+D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\GPIO.pbi
+  flags = -M D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\Firmware2_part0.pbi D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\ADC.pbi D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Firmware2.pbi D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\GPIO.pbi
+
+build D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\Firmware2_part1.pbi : PDBLINK D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Middleware.pbi |  $
+D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\PIT.pbi $
+D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Port.pbi
+  flags = -M D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\Firmware2_part1.pbi D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Middleware.pbi D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\PIT.pbi D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\source\Port.pbi
+
+build D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\Firmware2_part2.pbi : PDBLINK D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\startup\system_MKL46Z4.pbi
+  flags = -M D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\Firmware2_part2.pbi D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\startup\system_MKL46Z4.pbi
+
+build D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\Firmware2.pbd : PDBLINK D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\Firmware2_part0.pbi |  $
+D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\Firmware2_part1.pbi $
+D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\Firmware2_part2.pbi
+  flags = -M D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\Firmware2.pbd D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\Firmware2_part0.pbi D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\Firmware2_part1.pbi D$:\Study\Project_ARM\Firmware2\Debug\BrowseInfo\Firmware2_part2.pbi
+
