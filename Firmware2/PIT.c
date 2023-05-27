@@ -15,7 +15,7 @@
 * Variable
 *********************************************************************/
 
-static PIT_ISRType sCallback;
+static PIT_ISRType sCallback_PIT;
 
 /*static boolean status = false;*/
 
@@ -63,7 +63,7 @@ void PIT_Init(PIT_ConfigType * UserConfig)
     if (PIT_INTERRUPT_ENABLE == UserConfig->IntEnable)
     {
       PIT->CHANNEL[UserConfig->Channel].TCTRL |= PIT_TCTRL_TIE(1);
-      sCallback = UserConfig->Callback;
+      sCallback_PIT = UserConfig->Callback;
     }
     else
     {
@@ -93,14 +93,14 @@ void PIT_IRQHandler(void) //  Driver Code
 {  
   if ((PIT->CHANNEL[0].TFLG & (1 << 0)) != 0)
   {
-    (*sCallback)(PIT_CHANNEL_0);
+    (*sCallback_PIT)(PIT_CHANNEL_0);
     
     // Clear interrupt flag for channel 0
     PIT_ClearInterruptFlag(PIT_CHANNEL_0);
   }
   if ((PIT->CHANNEL[1].TFLG & (1 << 0)) != 0)
   {
-    (*sCallback)(PIT_CHANNEL_1);
+    (*sCallback_PIT)(PIT_CHANNEL_1);
     
     // Clear interrupt flag for channel 1
     PIT_ClearInterruptFlag(PIT_CHANNEL_1);

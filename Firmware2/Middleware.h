@@ -9,6 +9,8 @@
 #include "GPIO.h"
 #include "PIT.h"
 #include "ADC.h"
+#include "UART.h"
+//#include "UART.h"
 /********************************************************************
  * API
 ********************************************************************/
@@ -85,6 +87,24 @@ void Toggle_GREEN_LED(void);
 *@return input logic of button 1: 0 is logic 0, 1 is logic 1
 */
 uint8_t READ_BTN1();
+
+
+
+/*
+* @brief calculate temperature value by ADC value
+*
+* @param ADC_value is ADC read value of temperature sensor
+*
+*@return temperature value (Celsius) (C) 
+*/
+float Temperature_Cal(uint16_t ADC_value);
+
+void PIT_500ms_Init();
+
+void ADC_TempSensor_Init();
+
+void UART_User_Init();
+
 
 
 
