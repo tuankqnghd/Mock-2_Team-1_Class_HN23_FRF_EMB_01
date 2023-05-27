@@ -25,7 +25,7 @@ if not "%~1" == "" goto debugFile
 
 @echo on 
 
-"C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\settings\LED_Blink.Debug.general.xcl" --backend -f "D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\settings\LED_Blink.Debug.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\settings\LED_Blink.Debug.general.xcl" --backend -f "D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\settings\LED_Blink.Debug.driver.xcl" 
 
 @echo off 
 goto end 
@@ -34,7 +34,7 @@ goto end
 
 @echo on 
 
-"C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\settings\LED_Blink.Debug.general.xcl" "--debug_file=%~1" --backend -f "D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\settings\LED_Blink.Debug.driver.xcl" 
+"C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\settings\LED_Blink.Debug.general.xcl" "--debug_file=%~1" --backend -f "D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\settings\LED_Blink.Debug.driver.xcl" 
 
 @echo off 
 :end

@@ -72,8 +72,8 @@
         <ShowArgs>0</ShowArgs>
     </CallStack>
     <PEMicroDriver>
-        <CStepIntDis>_ 0</CStepIntDis>
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>
+        <CStepIntDis>_ 0</CStepIntDis>
     </PEMicroDriver>
     <watch_formats>
         <Fmt0>{W}1:SystemCoreClock	3	0</Fmt0>

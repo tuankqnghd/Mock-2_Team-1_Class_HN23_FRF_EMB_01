@@ -2886,6 +2886,12 @@
         <file>
             <name>$PROJ_DIR$\Port.h</name>
         </file>
+        <file>
+            <name>$PROJ_DIR$\UART.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\UART.h</name>
+        </file>
     </group>
     <group>
         <name>startup</name>

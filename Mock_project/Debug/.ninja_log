@@ -88,3 +88,8 @@
 7	224	7068079065828757	D:/Study/Project_ARM/LED_Blink/Debug/Obj/startup/system_MKL46Z4.o	8c1affef0edc2dd3
 226	278	7068079066393793	D:/Study/Project_ARM/LED_Blink/Debug/Exe/LED_Blink.out	8a3e6b967b3f1559
 280	294	7068079066601223	D:/Study/Project_ARM/LED_Blink/Debug/Exe/LED_Blink.srec	b0b04c56fc06a8c1
+12	31	7068618179479496	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock_project/Debug/Obj/startup/startup_MKL46Z4.o	3190878d2f3e5780
+2	130	7068618180403249	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock_project/Debug/Obj/source/LedBlinking.o	ba548ea03d46933
+6	147	7068618180572813	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock_project/Debug/Obj/startup/system_MKL46Z4.o	5d60ddf8fb974ab7
+149	198	7068618181121194	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock_project/Debug/Exe/LED_Blink.out	f614ba23b3c8a645
+201	210	7068618181286422	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock_project/Debug/Exe/LED_Blink.srec	d8537e3111918daa

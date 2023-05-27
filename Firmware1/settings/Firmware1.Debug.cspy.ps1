@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "D:\Study\Project_ARM\Firmware1\settings\Firmware1.Debug.general.xcl" --backend -f "D:\Study\Project_ARM\Firmware1\settings\Firmware1.Debug.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Firmware1\settings\Firmware1.Debug.general.xcl" --backend -f "D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Firmware1\settings\Firmware1.Debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "D:\Study\Project_ARM\Firmware1\settings\Firmware1.Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\Study\Project_ARM\Firmware1\settings\Firmware1.Debug.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Firmware1\settings\Firmware1.Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Firmware1\settings\Firmware1.Debug.driver.xcl" 
 }

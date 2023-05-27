@@ -23,9 +23,9 @@
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\settings\LED_Blink.Debug.general.xcl" --backend -f "D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\settings\LED_Blink.Debug.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\settings\LED_Blink.Debug.general.xcl" --backend -f "D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\settings\LED_Blink.Debug.driver.xcl" 
 }
 else
 {
-& "C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\settings\LED_Blink.Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\settings\LED_Blink.Debug.driver.xcl" 
+& "C:\Program Files\IAR Systems\Embedded Workbench 9.1\common\bin\cspybat" -f "D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\settings\LED_Blink.Debug.general.xcl" --debug_file=$debugfile --backend -f "D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\settings\LED_Blink.Debug.driver.xcl" 
 }

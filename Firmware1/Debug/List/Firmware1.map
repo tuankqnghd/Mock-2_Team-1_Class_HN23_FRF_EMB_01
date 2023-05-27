@@ -1,23 +1,27 @@
 ###############################################################################
 #
-# IAR ELF Linker V9.32.2.340/W64 for ARM                  27/May/2023  09:30:56
+# IAR ELF Linker V9.32.2.340/W64 for ARM                  27/May/2023  10:43:18
 # Copyright 2007-2023 IAR Systems AB.
 #
-#    Output file  =  D:\Study\Project_ARM\Firmware1\Debug\Exe\Firmware1.out
-#    Map file     =  D:\Study\Project_ARM\Firmware1\Debug\List\Firmware1.map
+#    Output file  =
+#        D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Firmware1\Debug\Exe\Firmware1.out
+#    Map file     =
+#        D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Firmware1\Debug\List\Firmware1.map
 #    Command line =
-#        -f D:\Study\Project_ARM\Firmware1\Debug\Exe\Firmware1.out.rsp
-#        (D:\Study\Project_ARM\Firmware1\Debug\Obj\source\Clock.o
-#        D:\Study\Project_ARM\Firmware1\Debug\Obj\source\Firmware1.o
-#        D:\Study\Project_ARM\Firmware1\Debug\Obj\source\GPIO.o
-#        D:\Study\Project_ARM\Firmware1\Debug\Obj\source\Middleware.o
-#        D:\Study\Project_ARM\Firmware1\Debug\Obj\source\Port.o
-#        D:\Study\Project_ARM\Firmware1\Debug\Obj\startup\startup_MKL46Z4.o
-#        D:\Study\Project_ARM\Firmware1\Debug\Obj\startup\system_MKL46Z4.o
+#        -f
+#        D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Firmware1\Debug\Exe\Firmware1.out.rsp
+#        (D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Firmware1\Debug\Obj\source\Clock.o
+#        D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Firmware1\Debug\Obj\source\Firmware1.o
+#        D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Firmware1\Debug\Obj\source\GPIO.o
+#        D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Firmware1\Debug\Obj\source\Middleware.o
+#        D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Firmware1\Debug\Obj\source\Port.o
+#        D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Firmware1\Debug\Obj\startup\startup_MKL46Z4.o
+#        D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Firmware1\Debug\Obj\startup\system_MKL46Z4.o
 #        --no_out_extension -o
-#        D:\Study\Project_ARM\Firmware1\Debug\Exe\Firmware1.out --map
-#        D:\Study\Project_ARM\Firmware1\Debug\List\Firmware1.map --config
-#        "C:\Program Files\IAR Systems\Embedded Workbench
+#        D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Firmware1\Debug\Exe\Firmware1.out
+#        --map
+#        D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Firmware1\Debug\List\Firmware1.map
+#        --config "C:\Program Files\IAR Systems\Embedded Workbench
 #        9.1\arm/config/linker/NXP/MKL46Z256xxx4.icf" --semihosting --entry
 #        __iar_program_start --vfe --text_out locale --cpu=Cortex-M0+
 #        --fpu=None)
@@ -165,7 +169,7 @@ command line/config:
     --------------------------------------------
     Total:
 
-D:\Study\Project_ARM\Firmware1\Debug\Obj\source: [1]
+D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Firmware1\Debug\Obj\source: [1]
     Clock.o                 64
     Firmware1.o            120        1        1
     GPIO.o                 100
@@ -174,7 +178,7 @@ D:\Study\Project_ARM\Firmware1\Debug\Obj\source: [1]
     --------------------------------------------
     Total:               1'102       15        1
 
-D:\Study\Project_ARM\Firmware1\Debug\Obj\startup: [2]
+D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Firmware1\Debug\Obj\startup: [2]
     startup_MKL46Z4.o      358
     system_MKL46Z4.o        12
     --------------------------------------------
@@ -311,8 +315,8 @@ main                          0x77d  0x34  Code  Gb  Firmware1.o [1]
 mode                    0x1fff'e000   0x1  Data  Gb  Firmware1.o [1]
 
 
-[1] = D:\Study\Project_ARM\Firmware1\Debug\Obj\source
-[2] = D:\Study\Project_ARM\Firmware1\Debug\Obj\startup
+[1] = D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Firmware1\Debug\Obj\source
+[2] = D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Firmware1\Debug\Obj\startup
 [3] = dl6M_tln.a
 [4] = rt6M_tl.a
 [5] = shb_l.a
