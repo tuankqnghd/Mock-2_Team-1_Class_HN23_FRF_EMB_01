@@ -99,13 +99,11 @@ uint8_t READ_BTN1();
 */
 float Temperature_Cal(uint16_t ADC_value);
 
-void PIT_500ms_Init();
+void PIT_Config_1s();
 
-void ADC_TempSensor_Init();
+void ADC_TempSensor_Config();
 
-void UART_User_Init();
-
-
+void UART_User_Config();
 
 
 #endif

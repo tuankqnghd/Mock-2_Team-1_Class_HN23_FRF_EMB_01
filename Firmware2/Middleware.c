@@ -8,26 +8,32 @@
 ********************************************************************/
 #include "MKL46Z4.h"
 #include "math.h"
+#include "stdio.h"
 #include "Middleware.h"
 
 /********************************************************************
  * Definition
 ********************************************************************/
 
-#define V_TEMP25          0.716
-#define M_TEMP            0.00175
-#define V_REF             3.3
-#define ADC_RESOLUTION    16
+#define V_TEMP25              (0.716)
+#define M_TEMP                (0.00175)
+#define V_REF                 (3.3)
+#define ADC_RESOLUTION        (16)
+#define ADC_READ_BUFFER_SIZE  (10)
 
 /*********************************************************************
 * Variable
 *********************************************************************/
 
-volatile uint16_t ADC_data;
+volatile uint16_t adc_data;
 
-volatile float Temp_value;
+volatile float temp_value;
+
+volatile float temperature[ADC_READ_BUFFER_SIZE];
 
 volatile uint8_t data;
+
+volatile uint8_t current_index = 0;
 
 static void myTimer_Handler(uint8_t Channel);
 
@@ -63,7 +69,7 @@ PIT_ConfigType UserConfig_PIT = {
   .Channel      = PIT_CHANNEL_0,
   .FreezeMode   = PIT_MODE_RUN,
   .IntEnable    = PIT_INTERRUPT_ENABLE,
-  .PeriodTime   = 500,  // 500ms
+  .PeriodTime   = 1000u,  // 1000ms
   .Callback     = &myTimer_Handler,
 };
 
@@ -93,6 +99,12 @@ UART_ConfigType Userconfig_UART = {
 * Static function
 *********************************************************************/
 
+/*********************************************************************
+* Global function 
+*********************************************************************/
+
+
+
 static void myTimer_Handler(uint8_t Channel)
 {
   if (Channel == 0)
@@ -109,27 +121,56 @@ static void myTimer_Handler(uint8_t Channel)
   }
 }
 
+
+
 static void myADC_Handler()
 {
   // Toggle Red LED
   Toggle_RED_LED();
   
   // Read data ADC
-  ADC_data = ADC0_Read(ADC_CHANNEL_A);
-  Temp_value = Temperature_Cal(ADC_data);
+  adc_data = ADC0_Read(ADC_CHANNEL_A);
+  
+  temp_value = Temperature_Cal(adc_data);
+  
+  float temp = temp_value;
+  
+  temperature[current_index] = temp;
+  
+  current_index = (current_index + 1) % ADC_READ_BUFFER_SIZE;
 }
+
+
+
+void floatToCharArray(float number, char* buffer, int bufferSize) 
+{
+    sprintf(buffer, "%.2f", number);
+}
+
+
 
 static void myUART_Handler()
 {
   // Read data
   data = UART0->D;
   
-  UART_SendChar(data);
-}
+  uint8_t index;
+  
+  if (data == 0x55)
+  {
+    char buffer[6u];
+    
+    for (index = 0; index < ADC_READ_BUFFER_SIZE; index++)
+    {
+      floatToCharArray(temperature[index], buffer, sizeof(buffer));
+      
+      // char 'Space'
+      buffer[5] = 0x20;
 
-/*********************************************************************
-* Global function 
-*********************************************************************/
+      UART_SendString(buffer, 6u);
+    }
+  }
+}
 
 
 
@@ -182,7 +223,6 @@ void Toggle_RED_LED(void)
 
 
 
-
 void Toggle_GREEN_LED(void)
 {
   GPIO_TogglePin(GPIOD, 5);
@@ -204,7 +244,7 @@ float Temperature_Cal(uint16_t ADC_value)
 
 
 
-void PIT_500ms_Init()
+void PIT_Config_1s()
 {
   PIT_Init(&UserConfig_PIT);
   NVIC_EnableIRQ(PIT_IRQn);
@@ -213,17 +253,16 @@ void PIT_500ms_Init()
 
 
 
-void ADC_TempSensor_Init()
+void ADC_TempSensor_Config()
 {
   ADC_Init(&UserConfig_ADC);
   NVIC_EnableIRQ(ADC0_IRQn);
   NVIC_SetPriority(ADC0_IRQn, 1);
-  
 }
 
 
 
-void UART_User_Init()
+void UART_User_Config()
 {
   // Clock for Baudrate - MCGIRCLK 2Mhz
   MCG->C1 |= MCG_C1_IRCLKEN(1u);
@@ -249,7 +288,7 @@ void UART_User_Init()
   NVIC_EnableIRQ(UART0_IRQn);
   
   // NVIC Set Priority
-  NVIC_SetPriority(UART0_IRQn, 1);
+  NVIC_SetPriority(UART0_IRQn, 3);
 }
 
 

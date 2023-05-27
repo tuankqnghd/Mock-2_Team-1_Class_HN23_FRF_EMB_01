@@ -1,6 +1,6 @@
 /*
-* @file TempSensor.c
-* @brief TempSensor.c support read temperature of enviroment by Internal Temperature Sensor in
+* @file Firmware2.c
+* @brief Firmware2.c support read temperature of enviroment by Internal Temperature Sensor in
 KL46
 */
 /********************************************************************
@@ -36,15 +36,19 @@ void main()
   BLUE_LED_Init();
   
   // Config for PIT
-  PIT_500ms_Init();
+  PIT_Config_1s();
   
   // Config for ADC
-  ADC_TempSensor_Init();
+  ADC_TempSensor_Config();
+  
+  // UART Config
+  UART_User_Config();
   
   // Start PIT
   PIT_TimerControl(PIT_CHANNEL_0, 1);
   
   while(1)
   {
+    
   }
 }
