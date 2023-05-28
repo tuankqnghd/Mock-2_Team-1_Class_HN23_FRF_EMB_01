@@ -7,7 +7,6 @@
  * Include Library
 ********************************************************************/
 #include "MKL46Z4.h"
-#include "math.h"
 #include "stdio.h"
 #include "Middleware.h"
 
@@ -144,7 +143,7 @@ static void myADC_Handler()
 
 void floatToCharArray(float number, char* buffer, int bufferSize) 
 {
-    sprintf(buffer, "%.2f", number);
+  sprintf(buffer, "%.2f", number);
 }
 
 
@@ -239,7 +238,7 @@ uint8_t READ_BTN1()
 
 float Temperature_Cal(uint16_t ADC_value)
 {
-  return (25 - ((float)ADC_value / (pow(2, 16) - 1) * V_REF - V_TEMP25) / M_TEMP);
+  return (25 - ((float)ADC_value / 65535u * V_REF - V_TEMP25) / M_TEMP);
 }
 
 
