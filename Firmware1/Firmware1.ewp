@@ -343,9 +343,9 @@
                 </option>
                 <option>
                     <name>CCIncludePath2</name>
-                    <state>D:\Study\Project_ARM\Firmware1\CMSIS\Include</state>
-                    <state>D:\Study\Project_ARM\Firmware1\MKL46Z</state>
-                    <state>D:\Study\Project_ARM\Firmware1\source</state>
+                    <state>$PROJ_DIR$\CMSIS\Include</state>
+                    <state>$PROJ_DIR$\MKL46Z</state>
+                    <state>$PROJ_DIR$</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>

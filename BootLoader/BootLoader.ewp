@@ -343,9 +343,9 @@
                 </option>
                 <option>
                     <name>CCIncludePath2</name>
-                    <state>D:\Study\Project_ARM\LED_Blink\CMSIS\Include</state>
-                    <state>D:\Study\Project_ARM\LED_Blink\MKL46Z</state>
-                    <state>D:\Study\Project_ARM\LED_Blink\source</state>
+                    <state>$PROJ_DIR$\CMSIS\Include</state>
+                    <state>$PROJ_DIR$\MKL46Z</state>
+                    <state>$PROJ_DIR$</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -647,7 +647,7 @@
                 </option>
                 <option>
                     <name>OOCOutputFile</name>
-                    <state>LED_Blink.srec</state>
+                    <state>BootLoader.srec</state>
                 </option>
                 <option>
                     <name>OOCCommandLineProducer</name>
@@ -694,7 +694,7 @@
                 </option>
                 <option>
                     <name>IlinkOutputFile</name>
-                    <state>LED_Blink.out</state>
+                    <state>BootLoader.out</state>
                 </option>
                 <option>
                     <name>IlinkDebugInfoEnable</name>
@@ -991,7 +991,7 @@
                 </option>
                 <option>
                     <name>IlinkTrustzoneImportLibraryOut</name>
-                    <state>LED_Blink_import_lib.o</state>
+                    <state>BootLoader_import_lib.o</state>
                 </option>
                 <option>
                     <name>OILinkExtraOption</name>
@@ -2146,7 +2146,49 @@
     <group>
         <name>source</name>
         <file>
-            <name>$PROJ_DIR$\LedBlinking.c</name>
+            <name>$PROJ_DIR$\ADC.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\ADC.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Clock.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Clock.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\GPIO.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\GPIO.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Middleware.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Middleware.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\PIT.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\PIT.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Port.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Port.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\TempSensor.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\UART.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\UART.h</name>
         </file>
     </group>
     <group>

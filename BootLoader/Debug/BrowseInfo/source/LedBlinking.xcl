@@ -1,21 +1,21 @@
-"D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\LedBlinking.c"
+"D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\BootLoader\LedBlinking.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\source\LedBlinking.pbi.dep
+D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\BootLoader\Debug\BrowseInfo\source\LedBlinking.pbi.dep
 -o
-D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project\Debug\BrowseInfo\source\LedBlinking.pbi
+D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\BootLoader\Debug\BrowseInfo\source\LedBlinking.pbi
 -I
-D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock_project
+D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\BootLoader
 -I
-D:\Study\Project_ARM\LED_Blink\CMSIS\Include
+D:\Study\Project_ARM\BootLoader\CMSIS\Include
 -I
-D:\Study\Project_ARM\LED_Blink\MKL46Z
+D:\Study\Project_ARM\BootLoader\MKL46Z
 -I
-D:\Study\Project_ARM\LED_Blink\source
+D:\Study\Project_ARM\BootLoader\source
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 9.1\arm\inc\c\aarch32
 -I
@@ -23,11 +23,11 @@ C:\Program Files\IAR Systems\Embedded Workbench 9.1\arm\inc
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 9.1\arm\inc\c
 -I
-D:\Study\Project_ARM\LED_Blink\CMSIS\Include
+D:\Study\Project_ARM\BootLoader\CMSIS\Include
 -I
-D:\Study\Project_ARM\LED_Blink\MKL46Z
+D:\Study\Project_ARM\BootLoader\MKL46Z
 -I
-D:\Study\Project_ARM\LED_Blink\source
+D:\Study\Project_ARM\BootLoader\source
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
 -D__CHAR_MIN__=0
