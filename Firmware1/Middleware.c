@@ -27,7 +27,7 @@ volatile uint8 mode = MODE_FLASH;
 
 volatile uint8 LED_status = 0;
 
-void myTimer_Handler(uint8_t Channel);
+void myTimer_Handler(uint8 Channel);
 
 const Port_ConfigType  UserConfig_PortC3 = {
   .Mux = PORT_MUX_GPIO, 
@@ -104,7 +104,7 @@ void PORTC_PORTD_IRQHandler(void)
 
 
 
-void myTimer_Handler(uint8_t Channel)
+void myTimer_Handler(uint8 Channel)
 {
   if (Channel == 0) // Blink mode
   {

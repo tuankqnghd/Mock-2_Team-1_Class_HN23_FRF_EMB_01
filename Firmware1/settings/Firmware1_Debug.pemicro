@@ -26,7 +26,7 @@
         <PORT_NAME_STRING>_ "415BDE42"</PORT_NAME_STRING>
         <interface_selection>_ "7"</interface_selection>
         <TraceLink_MaxBufferSize>_ "1"</TraceLink_MaxBufferSize>
-        <SHOWDIALOG>_ "0"</SHOWDIALOG>
+        <SHOWDIALOG>_ "1"</SHOWDIALOG>
         <SWO_BAUDRATE_SWITCH_MULTILINK_VALUE>_ "-1.000000"</SWO_BAUDRATE_SWITCH_MULTILINK_VALUE>
         <SWO_BAUDRATE_SWITCH_TARGET_VALUE>_ "-1.000000"</SWO_BAUDRATE_SWITCH_TARGET_VALUE>
     </PE_STARTUP>

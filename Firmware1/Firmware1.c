@@ -17,9 +17,6 @@
 * Variable
 *********************************************************************/
 
-typedef unsigned int uint32;
-typedef unsigned char uint8;
-
 /*static boolean status = false;*/
 
 /*********************************************************************
