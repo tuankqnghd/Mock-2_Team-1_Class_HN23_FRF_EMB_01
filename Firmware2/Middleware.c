@@ -140,9 +140,56 @@ static void myADC_Handler()
 
 
 
-void floatToCharArray(float number, char* buffer, int bufferSize) 
-{
-  sprintf(buffer, "%.2f", number);
+void floatToCharArray(float number, char* buffer, int bufferSize) {
+  // Integer Part
+  int integerPart = (int)number;
+    
+  // Decimal Part
+  int decimalPart = (int)((number - integerPart) * 100);
+    
+  int bufferIndex = 0;
+    
+  // Integer Part
+  if (integerPart == 0) 
+  {
+    buffer[bufferIndex++] = '0';
+  } 
+  else 
+  {
+    if (integerPart < 0) 
+      {
+            buffer[bufferIndex++] = '-';
+            integerPart = -integerPart;
+        }
+        
+        int tempIndex = bufferIndex;
+        
+        // Save Integer Part
+        while (integerPart != 0) {
+            buffer[tempIndex++] = '0' + (integerPart % 10);
+            integerPart /= 10;
+        }
+        
+        // Reverse Buffer
+        int start = bufferIndex;
+        int end = tempIndex - 1;
+        while (start < end) {
+            char temp = buffer[start];
+            buffer[start++] = buffer[end];
+            buffer[end--] = temp;
+        }
+        
+        bufferIndex = tempIndex;
+    }
+    
+    buffer[bufferIndex++] = '.';
+    
+    buffer[bufferIndex++] = '0' + (decimalPart / 10);
+    
+    buffer[bufferIndex++] = '0' + (decimalPart % 10);
+    
+    // End of buffer
+    buffer[bufferIndex] = '\0';
 }
 
 

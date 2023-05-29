@@ -92577,13 +92577,111 @@
     "scope": null
   },
   {
+    "ID": "c:Middleware.c@3549@F@floatToCharArray@integerPart",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "integerPart",
+    "location": {
+      "column": "7",
+      "line": "145",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Firmware2\\Middleware.c"
+    },
+    "name": "integerPart",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Middleware.c@3608@F@floatToCharArray@decimalPart",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "decimalPart",
+    "location": {
+      "column": "7",
+      "line": "148",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Firmware2\\Middleware.c"
+    },
+    "name": "decimalPart",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Middleware.c@3672@F@floatToCharArray@bufferIndex",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "bufferIndex",
+    "location": {
+      "column": "7",
+      "line": "150",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Firmware2\\Middleware.c"
+    },
+    "name": "bufferIndex",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Middleware.c@3952@F@floatToCharArray@tempIndex",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "tempIndex",
+    "location": {
+      "column": "13",
+      "line": "165",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Firmware2\\Middleware.c"
+    },
+    "name": "tempIndex",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Middleware.c@4207@F@floatToCharArray@start",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "start",
+    "location": {
+      "column": "13",
+      "line": "174",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Firmware2\\Middleware.c"
+    },
+    "name": "start",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Middleware.c@4241@F@floatToCharArray@end",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "end",
+    "location": {
+      "column": "13",
+      "line": "175",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Firmware2\\Middleware.c"
+    },
+    "name": "end",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Middleware.c@4310@F@floatToCharArray@temp",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "temp",
+    "location": {
+      "column": "18",
+      "line": "177",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Firmware2\\Middleware.c"
+    },
+    "name": "temp",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:Middleware.c@F@myUART_Handler",
     "What": "Function",
     "defdec": "Def",
     "display": "void myUART_Handler(void)",
     "location": {
       "column": "13",
-      "line": "150",
+      "line": "197",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Firmware2\\Middleware.c"
     },
     "name": "myUART_Handler",
@@ -92591,13 +92689,13 @@
     "scope": null
   },
   {
-    "ID": "c:Middleware.c@3650@F@myUART_Handler@index",
+    "ID": "c:Middleware.c@4786@F@myUART_Handler@index",
     "What": "Variable",
     "defdec": "Def",
     "display": "index",
     "location": {
       "column": "11",
-      "line": "155",
+      "line": "202",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Firmware2\\Middleware.c"
     },
     "name": "index",
@@ -92605,13 +92703,13 @@
     "scope": null
   },
   {
-    "ID": "c:Middleware.c@3700@F@myUART_Handler@buffer",
+    "ID": "c:Middleware.c@4836@F@myUART_Handler@buffer",
     "What": "Variable",
     "defdec": "Def",
     "display": "buffer",
     "location": {
       "column": "10",
-      "line": "159",
+      "line": "206",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Firmware2\\Middleware.c"
     },
     "name": "buffer",
@@ -92625,7 +92723,7 @@
     "display": "void RED_LED_Init(void)",
     "location": {
       "column": "6",
-      "line": "175",
+      "line": "222",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Firmware2\\Middleware.c"
     },
     "name": "RED_LED_Init",
@@ -92639,7 +92737,7 @@
     "display": "void BLUE_LED_Init(void)",
     "location": {
       "column": "6",
-      "line": "189",
+      "line": "236",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Firmware2\\Middleware.c"
     },
     "name": "BLUE_LED_Init",
@@ -92653,7 +92751,7 @@
     "display": "void BTN1_Init(void)",
     "location": {
       "column": "6",
-      "line": "203",
+      "line": "250",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Firmware2\\Middleware.c"
     },
     "name": "BTN1_Init",
@@ -92667,7 +92765,7 @@
     "display": "void Toggle_RED_LED(void)",
     "location": {
       "column": "6",
-      "line": "217",
+      "line": "264",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Firmware2\\Middleware.c"
     },
     "name": "Toggle_RED_LED",
@@ -92681,7 +92779,7 @@
     "display": "void Toggle_GREEN_LED(void)",
     "location": {
       "column": "6",
-      "line": "224",
+      "line": "271",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Firmware2\\Middleware.c"
     },
     "name": "Toggle_GREEN_LED",
@@ -92695,7 +92793,7 @@
     "display": "uint8_t READ_BTN1(void)",
     "location": {
       "column": "9",
-      "line": "231",
+      "line": "278",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Firmware2\\Middleware.c"
     },
     "name": "READ_BTN1",
@@ -92709,7 +92807,7 @@
     "display": "float Temperature_Cal(uint16_t)",
     "location": {
       "column": "7",
-      "line": "238",
+      "line": "285",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Firmware2\\Middleware.c"
     },
     "name": "Temperature_Cal",
@@ -92723,7 +92821,7 @@
     "display": "void PIT_Config_1s(void)",
     "location": {
       "column": "6",
-      "line": "245",
+      "line": "292",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Firmware2\\Middleware.c"
     },
     "name": "PIT_Config_1s",
@@ -92737,7 +92835,7 @@
     "display": "void ADC_TempSensor_Config(void)",
     "location": {
       "column": "6",
-      "line": "254",
+      "line": "301",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Firmware2\\Middleware.c"
     },
     "name": "ADC_TempSensor_Config",
@@ -92751,7 +92849,7 @@
     "display": "void UART_User_Config(void)",
     "location": {
       "column": "6",
-      "line": "263",
+      "line": "310",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Firmware2\\Middleware.c"
     },
     "name": "UART_User_Config",
