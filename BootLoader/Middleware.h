@@ -7,9 +7,8 @@
 #include "MKL46Z4.h"
 #include "Port.h"
 #include "GPIO.h"
-#include "PIT.h"
-#include "ADC.h"
 #include "UART.h"
+#include "PIT.h"
 //#include "UART.h"
 /********************************************************************
  * API
@@ -22,7 +21,7 @@
 *
 *@return void
 */
-void RED_LED_Init(void);
+void RED_LED_Config(void);
 
 
 
@@ -31,7 +30,7 @@ void RED_LED_Init(void);
 *
 *@return void
 */
-void BLUE_LED_Init(void);
+void BLUE_LED_Config(void);
 
 
 
@@ -40,44 +39,7 @@ void BLUE_LED_Init(void);
 *
 *@return void
 */
-void BTN1_Init(void);
-
-
-
-/*
-* @brief blink mode: Green and Red Led blink concurrent with T = 200ms
-*
-*@return void
-*/
-void LED_Blink_Mode(void);
-
-
-
-/*
-* @brief flash mode: Green Led and Red Led flash with the cycle T = 200ms 
-* (Green Led on while Red Led off)
-*
-*@return void
-*/
-void LED_Flash_Mode(void);
-
-
-
-/*
-* @brief toggle status of Red LED
-*
-*@return void
-*/
-void Toggle_RED_LED(void);
-
-
-
-/*
-* @brief toggle status of Green LED
-*
-*@return void
-*/
-void Toggle_GREEN_LED(void);
+void BTN1_Config(void);
 
 
 
@@ -91,20 +53,20 @@ uint8_t READ_BTN1();
 
 
 /*
-* @brief calculate temperature value by ADC value
+* @brief config for PIT 
 *
-* @param ADC_value is ADC read value of temperature sensor
-*
-*@return temperature value (Celsius) (C) 
+*@return void
 */
-float Temperature_Cal(uint16_t ADC_value);
+void PIT_Config_5s();
 
-void PIT_500ms_Init();
 
-void ADC_TempSensor_Init();
 
-void UART_User_Init();
-
+/*
+* @brief config for UART
+*
+*@return void
+*/
+void UART_User_Config();
 
 
 

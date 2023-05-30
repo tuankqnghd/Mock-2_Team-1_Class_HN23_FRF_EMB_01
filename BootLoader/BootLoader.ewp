@@ -2152,10 +2152,7 @@
             <name>$PROJ_DIR$\ADC.h</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\Clock.c</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\Clock.h</name>
+            <name>$PROJ_DIR$\BootLoader.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\GPIO.c</name>
@@ -2180,9 +2177,6 @@
         </file>
         <file>
             <name>$PROJ_DIR$\Port.h</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\TempSensor.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\UART.c</name>

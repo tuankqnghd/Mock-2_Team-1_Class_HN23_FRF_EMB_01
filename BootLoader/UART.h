@@ -96,7 +96,7 @@ void UART_SendChar(uint8_t Data);
 *
 *@return void
 */
-void UART_SendString(uint8_t * String, uint8_t len);
+void UART_SendString(char * String, uint8_t len);
 
 
 

@@ -7,31 +7,17 @@
  * Include Library
 ********************************************************************/
 #include "MKL46Z4.h"
-#include "math.h"
 #include "Middleware.h"
 
 /********************************************************************
  * Definition
 ********************************************************************/
 
-#define V_TEMP25          0.716
-#define M_TEMP            0.00175
-#define V_REF             3.3
-#define ADC_RESOLUTION    16
-
 /*********************************************************************
 * Variable
 *********************************************************************/
 
-volatile uint16_t ADC_data;
-
-volatile float Temp_value;
-
-volatile uint8_t data;
-
 static void myTimer_Handler(uint8_t Channel);
-
-static void myADC_Handler();
 
 static void myUART_Handler();
 
@@ -63,18 +49,8 @@ PIT_ConfigType UserConfig_PIT = {
   .Channel      = PIT_CHANNEL_0,
   .FreezeMode   = PIT_MODE_RUN,
   .IntEnable    = PIT_INTERRUPT_ENABLE,
-  .PeriodTime   = 500,  // 500ms
+  .PeriodTime   = 5000u,  // 1000ms
   .Callback     = &myTimer_Handler,
-};
-
-ADC_ConfigType UserConfig_ADC = {
-  .Channel      = ADC_CHANNEL_A,
-  .Clock        = ADC_CLOCK_BUSCLK,
-  .Vref         = ADC_VREF_VREFH_VREFL,
-  .Mode         = ADC_MODE_SINGLE_END,
-  .Resolution   = ADC_RESOLUTION_16BIT,
-  .EnableINT    = ADC_INT_ENABLE,
-  .Callback     = &myADC_Handler,
 };
 
 UART_ConfigType Userconfig_UART = {
@@ -93,47 +69,56 @@ UART_ConfigType Userconfig_UART = {
 * Static function
 *********************************************************************/
 
-static void myTimer_Handler(uint8_t Channel)
-{
-  if (Channel == 0)
-  {
-    // Toggle Green LED
-    Toggle_GREEN_LED();
-    
-    // Trigger for ADC conversion
-    ADC_Trigger_Conversion(ADC_CHANNEL_A, 26);
-  }
-  if (Channel == 1)
-  {
-    
-  }
-}
-
-static void myADC_Handler()
-{
-  // Toggle Red LED
-  Toggle_RED_LED();
-  
-  // Read data ADC
-  ADC_data = ADC0_Read(ADC_CHANNEL_A);
-  Temp_value = Temperature_Cal(ADC_data);
-}
-
-static void myUART_Handler()
-{
-  // Read data
-  data = UART0->D;
-  
-  UART_SendChar(data);
-}
-
 /*********************************************************************
 * Global function 
 *********************************************************************/
 
 
 
-void RED_LED_Init(void)
+static void myTimer_Handler(uint8_t Channel)
+{
+//  if (Channel == 0)
+//  {
+//    // Toggle Green LED
+//    Toggle_GREEN_LED();
+//    
+//    // Trigger for ADC conversion
+//    ADC_Trigger_Conversion(ADC_CHANNEL_A, 26);
+//  }
+//  if (Channel == 1)
+//  {
+//    
+//  }
+}
+
+
+
+static void myUART_Handler()
+{
+//  // Read data
+//  data = UART0->D;
+//  
+//  uint8_t index;
+//  
+//  if (data == 0x55)
+//  {
+//    char buffer[6u];
+//    
+//    for (index = 0; index < ADC_READ_BUFFER_SIZE; index++)
+//    {
+//      floatToCharArray(temperature[index], buffer, sizeof(buffer));
+//      
+//      // char 'Space'
+//      buffer[5] = 0x20;
+//
+//      UART_SendString(buffer, 6u);
+//    }
+//}
+}
+
+
+
+void RED_LED_Config(void)
 {
   // Enable clock for PORTE, GPIOE
   SIM->SCGC5 |= SIM_SCGC5_PORTE(1);  
@@ -147,7 +132,7 @@ void RED_LED_Init(void)
 
 
 
-void BLUE_LED_Init(void)
+void BLUE_LED_Config(void)
 {
   // Enable clock for PORTD, GPIOD
   SIM->SCGC5 |= SIM_SCGC5_PORTD(1);  
@@ -161,7 +146,7 @@ void BLUE_LED_Init(void)
 
 
 
-void BTN1_Init(void)
+void BTN1_Config(void)
 {
   // Enable Clock for Port C
   SIM->SCGC5 |= SIM_SCGC5_PORTC(1);
@@ -175,21 +160,6 @@ void BTN1_Init(void)
 
 
 
-void Toggle_RED_LED(void)
-{
-  GPIO_TogglePin(GPIOE, 29);
-}
-
-
-
-
-void Toggle_GREEN_LED(void)
-{
-  GPIO_TogglePin(GPIOD, 5);
-}
-
-
-
 uint8_t READ_BTN1()
 {
   return ((FGPIOC->PDIR & (1 << 3)) >> 3);
@@ -197,14 +167,7 @@ uint8_t READ_BTN1()
 
 
 
-float Temperature_Cal(uint16_t ADC_value)
-{
-  return (25 - ((float)ADC_value / (pow(2, 16) - 1) * V_REF - V_TEMP25) / M_TEMP);
-}
-
-
-
-void PIT_500ms_Init()
+void PIT_Config_5s()
 {
   PIT_Init(&UserConfig_PIT);
   NVIC_EnableIRQ(PIT_IRQn);
@@ -213,17 +176,7 @@ void PIT_500ms_Init()
 
 
 
-void ADC_TempSensor_Init()
-{
-  ADC_Init(&UserConfig_ADC);
-  NVIC_EnableIRQ(ADC0_IRQn);
-  NVIC_SetPriority(ADC0_IRQn, 1);
-  
-}
-
-
-
-void UART_User_Init()
+void UART_User_Config()
 {
   // Clock for Baudrate - MCGIRCLK 2Mhz
   MCG->C1 |= MCG_C1_IRCLKEN(1u);
@@ -249,7 +202,7 @@ void UART_User_Init()
   NVIC_EnableIRQ(UART0_IRQn);
   
   // NVIC Set Priority
-  NVIC_SetPriority(UART0_IRQn, 1);
+  NVIC_SetPriority(UART0_IRQn, 3);
 }
 
 
