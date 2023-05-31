@@ -2179,6 +2179,12 @@
             <name>$PROJ_DIR$\Port.h</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\queue.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\queue.h</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\UART.c</name>
         </file>
         <file>

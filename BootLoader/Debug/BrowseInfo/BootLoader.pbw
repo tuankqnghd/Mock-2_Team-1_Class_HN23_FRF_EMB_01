@@ -87055,6 +87055,1226 @@
     "scope": null
   },
   {
+    "ID": "c:ADC.h@27@macro@__ADC_H__",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__ADC_H__",
+    "location": {
+      "column": "9",
+      "line": "2",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+    },
+    "name": "__ADC_H__",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:ADC.h@T@ADC_ISRType",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "void (*)(void)",
+    "location": {
+      "column": "16",
+      "line": "13",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+    },
+    "name": "ADC_ISRType",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@EA@ADC_ChannelType",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@ADC_ChannelType@ADC_CHANNEL_A",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "ADC_CHANNEL_A",
+        "location": {
+          "column": "3",
+          "line": "18",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+        },
+        "name": "ADC_CHANNEL_A",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@ADC_ChannelType@ADC_CHANNEL_B",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "ADC_CHANNEL_B",
+        "location": {
+          "column": "3",
+          "line": "19",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+        },
+        "name": "ADC_CHANNEL_B",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "16",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@ADC_ChannelType",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "enum ADC_ChannelType",
+    "location": {
+      "column": "3",
+      "line": "20",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+    },
+    "name": "ADC_ChannelType",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@EA@ADC_ClockType",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@ADC_ClockType@ADC_CLOCK_BUSCLK",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "ADC_CLOCK_BUSCLK",
+        "location": {
+          "column": "3",
+          "line": "24",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+        },
+        "name": "ADC_CLOCK_BUSCLK",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@ADC_ClockType@ADC_CLOCK_BUSCLKDIV2",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "ADC_CLOCK_BUSCLKDIV2",
+        "location": {
+          "column": "3",
+          "line": "25",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+        },
+        "name": "ADC_CLOCK_BUSCLKDIV2",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@ADC_ClockType@ADC_CLOCK_ALTCLK",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "ADC_CLOCK_ALTCLK",
+        "location": {
+          "column": "3",
+          "line": "26",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+        },
+        "name": "ADC_CLOCK_ALTCLK",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@ADC_ClockType@ADC_CLOCK_ADACK",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "ADC_CLOCK_ADACK",
+        "location": {
+          "column": "3",
+          "line": "27",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+        },
+        "name": "ADC_CLOCK_ADACK",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "22",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@ADC_ClockType",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "enum ADC_ClockType",
+    "location": {
+      "column": "3",
+      "line": "28",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+    },
+    "name": "ADC_ClockType",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@EA@ADC_VrefType",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@ADC_VrefType@ADC_VREF_VREFH_VREFL",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "ADC_VREF_VREFH_VREFL",
+        "location": {
+          "column": "3",
+          "line": "32",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+        },
+        "name": "ADC_VREF_VREFH_VREFL",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@ADC_VrefType@ADC_VREF_VALTH_VALTL",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "ADC_VREF_VALTH_VALTL",
+        "location": {
+          "column": "3",
+          "line": "33",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+        },
+        "name": "ADC_VREF_VALTH_VALTL",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@ADC_VrefType@ADC_VREF_RESERVED1",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "ADC_VREF_RESERVED1",
+        "location": {
+          "column": "3",
+          "line": "34",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+        },
+        "name": "ADC_VREF_RESERVED1",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@ADC_VrefType@ADC_VREF_RESERVED2",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "ADC_VREF_RESERVED2",
+        "location": {
+          "column": "3",
+          "line": "35",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+        },
+        "name": "ADC_VREF_RESERVED2",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "30",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@ADC_VrefType",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "enum ADC_VrefType",
+    "location": {
+      "column": "3",
+      "line": "36",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+    },
+    "name": "ADC_VrefType",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@EA@ADC_ModeType",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@ADC_ModeType@ADC_MODE_SINGLE_END",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "ADC_MODE_SINGLE_END",
+        "location": {
+          "column": "3",
+          "line": "40",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+        },
+        "name": "ADC_MODE_SINGLE_END",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@ADC_ModeType@ADC_MODE_DIFFRENTIAL",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "ADC_MODE_DIFFRENTIAL",
+        "location": {
+          "column": "3",
+          "line": "41",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+        },
+        "name": "ADC_MODE_DIFFRENTIAL",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "38",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@ADC_ModeType",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "enum ADC_ModeType",
+    "location": {
+      "column": "3",
+      "line": "42",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+    },
+    "name": "ADC_ModeType",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@EA@ADC_ResolutionType",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@ADC_ResolutionType@ADC_RESOLUTION_8BIT",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "ADC_RESOLUTION_8BIT",
+        "location": {
+          "column": "3",
+          "line": "46",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+        },
+        "name": "ADC_RESOLUTION_8BIT",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@ADC_ResolutionType@ADC_RESOLUTION_12BIT",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "ADC_RESOLUTION_12BIT",
+        "location": {
+          "column": "3",
+          "line": "47",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+        },
+        "name": "ADC_RESOLUTION_12BIT",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@ADC_ResolutionType@ADC_RESOLUTION_10BIT",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "ADC_RESOLUTION_10BIT",
+        "location": {
+          "column": "3",
+          "line": "48",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+        },
+        "name": "ADC_RESOLUTION_10BIT",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@ADC_ResolutionType@ADC_RESOLUTION_16BIT",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "ADC_RESOLUTION_16BIT",
+        "location": {
+          "column": "3",
+          "line": "49",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+        },
+        "name": "ADC_RESOLUTION_16BIT",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "44",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@ADC_ResolutionType",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "enum ADC_ResolutionType",
+    "location": {
+      "column": "3",
+      "line": "50",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+    },
+    "name": "ADC_ResolutionType",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@EA@ADC_INTType",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@ADC_INTType@ADC_INT_DISABLE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "ADC_INT_DISABLE",
+        "location": {
+          "column": "3",
+          "line": "54",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+        },
+        "name": "ADC_INT_DISABLE",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@ADC_INTType@ADC_INT_ENABLE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "ADC_INT_ENABLE",
+        "location": {
+          "column": "3",
+          "line": "55",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+        },
+        "name": "ADC_INT_ENABLE",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "52",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@ADC_INTType",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "enum ADC_INTType",
+    "location": {
+      "column": "3",
+      "line": "56",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+    },
+    "name": "ADC_INTType",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@SA@ADC_ConfigType",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "",
+    "location": {
+      "column": "9",
+      "line": "58",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+    },
+    "members": [
+      {
+        "ID": "c:@SA@ADC_ConfigType@FI@Channel",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "Channel",
+        "location": {
+          "column": "25",
+          "line": "60",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+        },
+        "name": "Channel",
+        "origin": "user_include",
+        "scope": "_anonymous_ADC_h_58_9"
+      },
+      {
+        "ID": "c:@SA@ADC_ConfigType@FI@Clock",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "Clock",
+        "location": {
+          "column": "25",
+          "line": "61",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+        },
+        "name": "Clock",
+        "origin": "user_include",
+        "scope": "_anonymous_ADC_h_58_9"
+      },
+      {
+        "ID": "c:@SA@ADC_ConfigType@FI@Vref",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "Vref",
+        "location": {
+          "column": "25",
+          "line": "62",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+        },
+        "name": "Vref",
+        "origin": "user_include",
+        "scope": "_anonymous_ADC_h_58_9"
+      },
+      {
+        "ID": "c:@SA@ADC_ConfigType@FI@Mode",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "Mode",
+        "location": {
+          "column": "25",
+          "line": "63",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+        },
+        "name": "Mode",
+        "origin": "user_include",
+        "scope": "_anonymous_ADC_h_58_9"
+      },
+      {
+        "ID": "c:@SA@ADC_ConfigType@FI@Resolution",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "Resolution",
+        "location": {
+          "column": "25",
+          "line": "64",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+        },
+        "name": "Resolution",
+        "origin": "user_include",
+        "scope": "_anonymous_ADC_h_58_9"
+      },
+      {
+        "ID": "c:@SA@ADC_ConfigType@FI@EnableINT",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "EnableINT",
+        "location": {
+          "column": "25",
+          "line": "65",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+        },
+        "name": "EnableINT",
+        "origin": "user_include",
+        "scope": "_anonymous_ADC_h_58_9"
+      },
+      {
+        "ID": "c:@SA@ADC_ConfigType@FI@Callback",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "Callback",
+        "location": {
+          "column": "25",
+          "line": "66",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+        },
+        "name": "Callback",
+        "origin": "user_include",
+        "scope": "_anonymous_ADC_h_58_9"
+      }
+    ],
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@ADC_ConfigType",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "struct ADC_ConfigType",
+    "location": {
+      "column": "3",
+      "line": "67",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+    },
+    "name": "ADC_ConfigType",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ADC_Init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void ADC_Init(ADC_ConfigType *)",
+    "location": {
+      "column": "6",
+      "line": "81",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+    },
+    "name": "ADC_Init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ADC_Trigger_Conversion",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void ADC_Trigger_Conversion(ADC_ChannelType, uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "94",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+    },
+    "name": "ADC_Trigger_Conversion",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ADC0_Read",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint16_t ADC0_Read(ADC_ChannelType)",
+    "location": {
+      "column": "10",
+      "line": "105",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
+    },
+    "name": "ADC0_Read",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:GPIO.h@28@macro@__GPIO_H__",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__GPIO_H__",
+    "location": {
+      "column": "9",
+      "line": "2",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
+    },
+    "name": "__GPIO_H__",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@EA@GPIO_IO_Type",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@GPIO_IO_Type@GPIO_IO_INPUT",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "GPIO_IO_INPUT",
+        "location": {
+          "column": "3",
+          "line": "14",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
+        },
+        "name": "GPIO_IO_INPUT",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@GPIO_IO_Type@GPIO_IO_OUTPUT",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "GPIO_IO_OUTPUT",
+        "location": {
+          "column": "3",
+          "line": "15",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
+        },
+        "name": "GPIO_IO_OUTPUT",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "12",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@GPIO_IO_Type",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "enum GPIO_IO_Type",
+    "location": {
+      "column": "3",
+      "line": "16",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
+    },
+    "name": "GPIO_IO_Type",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIO_Init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void GPIO_Init(GPIO_Type *, uint8_t, GPIO_IO_Type)",
+    "location": {
+      "column": "6",
+      "line": "30",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
+    },
+    "name": "GPIO_Init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIO_Init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void GPIO_Init(GPIO_Type *, uint8_t, GPIO_IO_Type)",
+    "location": {
+      "column": "6",
+      "line": "30",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
+    },
+    "name": "GPIO_Init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIO_SetPin",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void GPIO_SetPin(GPIO_Type *, uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "42",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
+    },
+    "name": "GPIO_SetPin",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIO_SetPin",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void GPIO_SetPin(GPIO_Type *, uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "42",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
+    },
+    "name": "GPIO_SetPin",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIO_ClearPin",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void GPIO_ClearPin(GPIO_Type *, uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "54",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
+    },
+    "name": "GPIO_ClearPin",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIO_ClearPin",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void GPIO_ClearPin(GPIO_Type *, uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "54",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
+    },
+    "name": "GPIO_ClearPin",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIO_TogglePin",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void GPIO_TogglePin(GPIO_Type *, uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "66",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
+    },
+    "name": "GPIO_TogglePin",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIO_TogglePin",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void GPIO_TogglePin(GPIO_Type *, uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "66",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
+    },
+    "name": "GPIO_TogglePin",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIO_ReadPin",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8_t GPIO_ReadPin(GPIO_Type *, uint8_t)",
+    "location": {
+      "column": "9",
+      "line": "78",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
+    },
+    "name": "GPIO_ReadPin",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@GPIO_ReadPin",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8_t GPIO_ReadPin(GPIO_Type *, uint8_t)",
+    "location": {
+      "column": "9",
+      "line": "78",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
+    },
+    "name": "GPIO_ReadPin",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@1169@macro@_DLIB_DEFAULTS_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_DEFAULTS_H",
+    "location": {
+      "column": "9",
+      "line": "31",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "_DLIB_DEFAULTS_H",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@3035@macro@_DLIB_FILE_DESCRIPTOR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_FILE_DESCRIPTOR",
+    "location": {
+      "column": "11",
+      "line": "85",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "_DLIB_FILE_DESCRIPTOR",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@3448@macro@_DLIB_STDOUT_USES_STATIC_BUFFER",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_STDOUT_USES_STATIC_BUFFER",
+    "location": {
+      "column": "11",
+      "line": "100",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "_DLIB_STDOUT_USES_STATIC_BUFFER",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@4471@macro@_DLIB_FULL_LOCALE_SUPPORT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_FULL_LOCALE_SUPPORT",
+    "location": {
+      "column": "11",
+      "line": "127",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "_DLIB_FULL_LOCALE_SUPPORT",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@4649@macro@_DLIB_LOCALE_TABLE_MEMORY",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_LOCALE_TABLE_MEMORY",
+    "location": {
+      "column": "11",
+      "line": "135",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "_DLIB_LOCALE_TABLE_MEMORY",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@5493@macro@_DLIB_FORMATTED_MULTIBYTE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_FORMATTED_MULTIBYTE",
+    "location": {
+      "column": "11",
+      "line": "165",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "_DLIB_FORMATTED_MULTIBYTE",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@6974@macro@_DLIB_PRINTF_MULTIBYTE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_PRINTF_MULTIBYTE",
+    "location": {
+      "column": "11",
+      "line": "213",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "_DLIB_PRINTF_MULTIBYTE",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@7889@macro@_DLIB_PRINTF_INT_TYPE_IS_INT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_PRINTF_INT_TYPE_IS_INT",
+    "location": {
+      "column": "11",
+      "line": "238",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "_DLIB_PRINTF_INT_TYPE_IS_INT",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@8492@macro@_DLIB_PRINTF_INT_TYPE_IS_LONG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_PRINTF_INT_TYPE_IS_LONG",
+    "location": {
+      "column": "11",
+      "line": "255",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "_DLIB_PRINTF_INT_TYPE_IS_LONG",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@9338@macro@_DLIB_PRINTF_CHAR_BY_CHAR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_PRINTF_CHAR_BY_CHAR",
+    "location": {
+      "column": "11",
+      "line": "277",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "_DLIB_PRINTF_CHAR_BY_CHAR",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@10025@macro@_DLIB_SCANF_MULTIBYTE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_SCANF_MULTIBYTE",
+    "location": {
+      "column": "11",
+      "line": "301",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "_DLIB_SCANF_MULTIBYTE",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@10673@macro@_DLIB_STRFTIME_MULTIBYTE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_STRFTIME_MULTIBYTE",
+    "location": {
+      "column": "11",
+      "line": "321",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "_DLIB_STRFTIME_MULTIBYTE",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@11257@macro@_DLIB_QSORT_USE_BUBBLE_SORT",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_QSORT_USE_BUBBLE_SORT",
+    "location": {
+      "column": "11",
+      "line": "340",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "_DLIB_QSORT_USE_BUBBLE_SORT",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@11840@macro@_DLIB_RAND_USE_SIMPLE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_RAND_USE_SIMPLE",
+    "location": {
+      "column": "11",
+      "line": "365",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "_DLIB_RAND_USE_SIMPLE",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@12026@macro@_DLIB_DEBUG_BREAK_FUNCTION_ATTRIBUTE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_DEBUG_BREAK_FUNCTION_ATTRIBUTE",
+    "location": {
+      "column": "11",
+      "line": "374",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "_DLIB_DEBUG_BREAK_FUNCTION_ATTRIBUTE",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@12745@macro@_DLIB_DATA_ATTR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_DATA_ATTR",
+    "location": {
+      "column": "11",
+      "line": "390",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "_DLIB_DATA_ATTR",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@12836@macro@_DLIB_CONST_ATTR",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_CONST_ATTR",
+    "location": {
+      "column": "13",
+      "line": "395",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "_DLIB_CONST_ATTR",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@13453@macro@_DLIB_MBSTATET_USES_UNSIGNED_LONG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_MBSTATET_USES_UNSIGNED_LONG",
+    "location": {
+      "column": "15",
+      "line": "421",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "_DLIB_MBSTATET_USES_UNSIGNED_LONG",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@13636@macro@_DLIB_TIME_USES_LONG",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_TIME_USES_LONG",
+    "location": {
+      "column": "15",
+      "line": "429",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "_DLIB_TIME_USES_LONG",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@14183@macro@_DLIB_AEABI_DIFUNC_CONTAINS_OFFSETS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_AEABI_DIFUNC_CONTAINS_OFFSETS",
+    "location": {
+      "column": "13",
+      "line": "443",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "_DLIB_AEABI_DIFUNC_CONTAINS_OFFSETS",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@14573@macro@_DLIB_ONLY_USE_CXA_FUNCTIONS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_ONLY_USE_CXA_FUNCTIONS",
+    "location": {
+      "column": "13",
+      "line": "458",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "_DLIB_ONLY_USE_CXA_FUNCTIONS",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@15142@macro@_DLIB_FAST_FMA",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_FAST_FMA",
+    "location": {
+      "column": "11",
+      "line": "485",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "_DLIB_FAST_FMA",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@16042@macro@_DLIB_INCLUDE_DLMALLOC_ALTERNATIVE",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_INCLUDE_DLMALLOC_ALTERNATIVE",
+    "location": {
+      "column": "13",
+      "line": "515",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "_DLIB_INCLUDE_DLMALLOC_ALTERNATIVE",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@16406@macro@_DLIB_TIME_ALLOW_64",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_TIME_ALLOW_64",
+    "location": {
+      "column": "13",
+      "line": "537",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "_DLIB_TIME_ALLOW_64",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@16880@macro@_DLIB_ALLOW_LARGE_CONSTANT_TABLES_FOR_MATH",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "_DLIB_ALLOW_LARGE_CONSTANT_TABLES_FOR_MATH",
+    "location": {
+      "column": "11",
+      "line": "562",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "_DLIB_ALLOW_LARGE_CONSTANT_TABLES_FOR_MATH",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@17280@macro@__WEAK",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__WEAK",
+    "location": {
+      "column": "11",
+      "line": "579",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "__WEAK",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
+    "ID": "c:DLib_Defaults.h@17335@macro@__WEAK_DEFS",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__WEAK_DEFS",
+    "location": {
+      "column": "11",
+      "line": "580",
+      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+    },
+    "name": "__WEAK_DEFS",
+    "origin": "system_include",
+    "scope": null
+  },
+  {
     "ID": "c:cmsis_iar.h@809@macro@__CMSIS_IAR_H__",
     "What": "MacroDef",
     "defdec": "Def",
@@ -88303,381 +89523,1567 @@
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@1169@macro@_DLIB_DEFAULTS_H",
+    "ID": "c:ADC.c@sCallback_ADC",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "sCallback_ADC",
+    "location": {
+      "column": "20",
+      "line": "18",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.c"
+    },
+    "name": "sCallback_ADC",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ADC_Init",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void ADC_Init(ADC_ConfigType *)",
+    "location": {
+      "column": "6",
+      "line": "41",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.c"
+    },
+    "name": "ADC_Init",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ADC_Trigger_Conversion",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void ADC_Trigger_Conversion(ADC_ChannelType, uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "74",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.c"
+    },
+    "name": "ADC_Trigger_Conversion",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ADC0_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void ADC0_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "82",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.c"
+    },
+    "name": "ADC0_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@ADC0_Read",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint16_t ADC0_Read(ADC_ChannelType)",
+    "location": {
+      "column": "10",
+      "line": "89",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.c"
+    },
+    "name": "ADC0_Read",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:queue.h@25@macro@QUEUE_H",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "_DLIB_DEFAULTS_H",
+    "display": "QUEUE_H",
     "location": {
       "column": "9",
-      "line": "31",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "line": "2",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.h"
     },
-    "name": "_DLIB_DEFAULTS_H",
-    "origin": "system_include",
+    "name": "QUEUE_H",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@3035@macro@_DLIB_FILE_DESCRIPTOR",
+    "ID": "c:queue.h@384@macro@QUEUE_SIZE",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "_DLIB_FILE_DESCRIPTOR",
+    "display": "QUEUE_SIZE",
     "location": {
-      "column": "11",
-      "line": "85",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "column": "9",
+      "line": "14",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.h"
     },
-    "name": "_DLIB_FILE_DESCRIPTOR",
-    "origin": "system_include",
+    "name": "QUEUE_SIZE",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@3448@macro@_DLIB_STDOUT_USES_STATIC_BUFFER",
+    "ID": "c:@SA@Queue",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "",
+    "location": {
+      "column": "9",
+      "line": "16",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.h"
+    },
+    "members": [
+      {
+        "ID": "c:@SA@Queue@FI@data",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "data",
+        "location": {
+          "column": "12",
+          "line": "17",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.h"
+        },
+        "name": "data",
+        "origin": "user_include",
+        "scope": "_anonymous_queue_h_16_9"
+      },
+      {
+        "ID": "c:@SA@Queue@FI@front",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "front",
+        "location": {
+          "column": "12",
+          "line": "18",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.h"
+        },
+        "name": "front",
+        "origin": "user_include",
+        "scope": "_anonymous_queue_h_16_9"
+      },
+      {
+        "ID": "c:@SA@Queue@FI@rear",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "rear",
+        "location": {
+          "column": "12",
+          "line": "19",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.h"
+        },
+        "name": "rear",
+        "origin": "user_include",
+        "scope": "_anonymous_queue_h_16_9"
+      }
+    ],
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@Queue",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "struct Queue",
+    "location": {
+      "column": "3",
+      "line": "20",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.h"
+    },
+    "name": "Queue",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@initQueue",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void initQueue(Queue *)",
+    "location": {
+      "column": "6",
+      "line": "22",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.h"
+    },
+    "name": "initQueue",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@initQueue",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void initQueue(Queue *)",
+    "location": {
+      "column": "6",
+      "line": "22",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.h"
+    },
+    "name": "initQueue",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@isQueueEmpty",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8_t isQueueEmpty(Queue *)",
+    "location": {
+      "column": "9",
+      "line": "23",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.h"
+    },
+    "name": "isQueueEmpty",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@isQueueEmpty",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8_t isQueueEmpty(Queue *)",
+    "location": {
+      "column": "9",
+      "line": "23",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.h"
+    },
+    "name": "isQueueEmpty",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@isQueueFull",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8_t isQueueFull(Queue *)",
+    "location": {
+      "column": "9",
+      "line": "24",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.h"
+    },
+    "name": "isQueueFull",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@isQueueFull",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8_t isQueueFull(Queue *)",
+    "location": {
+      "column": "9",
+      "line": "24",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.h"
+    },
+    "name": "isQueueFull",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@enqueue",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void enqueue(Queue *, uint8_t *)",
+    "location": {
+      "column": "6",
+      "line": "25",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.h"
+    },
+    "name": "enqueue",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@enqueue",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void enqueue(Queue *, uint8_t *)",
+    "location": {
+      "column": "6",
+      "line": "25",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.h"
+    },
+    "name": "enqueue",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@dequeue",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8_t * dequeue(Queue *)",
+    "location": {
+      "column": "10",
+      "line": "26",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.h"
+    },
+    "name": "dequeue",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@dequeue",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8_t * dequeue(Queue *)",
+    "location": {
+      "column": "10",
+      "line": "26",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.h"
+    },
+    "name": "dequeue",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@size",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int size(Queue *)",
+    "location": {
+      "column": "5",
+      "line": "27",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.h"
+    },
+    "name": "size",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@size",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "int size(Queue *)",
+    "location": {
+      "column": "5",
+      "line": "27",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.h"
+    },
+    "name": "size",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:system_MKL46Z4.h@4734@macro@_SYSTEM_MKL46Z4_H_",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "_DLIB_STDOUT_USES_STATIC_BUFFER",
+    "display": "_SYSTEM_MKL46Z4_H_",
     "location": {
-      "column": "11",
+      "column": "9",
       "line": "100",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
     },
-    "name": "_DLIB_STDOUT_USES_STATIC_BUFFER",
-    "origin": "system_include",
+    "name": "_SYSTEM_MKL46Z4_H_",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@4471@macro@_DLIB_FULL_LOCALE_SUPPORT",
+    "ID": "c:system_MKL46Z4.h@4924@macro@DISABLE_WDOG",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "_DLIB_FULL_LOCALE_SUPPORT",
+    "display": "DISABLE_WDOG",
     "location": {
       "column": "11",
-      "line": "127",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "line": "110",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
     },
-    "name": "_DLIB_FULL_LOCALE_SUPPORT",
-    "origin": "system_include",
+    "name": "DISABLE_WDOG",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@4649@macro@_DLIB_LOCALE_TABLE_MEMORY",
+    "ID": "c:system_MKL46Z4.h@4998@macro@RTC_CLKIN_USED",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "_DLIB_LOCALE_TABLE_MEMORY",
+    "display": "RTC_CLKIN_USED",
     "location": {
       "column": "11",
-      "line": "135",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "line": "113",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
     },
-    "name": "_DLIB_LOCALE_TABLE_MEMORY",
-    "origin": "system_include",
+    "name": "RTC_CLKIN_USED",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@5493@macro@_DLIB_FORMATTED_MULTIBYTE",
+    "ID": "c:system_MKL46Z4.h@5090@macro@CPU_XTAL_CLK_HZ",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "_DLIB_FORMATTED_MULTIBYTE",
+    "display": "CPU_XTAL_CLK_HZ",
     "location": {
-      "column": "11",
-      "line": "165",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "column": "9",
+      "line": "121",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
     },
-    "name": "_DLIB_FORMATTED_MULTIBYTE",
-    "origin": "system_include",
+    "name": "CPU_XTAL_CLK_HZ",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@6974@macro@_DLIB_PRINTF_MULTIBYTE",
+    "ID": "c:system_MKL46Z4.h@5253@macro@CPU_INT_SLOW_CLK_HZ",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "_DLIB_PRINTF_MULTIBYTE",
+    "display": "CPU_INT_SLOW_CLK_HZ",
     "location": {
-      "column": "11",
-      "line": "213",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "column": "9",
+      "line": "122",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
     },
-    "name": "_DLIB_PRINTF_MULTIBYTE",
-    "origin": "system_include",
+    "name": "CPU_INT_SLOW_CLK_HZ",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@7889@macro@_DLIB_PRINTF_INT_TYPE_IS_INT",
+    "ID": "c:system_MKL46Z4.h@5379@macro@CPU_INT_FAST_CLK_HZ",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "_DLIB_PRINTF_INT_TYPE_IS_INT",
+    "display": "CPU_INT_FAST_CLK_HZ",
     "location": {
-      "column": "11",
-      "line": "238",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "column": "9",
+      "line": "123",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
     },
-    "name": "_DLIB_PRINTF_INT_TYPE_IS_INT",
-    "origin": "system_include",
+    "name": "CPU_INT_FAST_CLK_HZ",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@8492@macro@_DLIB_PRINTF_INT_TYPE_IS_LONG",
+    "ID": "c:system_MKL46Z4.h@5609@macro@SYSTEM_SMC_PMPROT_VALUE",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "_DLIB_PRINTF_INT_TYPE_IS_LONG",
+    "display": "SYSTEM_SMC_PMPROT_VALUE",
     "location": {
-      "column": "11",
-      "line": "255",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "column": "9",
+      "line": "129",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
     },
-    "name": "_DLIB_PRINTF_INT_TYPE_IS_LONG",
-    "origin": "system_include",
+    "name": "SYSTEM_SMC_PMPROT_VALUE",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@9338@macro@_DLIB_PRINTF_CHAR_BY_CHAR",
+    "ID": "c:system_MKL46Z4.h@5688@macro@DEFAULT_SYSTEM_CLOCK",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "_DLIB_PRINTF_CHAR_BY_CHAR",
+    "display": "DEFAULT_SYSTEM_CLOCK",
     "location": {
-      "column": "11",
-      "line": "277",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "column": "9",
+      "line": "131",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
     },
-    "name": "_DLIB_PRINTF_CHAR_BY_CHAR",
-    "origin": "system_include",
+    "name": "DEFAULT_SYSTEM_CLOCK",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@10025@macro@_DLIB_SCANF_MULTIBYTE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_SCANF_MULTIBYTE",
+    "ID": "c:@SystemCoreClock",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "SystemCoreClock",
     "location": {
-      "column": "11",
-      "line": "301",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "column": "17",
+      "line": "143",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
     },
-    "name": "_DLIB_SCANF_MULTIBYTE",
-    "origin": "system_include",
+    "name": "SystemCoreClock",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@10673@macro@_DLIB_STRFTIME_MULTIBYTE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_STRFTIME_MULTIBYTE",
+    "ID": "c:@SystemCoreClock",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "SystemCoreClock",
     "location": {
-      "column": "11",
-      "line": "321",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "column": "17",
+      "line": "143",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
     },
-    "name": "_DLIB_STRFTIME_MULTIBYTE",
-    "origin": "system_include",
+    "name": "SystemCoreClock",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@11257@macro@_DLIB_QSORT_USE_BUBBLE_SORT",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_QSORT_USE_BUBBLE_SORT",
+    "ID": "c:@F@SystemInit",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void SystemInit(void)",
     "location": {
-      "column": "11",
-      "line": "340",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "column": "6",
+      "line": "152",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
     },
-    "name": "_DLIB_QSORT_USE_BUBBLE_SORT",
-    "origin": "system_include",
+    "name": "SystemInit",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@11840@macro@_DLIB_RAND_USE_SIMPLE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_RAND_USE_SIMPLE",
+    "ID": "c:@F@SystemInit",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void SystemInit(void)",
     "location": {
-      "column": "11",
-      "line": "365",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "column": "6",
+      "line": "152",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
     },
-    "name": "_DLIB_RAND_USE_SIMPLE",
-    "origin": "system_include",
+    "name": "SystemInit",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@12026@macro@_DLIB_DEBUG_BREAK_FUNCTION_ATTRIBUTE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_DEBUG_BREAK_FUNCTION_ATTRIBUTE",
+    "ID": "c:@F@SystemCoreClockUpdate",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void SystemCoreClockUpdate(void)",
     "location": {
-      "column": "11",
-      "line": "374",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "column": "6",
+      "line": "161",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
     },
-    "name": "_DLIB_DEBUG_BREAK_FUNCTION_ATTRIBUTE",
-    "origin": "system_include",
+    "name": "SystemCoreClockUpdate",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@12745@macro@_DLIB_DATA_ATTR",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_DLIB_DATA_ATTR",
+    "ID": "c:@F@SystemCoreClockUpdate",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void SystemCoreClockUpdate(void)",
     "location": {
-      "column": "11",
-      "line": "390",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "column": "6",
+      "line": "161",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
     },
-    "name": "_DLIB_DATA_ATTR",
-    "origin": "system_include",
+    "name": "SystemCoreClockUpdate",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@12836@macro@_DLIB_CONST_ATTR",
+    "ID": "c:UART.h@28@macro@__UART_H__",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "_DLIB_CONST_ATTR",
+    "display": "__UART_H__",
     "location": {
-      "column": "13",
-      "line": "395",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "column": "9",
+      "line": "2",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
     },
-    "name": "_DLIB_CONST_ATTR",
-    "origin": "system_include",
+    "name": "__UART_H__",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@13453@macro@_DLIB_MBSTATET_USES_UNSIGNED_LONG",
-    "What": "MacroDef",
+    "ID": "c:UART.h@T@UART_ISRType",
+    "What": "Typedef",
     "defdec": "Def",
-    "display": "_DLIB_MBSTATET_USES_UNSIGNED_LONG",
+    "display": "void (*)(void)",
     "location": {
-      "column": "15",
-      "line": "421",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "column": "16",
+      "line": "14",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
     },
-    "name": "_DLIB_MBSTATET_USES_UNSIGNED_LONG",
-    "origin": "system_include",
+    "name": "UART_ISRType",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@13636@macro@_DLIB_TIME_USES_LONG",
-    "What": "MacroDef",
+    "ID": "c:@EA@UART_ModeType",
+    "What": "Enum",
     "defdec": "Def",
-    "display": "_DLIB_TIME_USES_LONG",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@UART_ModeType@UART_MODE_8BIT",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "UART_MODE_8BIT",
+        "location": {
+          "column": "3",
+          "line": "19",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+        },
+        "name": "UART_MODE_8BIT",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@UART_ModeType@UART_MODE_9BIT",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "UART_MODE_9BIT",
+        "location": {
+          "column": "3",
+          "line": "20",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+        },
+        "name": "UART_MODE_9BIT",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
     "location": {
-      "column": "15",
-      "line": "429",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "column": "9",
+      "line": "17",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
     },
-    "name": "_DLIB_TIME_USES_LONG",
-    "origin": "system_include",
+    "name": "",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@14183@macro@_DLIB_AEABI_DIFUNC_CONTAINS_OFFSETS",
-    "What": "MacroDef",
+    "ID": "c:@T@UART_ModeType",
+    "What": "Typedef",
     "defdec": "Def",
-    "display": "_DLIB_AEABI_DIFUNC_CONTAINS_OFFSETS",
+    "display": "enum UART_ModeType",
     "location": {
-      "column": "13",
-      "line": "443",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "column": "3",
+      "line": "21",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
     },
-    "name": "_DLIB_AEABI_DIFUNC_CONTAINS_OFFSETS",
-    "origin": "system_include",
+    "name": "UART_ModeType",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@14573@macro@_DLIB_ONLY_USE_CXA_FUNCTIONS",
-    "What": "MacroDef",
+    "ID": "c:@EA@UART_ParityType",
+    "What": "Enum",
     "defdec": "Def",
-    "display": "_DLIB_ONLY_USE_CXA_FUNCTIONS",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@UART_ParityType@UART_PARITY_DISABLE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "UART_PARITY_DISABLE",
+        "location": {
+          "column": "3",
+          "line": "25",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+        },
+        "name": "UART_PARITY_DISABLE",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@UART_ParityType@UART_PARITY_EVEN",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "UART_PARITY_EVEN",
+        "location": {
+          "column": "3",
+          "line": "26",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+        },
+        "name": "UART_PARITY_EVEN",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@UART_ParityType@UART_PARITY_ODD",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "UART_PARITY_ODD",
+        "location": {
+          "column": "3",
+          "line": "27",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+        },
+        "name": "UART_PARITY_ODD",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
     "location": {
-      "column": "13",
-      "line": "458",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "column": "9",
+      "line": "23",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
     },
-    "name": "_DLIB_ONLY_USE_CXA_FUNCTIONS",
-    "origin": "system_include",
+    "name": "",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@15142@macro@_DLIB_FAST_FMA",
-    "What": "MacroDef",
+    "ID": "c:@T@UART_ParityType",
+    "What": "Typedef",
     "defdec": "Def",
-    "display": "_DLIB_FAST_FMA",
+    "display": "enum UART_ParityType",
     "location": {
-      "column": "11",
-      "line": "485",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "column": "3",
+      "line": "28",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
     },
-    "name": "_DLIB_FAST_FMA",
-    "origin": "system_include",
+    "name": "UART_ParityType",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@16042@macro@_DLIB_INCLUDE_DLMALLOC_ALTERNATIVE",
-    "What": "MacroDef",
+    "ID": "c:@EA@UART_StopbitType",
+    "What": "Enum",
     "defdec": "Def",
-    "display": "_DLIB_INCLUDE_DLMALLOC_ALTERNATIVE",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@UART_StopbitType@UART_STOPBIT_ONE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "UART_STOPBIT_ONE",
+        "location": {
+          "column": "3",
+          "line": "32",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+        },
+        "name": "UART_STOPBIT_ONE",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@UART_StopbitType@UART_STOPBIT_TWO",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "UART_STOPBIT_TWO",
+        "location": {
+          "column": "3",
+          "line": "33",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+        },
+        "name": "UART_STOPBIT_TWO",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
     "location": {
-      "column": "13",
-      "line": "515",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "column": "9",
+      "line": "30",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
     },
-    "name": "_DLIB_INCLUDE_DLMALLOC_ALTERNATIVE",
-    "origin": "system_include",
+    "name": "",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@16406@macro@_DLIB_TIME_ALLOW_64",
-    "What": "MacroDef",
+    "ID": "c:@T@UART_StopbitType",
+    "What": "Typedef",
     "defdec": "Def",
-    "display": "_DLIB_TIME_ALLOW_64",
+    "display": "enum UART_StopbitType",
     "location": {
-      "column": "13",
-      "line": "537",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "column": "3",
+      "line": "34",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
     },
-    "name": "_DLIB_TIME_ALLOW_64",
-    "origin": "system_include",
+    "name": "UART_StopbitType",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@16880@macro@_DLIB_ALLOW_LARGE_CONSTANT_TABLES_FOR_MATH",
-    "What": "MacroDef",
+    "ID": "c:@EA@UART_TIEINTType",
+    "What": "Enum",
     "defdec": "Def",
-    "display": "_DLIB_ALLOW_LARGE_CONSTANT_TABLES_FOR_MATH",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@UART_TIEINTType@UART_TIEINT_DISABLE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "UART_TIEINT_DISABLE",
+        "location": {
+          "column": "3",
+          "line": "38",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+        },
+        "name": "UART_TIEINT_DISABLE",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@UART_TIEINTType@UART_TIEINT_ENABLE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "UART_TIEINT_ENABLE",
+        "location": {
+          "column": "3",
+          "line": "39",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+        },
+        "name": "UART_TIEINT_ENABLE",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
     "location": {
-      "column": "11",
-      "line": "562",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "column": "9",
+      "line": "36",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
     },
-    "name": "_DLIB_ALLOW_LARGE_CONSTANT_TABLES_FOR_MATH",
-    "origin": "system_include",
+    "name": "",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@17280@macro@__WEAK",
-    "What": "MacroDef",
+    "ID": "c:@T@UART_TIEINTType",
+    "What": "Typedef",
     "defdec": "Def",
-    "display": "__WEAK",
+    "display": "enum UART_TIEINTType",
     "location": {
-      "column": "11",
-      "line": "579",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "column": "3",
+      "line": "40",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
     },
-    "name": "__WEAK",
-    "origin": "system_include",
+    "name": "UART_TIEINTType",
+    "origin": "user_include",
     "scope": null
   },
   {
-    "ID": "c:DLib_Defaults.h@17335@macro@__WEAK_DEFS",
+    "ID": "c:@EA@UART_TCIEINTType",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@UART_TCIEINTType@UART_TCIEINT_DISABLE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "UART_TCIEINT_DISABLE",
+        "location": {
+          "column": "3",
+          "line": "44",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+        },
+        "name": "UART_TCIEINT_DISABLE",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@UART_TCIEINTType@UART_TCIEINT_ENABLE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "UART_TCIEINT_ENABLE",
+        "location": {
+          "column": "3",
+          "line": "45",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+        },
+        "name": "UART_TCIEINT_ENABLE",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "42",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@UART_TCIEINTType",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "enum UART_TCIEINTType",
+    "location": {
+      "column": "3",
+      "line": "46",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+    },
+    "name": "UART_TCIEINTType",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@EA@UART_RIEINTType",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@UART_RIEINTType@UART_RIEINT_DISABLE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "UART_RIEINT_DISABLE",
+        "location": {
+          "column": "3",
+          "line": "50",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+        },
+        "name": "UART_RIEINT_DISABLE",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@UART_RIEINTType@UART_RIEINT_ENABLE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "UART_RIEINT_ENABLE",
+        "location": {
+          "column": "3",
+          "line": "51",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+        },
+        "name": "UART_RIEINT_ENABLE",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "48",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@UART_RIEINTType",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "enum UART_RIEINTType",
+    "location": {
+      "column": "3",
+      "line": "52",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+    },
+    "name": "UART_RIEINTType",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@SA@UART_ConfigType",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "",
+    "location": {
+      "column": "9",
+      "line": "56",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+    },
+    "members": [
+      {
+        "ID": "c:@SA@UART_ConfigType@FI@Mode",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "Mode",
+        "location": {
+          "column": "25",
+          "line": "58",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+        },
+        "name": "Mode",
+        "origin": "user_include",
+        "scope": "_anonymous_UART_h_56_9"
+      },
+      {
+        "ID": "c:@SA@UART_ConfigType@FI@Parity",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "Parity",
+        "location": {
+          "column": "25",
+          "line": "59",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+        },
+        "name": "Parity",
+        "origin": "user_include",
+        "scope": "_anonymous_UART_h_56_9"
+      },
+      {
+        "ID": "c:@SA@UART_ConfigType@FI@Stopbit",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "Stopbit",
+        "location": {
+          "column": "25",
+          "line": "60",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+        },
+        "name": "Stopbit",
+        "origin": "user_include",
+        "scope": "_anonymous_UART_h_56_9"
+      },
+      {
+        "ID": "c:@SA@UART_ConfigType@FI@OSR",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "OSR",
+        "location": {
+          "column": "25",
+          "line": "61",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+        },
+        "name": "OSR",
+        "origin": "user_include",
+        "scope": "_anonymous_UART_h_56_9"
+      },
+      {
+        "ID": "c:@SA@UART_ConfigType@FI@SBR",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "SBR",
+        "location": {
+          "column": "25",
+          "line": "62",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+        },
+        "name": "SBR",
+        "origin": "user_include",
+        "scope": "_anonymous_UART_h_56_9"
+      },
+      {
+        "ID": "c:@SA@UART_ConfigType@FI@TIEINT",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "TIEINT",
+        "location": {
+          "column": "25",
+          "line": "63",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+        },
+        "name": "TIEINT",
+        "origin": "user_include",
+        "scope": "_anonymous_UART_h_56_9"
+      },
+      {
+        "ID": "c:@SA@UART_ConfigType@FI@TCIEINT",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "TCIEINT",
+        "location": {
+          "column": "25",
+          "line": "64",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+        },
+        "name": "TCIEINT",
+        "origin": "user_include",
+        "scope": "_anonymous_UART_h_56_9"
+      },
+      {
+        "ID": "c:@SA@UART_ConfigType@FI@RIEINT",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "RIEINT",
+        "location": {
+          "column": "25",
+          "line": "65",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+        },
+        "name": "RIEINT",
+        "origin": "user_include",
+        "scope": "_anonymous_UART_h_56_9"
+      },
+      {
+        "ID": "c:@SA@UART_ConfigType@FI@Callback",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "Callback",
+        "location": {
+          "column": "25",
+          "line": "66",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+        },
+        "name": "Callback",
+        "origin": "user_include",
+        "scope": "_anonymous_UART_h_56_9"
+      }
+    ],
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@UART_ConfigType",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "struct UART_ConfigType",
+    "location": {
+      "column": "3",
+      "line": "67",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+    },
+    "name": "UART_ConfigType",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_Init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void UART_Init(UART_ConfigType *)",
+    "location": {
+      "column": "6",
+      "line": "78",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+    },
+    "name": "UART_Init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_Init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void UART_Init(UART_ConfigType *)",
+    "location": {
+      "column": "6",
+      "line": "78",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+    },
+    "name": "UART_Init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_SendChar",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void UART_SendChar(uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "89",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+    },
+    "name": "UART_SendChar",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_SendChar",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void UART_SendChar(uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "89",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+    },
+    "name": "UART_SendChar",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_SendString",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void UART_SendString(char *, uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "100",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+    },
+    "name": "UART_SendString",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_SendString",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void UART_SendString(char *, uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "100",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+    },
+    "name": "UART_SendString",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_Receive",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8_t UART_Receive(void)",
+    "location": {
+      "column": "9",
+      "line": "109",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+    },
+    "name": "UART_Receive",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@UART_Receive",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "uint8_t UART_Receive(void)",
+    "location": {
+      "column": "9",
+      "line": "109",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
+    },
+    "name": "UART_Receive",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:PIT.h@27@macro@__PIT_H__",
     "What": "MacroDef",
     "defdec": "Def",
-    "display": "__WEAK_DEFS",
+    "display": "__PIT_H__",
     "location": {
-      "column": "11",
-      "line": "580",
-      "path": "C:\\Program Files\\IAR Systems\\Embedded Workbench 9.1\\arm\\inc\\c\\DLib_Defaults.h"
+      "column": "9",
+      "line": "2",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
     },
-    "name": "__WEAK_DEFS",
-    "origin": "system_include",
+    "name": "__PIT_H__",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:PIT.h@545@macro@BUS_CLOCK_DIV",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "BUS_CLOCK_DIV",
+    "location": {
+      "column": "9",
+      "line": "22",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
+    },
+    "name": "BUS_CLOCK_DIV",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:PIT.h@T@PIT_ISRType",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "void (*)(uint8_t)",
+    "location": {
+      "column": "16",
+      "line": "24",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
+    },
+    "name": "PIT_ISRType",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@EA@PIT_ChannelType",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@PIT_ChannelType@PIT_CHANNEL_0",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "PIT_CHANNEL_0",
+        "location": {
+          "column": "3",
+          "line": "29",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
+        },
+        "name": "PIT_CHANNEL_0",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@PIT_ChannelType@PIT_CHANNEL_1",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "PIT_CHANNEL_1",
+        "location": {
+          "column": "3",
+          "line": "30",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
+        },
+        "name": "PIT_CHANNEL_1",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "27",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@PIT_ChannelType",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "enum PIT_ChannelType",
+    "location": {
+      "column": "3",
+      "line": "31",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
+    },
+    "name": "PIT_ChannelType",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@EA@PIT_ModeType",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@PIT_ModeType@PIT_MODE_RUN",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "PIT_MODE_RUN",
+        "location": {
+          "column": "3",
+          "line": "35",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
+        },
+        "name": "PIT_MODE_RUN",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@PIT_ModeType@PIT_MODE_FREEZE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "PIT_MODE_FREEZE",
+        "location": {
+          "column": "3",
+          "line": "36",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
+        },
+        "name": "PIT_MODE_FREEZE",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "33",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@PIT_ModeType",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "enum PIT_ModeType",
+    "location": {
+      "column": "3",
+      "line": "37",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
+    },
+    "name": "PIT_ModeType",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@EA@PIT_IntType",
+    "What": "Enum",
+    "defdec": "Def",
+    "display": "",
+    "fields": [
+      {
+        "ID": "c:@EA@PIT_IntType@PIT_INTERRUPT_DISABLE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "PIT_INTERRUPT_DISABLE",
+        "location": {
+          "column": "3",
+          "line": "41",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
+        },
+        "name": "PIT_INTERRUPT_DISABLE",
+        "origin": "user_include",
+        "scope": null
+      },
+      {
+        "ID": "c:@EA@PIT_IntType@PIT_INTERRUPT_ENABLE",
+        "What": "Enumerator",
+        "defdec": "Def",
+        "display": "PIT_INTERRUPT_ENABLE",
+        "location": {
+          "column": "3",
+          "line": "42",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
+        },
+        "name": "PIT_INTERRUPT_ENABLE",
+        "origin": "user_include",
+        "scope": null
+      }
+    ],
+    "location": {
+      "column": "9",
+      "line": "39",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
+    },
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@PIT_IntType",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "enum PIT_IntType",
+    "location": {
+      "column": "3",
+      "line": "43",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
+    },
+    "name": "PIT_IntType",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@SA@PIT_ConfigType",
+    "What": "Struct",
+    "defdec": "Def",
+    "display": "",
+    "location": {
+      "column": "9",
+      "line": "45",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
+    },
+    "members": [
+      {
+        "ID": "c:@SA@PIT_ConfigType@FI@Channel",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "Channel",
+        "location": {
+          "column": "25",
+          "line": "47",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
+        },
+        "name": "Channel",
+        "origin": "user_include",
+        "scope": "_anonymous_PIT_h_45_9"
+      },
+      {
+        "ID": "c:@SA@PIT_ConfigType@FI@FreezeMode",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "FreezeMode",
+        "location": {
+          "column": "25",
+          "line": "48",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
+        },
+        "name": "FreezeMode",
+        "origin": "user_include",
+        "scope": "_anonymous_PIT_h_45_9"
+      },
+      {
+        "ID": "c:@SA@PIT_ConfigType@FI@PeriodTime",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "PeriodTime",
+        "location": {
+          "column": "25",
+          "line": "49",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
+        },
+        "name": "PeriodTime",
+        "origin": "user_include",
+        "scope": "_anonymous_PIT_h_45_9"
+      },
+      {
+        "ID": "c:@SA@PIT_ConfigType@FI@IntEnable",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "IntEnable",
+        "location": {
+          "column": "25",
+          "line": "50",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
+        },
+        "name": "IntEnable",
+        "origin": "user_include",
+        "scope": "_anonymous_PIT_h_45_9"
+      },
+      {
+        "ID": "c:@SA@PIT_ConfigType@FI@Callback",
+        "What": "FieldDecl",
+        "defdec": "Def",
+        "display": "Callback",
+        "location": {
+          "column": "25",
+          "line": "51",
+          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
+        },
+        "name": "Callback",
+        "origin": "user_include",
+        "scope": "_anonymous_PIT_h_45_9"
+      }
+    ],
+    "name": "",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@T@PIT_ConfigType",
+    "What": "Typedef",
+    "defdec": "Def",
+    "display": "struct PIT_ConfigType",
+    "location": {
+      "column": "3",
+      "line": "52",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
+    },
+    "name": "PIT_ConfigType",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@PIT_Init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void PIT_Init(PIT_ConfigType *)",
+    "location": {
+      "column": "6",
+      "line": "63",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
+    },
+    "name": "PIT_Init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@PIT_Init",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void PIT_Init(PIT_ConfigType *)",
+    "location": {
+      "column": "6",
+      "line": "63",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
+    },
+    "name": "PIT_Init",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@PIT_TimerControl",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void PIT_TimerControl(PIT_ChannelType, uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "76",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
+    },
+    "name": "PIT_TimerControl",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@PIT_TimerControl",
+    "What": "Function",
+    "defdec": "Dec",
+    "display": "void PIT_TimerControl(PIT_ChannelType, uint8_t)",
+    "location": {
+      "column": "6",
+      "line": "76",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
+    },
+    "name": "PIT_TimerControl",
+    "origin": "user_include",
     "scope": null
   },
   {
@@ -89042,1364 +91448,6 @@
     },
     "name": "_CPPINIT_ATTR",
     "origin": "system_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ADC.h@27@macro@__ADC_H__",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__ADC_H__",
-    "location": {
-      "column": "9",
-      "line": "2",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-    },
-    "name": "__ADC_H__",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ADC.h@T@ADC_ISRType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "void (*)(void)",
-    "location": {
-      "column": "16",
-      "line": "13",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-    },
-    "name": "ADC_ISRType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@EA@ADC_ChannelType",
-    "What": "Enum",
-    "defdec": "Def",
-    "display": "",
-    "fields": [
-      {
-        "ID": "c:@EA@ADC_ChannelType@ADC_CHANNEL_A",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "ADC_CHANNEL_A",
-        "location": {
-          "column": "3",
-          "line": "18",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-        },
-        "name": "ADC_CHANNEL_A",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@ADC_ChannelType@ADC_CHANNEL_B",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "ADC_CHANNEL_B",
-        "location": {
-          "column": "3",
-          "line": "19",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-        },
-        "name": "ADC_CHANNEL_B",
-        "origin": "user_include",
-        "scope": null
-      }
-    ],
-    "location": {
-      "column": "9",
-      "line": "16",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-    },
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@ADC_ChannelType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "enum ADC_ChannelType",
-    "location": {
-      "column": "3",
-      "line": "20",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-    },
-    "name": "ADC_ChannelType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@EA@ADC_ClockType",
-    "What": "Enum",
-    "defdec": "Def",
-    "display": "",
-    "fields": [
-      {
-        "ID": "c:@EA@ADC_ClockType@ADC_CLOCK_BUSCLK",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "ADC_CLOCK_BUSCLK",
-        "location": {
-          "column": "3",
-          "line": "24",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-        },
-        "name": "ADC_CLOCK_BUSCLK",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@ADC_ClockType@ADC_CLOCK_BUSCLKDIV2",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "ADC_CLOCK_BUSCLKDIV2",
-        "location": {
-          "column": "3",
-          "line": "25",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-        },
-        "name": "ADC_CLOCK_BUSCLKDIV2",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@ADC_ClockType@ADC_CLOCK_ALTCLK",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "ADC_CLOCK_ALTCLK",
-        "location": {
-          "column": "3",
-          "line": "26",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-        },
-        "name": "ADC_CLOCK_ALTCLK",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@ADC_ClockType@ADC_CLOCK_ADACK",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "ADC_CLOCK_ADACK",
-        "location": {
-          "column": "3",
-          "line": "27",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-        },
-        "name": "ADC_CLOCK_ADACK",
-        "origin": "user_include",
-        "scope": null
-      }
-    ],
-    "location": {
-      "column": "9",
-      "line": "22",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-    },
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@ADC_ClockType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "enum ADC_ClockType",
-    "location": {
-      "column": "3",
-      "line": "28",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-    },
-    "name": "ADC_ClockType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@EA@ADC_VrefType",
-    "What": "Enum",
-    "defdec": "Def",
-    "display": "",
-    "fields": [
-      {
-        "ID": "c:@EA@ADC_VrefType@ADC_VREF_VREFH_VREFL",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "ADC_VREF_VREFH_VREFL",
-        "location": {
-          "column": "3",
-          "line": "32",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-        },
-        "name": "ADC_VREF_VREFH_VREFL",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@ADC_VrefType@ADC_VREF_VALTH_VALTL",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "ADC_VREF_VALTH_VALTL",
-        "location": {
-          "column": "3",
-          "line": "33",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-        },
-        "name": "ADC_VREF_VALTH_VALTL",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@ADC_VrefType@ADC_VREF_RESERVED1",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "ADC_VREF_RESERVED1",
-        "location": {
-          "column": "3",
-          "line": "34",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-        },
-        "name": "ADC_VREF_RESERVED1",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@ADC_VrefType@ADC_VREF_RESERVED2",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "ADC_VREF_RESERVED2",
-        "location": {
-          "column": "3",
-          "line": "35",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-        },
-        "name": "ADC_VREF_RESERVED2",
-        "origin": "user_include",
-        "scope": null
-      }
-    ],
-    "location": {
-      "column": "9",
-      "line": "30",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-    },
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@ADC_VrefType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "enum ADC_VrefType",
-    "location": {
-      "column": "3",
-      "line": "36",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-    },
-    "name": "ADC_VrefType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@EA@ADC_ModeType",
-    "What": "Enum",
-    "defdec": "Def",
-    "display": "",
-    "fields": [
-      {
-        "ID": "c:@EA@ADC_ModeType@ADC_MODE_SINGLE_END",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "ADC_MODE_SINGLE_END",
-        "location": {
-          "column": "3",
-          "line": "40",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-        },
-        "name": "ADC_MODE_SINGLE_END",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@ADC_ModeType@ADC_MODE_DIFFRENTIAL",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "ADC_MODE_DIFFRENTIAL",
-        "location": {
-          "column": "3",
-          "line": "41",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-        },
-        "name": "ADC_MODE_DIFFRENTIAL",
-        "origin": "user_include",
-        "scope": null
-      }
-    ],
-    "location": {
-      "column": "9",
-      "line": "38",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-    },
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@ADC_ModeType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "enum ADC_ModeType",
-    "location": {
-      "column": "3",
-      "line": "42",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-    },
-    "name": "ADC_ModeType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@EA@ADC_ResolutionType",
-    "What": "Enum",
-    "defdec": "Def",
-    "display": "",
-    "fields": [
-      {
-        "ID": "c:@EA@ADC_ResolutionType@ADC_RESOLUTION_8BIT",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "ADC_RESOLUTION_8BIT",
-        "location": {
-          "column": "3",
-          "line": "46",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-        },
-        "name": "ADC_RESOLUTION_8BIT",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@ADC_ResolutionType@ADC_RESOLUTION_12BIT",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "ADC_RESOLUTION_12BIT",
-        "location": {
-          "column": "3",
-          "line": "47",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-        },
-        "name": "ADC_RESOLUTION_12BIT",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@ADC_ResolutionType@ADC_RESOLUTION_10BIT",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "ADC_RESOLUTION_10BIT",
-        "location": {
-          "column": "3",
-          "line": "48",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-        },
-        "name": "ADC_RESOLUTION_10BIT",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@ADC_ResolutionType@ADC_RESOLUTION_16BIT",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "ADC_RESOLUTION_16BIT",
-        "location": {
-          "column": "3",
-          "line": "49",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-        },
-        "name": "ADC_RESOLUTION_16BIT",
-        "origin": "user_include",
-        "scope": null
-      }
-    ],
-    "location": {
-      "column": "9",
-      "line": "44",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-    },
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@ADC_ResolutionType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "enum ADC_ResolutionType",
-    "location": {
-      "column": "3",
-      "line": "50",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-    },
-    "name": "ADC_ResolutionType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@EA@ADC_INTType",
-    "What": "Enum",
-    "defdec": "Def",
-    "display": "",
-    "fields": [
-      {
-        "ID": "c:@EA@ADC_INTType@ADC_INT_DISABLE",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "ADC_INT_DISABLE",
-        "location": {
-          "column": "3",
-          "line": "54",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-        },
-        "name": "ADC_INT_DISABLE",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@ADC_INTType@ADC_INT_ENABLE",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "ADC_INT_ENABLE",
-        "location": {
-          "column": "3",
-          "line": "55",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-        },
-        "name": "ADC_INT_ENABLE",
-        "origin": "user_include",
-        "scope": null
-      }
-    ],
-    "location": {
-      "column": "9",
-      "line": "52",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-    },
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@ADC_INTType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "enum ADC_INTType",
-    "location": {
-      "column": "3",
-      "line": "56",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-    },
-    "name": "ADC_INTType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@SA@ADC_ConfigType",
-    "What": "Struct",
-    "defdec": "Def",
-    "display": "",
-    "location": {
-      "column": "9",
-      "line": "58",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-    },
-    "members": [
-      {
-        "ID": "c:@SA@ADC_ConfigType@FI@Channel",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "Channel",
-        "location": {
-          "column": "25",
-          "line": "60",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-        },
-        "name": "Channel",
-        "origin": "user_include",
-        "scope": "_anonymous_ADC_h_58_9"
-      },
-      {
-        "ID": "c:@SA@ADC_ConfigType@FI@Clock",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "Clock",
-        "location": {
-          "column": "25",
-          "line": "61",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-        },
-        "name": "Clock",
-        "origin": "user_include",
-        "scope": "_anonymous_ADC_h_58_9"
-      },
-      {
-        "ID": "c:@SA@ADC_ConfigType@FI@Vref",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "Vref",
-        "location": {
-          "column": "25",
-          "line": "62",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-        },
-        "name": "Vref",
-        "origin": "user_include",
-        "scope": "_anonymous_ADC_h_58_9"
-      },
-      {
-        "ID": "c:@SA@ADC_ConfigType@FI@Mode",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "Mode",
-        "location": {
-          "column": "25",
-          "line": "63",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-        },
-        "name": "Mode",
-        "origin": "user_include",
-        "scope": "_anonymous_ADC_h_58_9"
-      },
-      {
-        "ID": "c:@SA@ADC_ConfigType@FI@Resolution",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "Resolution",
-        "location": {
-          "column": "25",
-          "line": "64",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-        },
-        "name": "Resolution",
-        "origin": "user_include",
-        "scope": "_anonymous_ADC_h_58_9"
-      },
-      {
-        "ID": "c:@SA@ADC_ConfigType@FI@EnableINT",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "EnableINT",
-        "location": {
-          "column": "25",
-          "line": "65",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-        },
-        "name": "EnableINT",
-        "origin": "user_include",
-        "scope": "_anonymous_ADC_h_58_9"
-      },
-      {
-        "ID": "c:@SA@ADC_ConfigType@FI@Callback",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "Callback",
-        "location": {
-          "column": "25",
-          "line": "66",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-        },
-        "name": "Callback",
-        "origin": "user_include",
-        "scope": "_anonymous_ADC_h_58_9"
-      }
-    ],
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@ADC_ConfigType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "struct ADC_ConfigType",
-    "location": {
-      "column": "3",
-      "line": "67",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-    },
-    "name": "ADC_ConfigType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@ADC_Init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void ADC_Init(ADC_ConfigType *)",
-    "location": {
-      "column": "6",
-      "line": "81",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-    },
-    "name": "ADC_Init",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@ADC_Trigger_Conversion",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void ADC_Trigger_Conversion(ADC_ChannelType, uint8_t)",
-    "location": {
-      "column": "6",
-      "line": "94",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-    },
-    "name": "ADC_Trigger_Conversion",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@ADC0_Read",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "uint16_t ADC0_Read(ADC_ChannelType)",
-    "location": {
-      "column": "10",
-      "line": "105",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.h"
-    },
-    "name": "ADC0_Read",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:UART.h@28@macro@__UART_H__",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__UART_H__",
-    "location": {
-      "column": "9",
-      "line": "2",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-    },
-    "name": "__UART_H__",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:UART.h@T@UART_ISRType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "void (*)(void)",
-    "location": {
-      "column": "16",
-      "line": "13",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-    },
-    "name": "UART_ISRType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@EA@UART_ModeType",
-    "What": "Enum",
-    "defdec": "Def",
-    "display": "",
-    "fields": [
-      {
-        "ID": "c:@EA@UART_ModeType@UART_MODE_8BIT",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "UART_MODE_8BIT",
-        "location": {
-          "column": "3",
-          "line": "18",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-        },
-        "name": "UART_MODE_8BIT",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@UART_ModeType@UART_MODE_9BIT",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "UART_MODE_9BIT",
-        "location": {
-          "column": "3",
-          "line": "19",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-        },
-        "name": "UART_MODE_9BIT",
-        "origin": "user_include",
-        "scope": null
-      }
-    ],
-    "location": {
-      "column": "9",
-      "line": "16",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-    },
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@UART_ModeType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "enum UART_ModeType",
-    "location": {
-      "column": "3",
-      "line": "20",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-    },
-    "name": "UART_ModeType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@EA@UART_ParityType",
-    "What": "Enum",
-    "defdec": "Def",
-    "display": "",
-    "fields": [
-      {
-        "ID": "c:@EA@UART_ParityType@UART_PARITY_DISABLE",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "UART_PARITY_DISABLE",
-        "location": {
-          "column": "3",
-          "line": "24",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-        },
-        "name": "UART_PARITY_DISABLE",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@UART_ParityType@UART_PARITY_EVEN",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "UART_PARITY_EVEN",
-        "location": {
-          "column": "3",
-          "line": "25",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-        },
-        "name": "UART_PARITY_EVEN",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@UART_ParityType@UART_PARITY_ODD",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "UART_PARITY_ODD",
-        "location": {
-          "column": "3",
-          "line": "26",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-        },
-        "name": "UART_PARITY_ODD",
-        "origin": "user_include",
-        "scope": null
-      }
-    ],
-    "location": {
-      "column": "9",
-      "line": "22",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-    },
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@UART_ParityType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "enum UART_ParityType",
-    "location": {
-      "column": "3",
-      "line": "27",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-    },
-    "name": "UART_ParityType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@EA@UART_StopbitType",
-    "What": "Enum",
-    "defdec": "Def",
-    "display": "",
-    "fields": [
-      {
-        "ID": "c:@EA@UART_StopbitType@UART_STOPBIT_ONE",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "UART_STOPBIT_ONE",
-        "location": {
-          "column": "3",
-          "line": "31",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-        },
-        "name": "UART_STOPBIT_ONE",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@UART_StopbitType@UART_STOPBIT_TWO",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "UART_STOPBIT_TWO",
-        "location": {
-          "column": "3",
-          "line": "32",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-        },
-        "name": "UART_STOPBIT_TWO",
-        "origin": "user_include",
-        "scope": null
-      }
-    ],
-    "location": {
-      "column": "9",
-      "line": "29",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-    },
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@UART_StopbitType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "enum UART_StopbitType",
-    "location": {
-      "column": "3",
-      "line": "33",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-    },
-    "name": "UART_StopbitType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@EA@UART_TIEINTType",
-    "What": "Enum",
-    "defdec": "Def",
-    "display": "",
-    "fields": [
-      {
-        "ID": "c:@EA@UART_TIEINTType@UART_TIEINT_DISABLE",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "UART_TIEINT_DISABLE",
-        "location": {
-          "column": "3",
-          "line": "37",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-        },
-        "name": "UART_TIEINT_DISABLE",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@UART_TIEINTType@UART_TIEINT_ENABLE",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "UART_TIEINT_ENABLE",
-        "location": {
-          "column": "3",
-          "line": "38",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-        },
-        "name": "UART_TIEINT_ENABLE",
-        "origin": "user_include",
-        "scope": null
-      }
-    ],
-    "location": {
-      "column": "9",
-      "line": "35",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-    },
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@UART_TIEINTType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "enum UART_TIEINTType",
-    "location": {
-      "column": "3",
-      "line": "39",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-    },
-    "name": "UART_TIEINTType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@EA@UART_TCIEINTType",
-    "What": "Enum",
-    "defdec": "Def",
-    "display": "",
-    "fields": [
-      {
-        "ID": "c:@EA@UART_TCIEINTType@UART_TCIEINT_DISABLE",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "UART_TCIEINT_DISABLE",
-        "location": {
-          "column": "3",
-          "line": "43",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-        },
-        "name": "UART_TCIEINT_DISABLE",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@UART_TCIEINTType@UART_TCIEINT_ENABLE",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "UART_TCIEINT_ENABLE",
-        "location": {
-          "column": "3",
-          "line": "44",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-        },
-        "name": "UART_TCIEINT_ENABLE",
-        "origin": "user_include",
-        "scope": null
-      }
-    ],
-    "location": {
-      "column": "9",
-      "line": "41",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-    },
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@UART_TCIEINTType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "enum UART_TCIEINTType",
-    "location": {
-      "column": "3",
-      "line": "45",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-    },
-    "name": "UART_TCIEINTType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@EA@UART_RIEINTType",
-    "What": "Enum",
-    "defdec": "Def",
-    "display": "",
-    "fields": [
-      {
-        "ID": "c:@EA@UART_RIEINTType@UART_RIEINT_DISABLE",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "UART_RIEINT_DISABLE",
-        "location": {
-          "column": "3",
-          "line": "49",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-        },
-        "name": "UART_RIEINT_DISABLE",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@UART_RIEINTType@UART_RIEINT_ENABLE",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "UART_RIEINT_ENABLE",
-        "location": {
-          "column": "3",
-          "line": "50",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-        },
-        "name": "UART_RIEINT_ENABLE",
-        "origin": "user_include",
-        "scope": null
-      }
-    ],
-    "location": {
-      "column": "9",
-      "line": "47",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-    },
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@UART_RIEINTType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "enum UART_RIEINTType",
-    "location": {
-      "column": "3",
-      "line": "51",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-    },
-    "name": "UART_RIEINTType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@SA@UART_ConfigType",
-    "What": "Struct",
-    "defdec": "Def",
-    "display": "",
-    "location": {
-      "column": "9",
-      "line": "55",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-    },
-    "members": [
-      {
-        "ID": "c:@SA@UART_ConfigType@FI@Mode",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "Mode",
-        "location": {
-          "column": "25",
-          "line": "57",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-        },
-        "name": "Mode",
-        "origin": "user_include",
-        "scope": "_anonymous_UART_h_55_9"
-      },
-      {
-        "ID": "c:@SA@UART_ConfigType@FI@Parity",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "Parity",
-        "location": {
-          "column": "25",
-          "line": "58",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-        },
-        "name": "Parity",
-        "origin": "user_include",
-        "scope": "_anonymous_UART_h_55_9"
-      },
-      {
-        "ID": "c:@SA@UART_ConfigType@FI@Stopbit",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "Stopbit",
-        "location": {
-          "column": "25",
-          "line": "59",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-        },
-        "name": "Stopbit",
-        "origin": "user_include",
-        "scope": "_anonymous_UART_h_55_9"
-      },
-      {
-        "ID": "c:@SA@UART_ConfigType@FI@OSR",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "OSR",
-        "location": {
-          "column": "25",
-          "line": "60",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-        },
-        "name": "OSR",
-        "origin": "user_include",
-        "scope": "_anonymous_UART_h_55_9"
-      },
-      {
-        "ID": "c:@SA@UART_ConfigType@FI@SBR",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "SBR",
-        "location": {
-          "column": "25",
-          "line": "61",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-        },
-        "name": "SBR",
-        "origin": "user_include",
-        "scope": "_anonymous_UART_h_55_9"
-      },
-      {
-        "ID": "c:@SA@UART_ConfigType@FI@TIEINT",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "TIEINT",
-        "location": {
-          "column": "25",
-          "line": "62",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-        },
-        "name": "TIEINT",
-        "origin": "user_include",
-        "scope": "_anonymous_UART_h_55_9"
-      },
-      {
-        "ID": "c:@SA@UART_ConfigType@FI@TCIEINT",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "TCIEINT",
-        "location": {
-          "column": "25",
-          "line": "63",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-        },
-        "name": "TCIEINT",
-        "origin": "user_include",
-        "scope": "_anonymous_UART_h_55_9"
-      },
-      {
-        "ID": "c:@SA@UART_ConfigType@FI@RIEINT",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "RIEINT",
-        "location": {
-          "column": "25",
-          "line": "64",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-        },
-        "name": "RIEINT",
-        "origin": "user_include",
-        "scope": "_anonymous_UART_h_55_9"
-      },
-      {
-        "ID": "c:@SA@UART_ConfigType@FI@Callback",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "Callback",
-        "location": {
-          "column": "25",
-          "line": "65",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-        },
-        "name": "Callback",
-        "origin": "user_include",
-        "scope": "_anonymous_UART_h_55_9"
-      }
-    ],
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@UART_ConfigType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "struct UART_ConfigType",
-    "location": {
-      "column": "3",
-      "line": "66",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-    },
-    "name": "UART_ConfigType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UART_Init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void UART_Init(UART_ConfigType *)",
-    "location": {
-      "column": "6",
-      "line": "77",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-    },
-    "name": "UART_Init",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UART_Init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void UART_Init(UART_ConfigType *)",
-    "location": {
-      "column": "6",
-      "line": "77",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-    },
-    "name": "UART_Init",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UART_SendChar",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void UART_SendChar(uint8_t)",
-    "location": {
-      "column": "6",
-      "line": "88",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-    },
-    "name": "UART_SendChar",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UART_SendChar",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void UART_SendChar(uint8_t)",
-    "location": {
-      "column": "6",
-      "line": "88",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-    },
-    "name": "UART_SendChar",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UART_SendString",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void UART_SendString(char *, uint8_t)",
-    "location": {
-      "column": "6",
-      "line": "99",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-    },
-    "name": "UART_SendString",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UART_SendString",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void UART_SendString(uint8_t *, uint8_t)",
-    "location": {
-      "column": "6",
-      "line": "99",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-    },
-    "name": "UART_SendString",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UART_Receive",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "uint8_t UART_Receive(void)",
-    "location": {
-      "column": "9",
-      "line": "108",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-    },
-    "name": "UART_Receive",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@UART_Receive",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "uint8_t UART_Receive(void)",
-    "location": {
-      "column": "9",
-      "line": "108",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\UART.h"
-    },
-    "name": "UART_Receive",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:ADC.c@sCallback_ADC",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "sCallback_ADC",
-    "location": {
-      "column": "20",
-      "line": "18",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.c"
-    },
-    "name": "sCallback_ADC",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@ADC_Init",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void ADC_Init(ADC_ConfigType *)",
-    "location": {
-      "column": "6",
-      "line": "41",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.c"
-    },
-    "name": "ADC_Init",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@ADC_Trigger_Conversion",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void ADC_Trigger_Conversion(ADC_ChannelType, uint8_t)",
-    "location": {
-      "column": "6",
-      "line": "74",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.c"
-    },
-    "name": "ADC_Trigger_Conversion",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@ADC0_IRQHandler",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void ADC0_IRQHandler(void)",
-    "location": {
-      "column": "6",
-      "line": "82",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.c"
-    },
-    "name": "ADC0_IRQHandler",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@ADC0_Read",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "uint16_t ADC0_Read(ADC_ChannelType)",
-    "location": {
-      "column": "10",
-      "line": "89",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\ADC.c"
-    },
-    "name": "ADC0_Read",
-    "origin": "project_file",
     "scope": null
   },
   {
@@ -90963,7 +92011,7 @@
     "display": "void RED_LED_Config(void)",
     "location": {
       "column": "6",
-      "line": "24",
+      "line": "25",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.h"
     },
     "name": "RED_LED_Config",
@@ -90977,7 +92025,7 @@
     "display": "void RED_LED_Config(void)",
     "location": {
       "column": "6",
-      "line": "24",
+      "line": "25",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.h"
     },
     "name": "RED_LED_Config",
@@ -90991,7 +92039,7 @@
     "display": "void BLUE_LED_Config(void)",
     "location": {
       "column": "6",
-      "line": "33",
+      "line": "34",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.h"
     },
     "name": "BLUE_LED_Config",
@@ -91005,7 +92053,7 @@
     "display": "void BLUE_LED_Config(void)",
     "location": {
       "column": "6",
-      "line": "33",
+      "line": "34",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.h"
     },
     "name": "BLUE_LED_Config",
@@ -91019,7 +92067,7 @@
     "display": "void BTN1_Config(void)",
     "location": {
       "column": "6",
-      "line": "42",
+      "line": "43",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.h"
     },
     "name": "BTN1_Config",
@@ -91033,7 +92081,7 @@
     "display": "void BTN1_Config(void)",
     "location": {
       "column": "6",
-      "line": "42",
+      "line": "43",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.h"
     },
     "name": "BTN1_Config",
@@ -91047,7 +92095,7 @@
     "display": "uint8_t READ_BTN1(void)",
     "location": {
       "column": "9",
-      "line": "51",
+      "line": "52",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.h"
     },
     "name": "READ_BTN1",
@@ -91061,7 +92109,7 @@
     "display": "uint8_t READ_BTN1(void)",
     "location": {
       "column": "9",
-      "line": "51",
+      "line": "52",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.h"
     },
     "name": "READ_BTN1",
@@ -91075,7 +92123,7 @@
     "display": "void PIT_Config_5s(void)",
     "location": {
       "column": "6",
-      "line": "60",
+      "line": "61",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.h"
     },
     "name": "PIT_Config_5s",
@@ -91089,7 +92137,7 @@
     "display": "void PIT_Config_5s(void)",
     "location": {
       "column": "6",
-      "line": "60",
+      "line": "61",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.h"
     },
     "name": "PIT_Config_5s",
@@ -91103,7 +92151,7 @@
     "display": "void UART_User_Config(void)",
     "location": {
       "column": "6",
-      "line": "69",
+      "line": "70",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.h"
     },
     "name": "UART_User_Config",
@@ -91117,804 +92165,10 @@
     "display": "void UART_User_Config(void)",
     "location": {
       "column": "6",
-      "line": "69",
+      "line": "70",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.h"
     },
     "name": "UART_User_Config",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:system_MKL46Z4.h@4734@macro@_SYSTEM_MKL46Z4_H_",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "_SYSTEM_MKL46Z4_H_",
-    "location": {
-      "column": "9",
-      "line": "100",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
-    },
-    "name": "_SYSTEM_MKL46Z4_H_",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:system_MKL46Z4.h@4924@macro@DISABLE_WDOG",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DISABLE_WDOG",
-    "location": {
-      "column": "11",
-      "line": "110",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
-    },
-    "name": "DISABLE_WDOG",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:system_MKL46Z4.h@4998@macro@RTC_CLKIN_USED",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "RTC_CLKIN_USED",
-    "location": {
-      "column": "11",
-      "line": "113",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
-    },
-    "name": "RTC_CLKIN_USED",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:system_MKL46Z4.h@5090@macro@CPU_XTAL_CLK_HZ",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CPU_XTAL_CLK_HZ",
-    "location": {
-      "column": "9",
-      "line": "121",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
-    },
-    "name": "CPU_XTAL_CLK_HZ",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:system_MKL46Z4.h@5253@macro@CPU_INT_SLOW_CLK_HZ",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CPU_INT_SLOW_CLK_HZ",
-    "location": {
-      "column": "9",
-      "line": "122",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
-    },
-    "name": "CPU_INT_SLOW_CLK_HZ",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:system_MKL46Z4.h@5379@macro@CPU_INT_FAST_CLK_HZ",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "CPU_INT_FAST_CLK_HZ",
-    "location": {
-      "column": "9",
-      "line": "123",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
-    },
-    "name": "CPU_INT_FAST_CLK_HZ",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:system_MKL46Z4.h@5609@macro@SYSTEM_SMC_PMPROT_VALUE",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "SYSTEM_SMC_PMPROT_VALUE",
-    "location": {
-      "column": "9",
-      "line": "129",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
-    },
-    "name": "SYSTEM_SMC_PMPROT_VALUE",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:system_MKL46Z4.h@5688@macro@DEFAULT_SYSTEM_CLOCK",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "DEFAULT_SYSTEM_CLOCK",
-    "location": {
-      "column": "9",
-      "line": "131",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
-    },
-    "name": "DEFAULT_SYSTEM_CLOCK",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@SystemCoreClock",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "SystemCoreClock",
-    "location": {
-      "column": "17",
-      "line": "143",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
-    },
-    "name": "SystemCoreClock",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@SystemCoreClock",
-    "What": "Variable",
-    "defdec": "Dec",
-    "display": "SystemCoreClock",
-    "location": {
-      "column": "17",
-      "line": "143",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
-    },
-    "name": "SystemCoreClock",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SystemInit",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void SystemInit(void)",
-    "location": {
-      "column": "6",
-      "line": "152",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
-    },
-    "name": "SystemInit",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SystemInit",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void SystemInit(void)",
-    "location": {
-      "column": "6",
-      "line": "152",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
-    },
-    "name": "SystemInit",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SystemCoreClockUpdate",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void SystemCoreClockUpdate(void)",
-    "location": {
-      "column": "6",
-      "line": "161",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
-    },
-    "name": "SystemCoreClockUpdate",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SystemCoreClockUpdate",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void SystemCoreClockUpdate(void)",
-    "location": {
-      "column": "6",
-      "line": "161",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.h"
-    },
-    "name": "SystemCoreClockUpdate",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:GPIO.h@28@macro@__GPIO_H__",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__GPIO_H__",
-    "location": {
-      "column": "9",
-      "line": "2",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
-    },
-    "name": "__GPIO_H__",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@EA@GPIO_IO_Type",
-    "What": "Enum",
-    "defdec": "Def",
-    "display": "",
-    "fields": [
-      {
-        "ID": "c:@EA@GPIO_IO_Type@GPIO_IO_INPUT",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "GPIO_IO_INPUT",
-        "location": {
-          "column": "3",
-          "line": "14",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
-        },
-        "name": "GPIO_IO_INPUT",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@GPIO_IO_Type@GPIO_IO_OUTPUT",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "GPIO_IO_OUTPUT",
-        "location": {
-          "column": "3",
-          "line": "15",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
-        },
-        "name": "GPIO_IO_OUTPUT",
-        "origin": "user_include",
-        "scope": null
-      }
-    ],
-    "location": {
-      "column": "9",
-      "line": "12",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
-    },
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@GPIO_IO_Type",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "enum GPIO_IO_Type",
-    "location": {
-      "column": "3",
-      "line": "16",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
-    },
-    "name": "GPIO_IO_Type",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIO_Init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void GPIO_Init(GPIO_Type *, uint8_t, GPIO_IO_Type)",
-    "location": {
-      "column": "6",
-      "line": "30",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
-    },
-    "name": "GPIO_Init",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIO_Init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void GPIO_Init(GPIO_Type *, uint8_t, GPIO_IO_Type)",
-    "location": {
-      "column": "6",
-      "line": "30",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
-    },
-    "name": "GPIO_Init",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIO_SetPin",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void GPIO_SetPin(GPIO_Type *, uint8_t)",
-    "location": {
-      "column": "6",
-      "line": "42",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
-    },
-    "name": "GPIO_SetPin",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIO_SetPin",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void GPIO_SetPin(GPIO_Type *, uint8_t)",
-    "location": {
-      "column": "6",
-      "line": "42",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
-    },
-    "name": "GPIO_SetPin",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIO_ClearPin",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void GPIO_ClearPin(GPIO_Type *, uint8_t)",
-    "location": {
-      "column": "6",
-      "line": "54",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
-    },
-    "name": "GPIO_ClearPin",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIO_ClearPin",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void GPIO_ClearPin(GPIO_Type *, uint8_t)",
-    "location": {
-      "column": "6",
-      "line": "54",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
-    },
-    "name": "GPIO_ClearPin",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIO_TogglePin",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void GPIO_TogglePin(GPIO_Type *, uint8_t)",
-    "location": {
-      "column": "6",
-      "line": "66",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
-    },
-    "name": "GPIO_TogglePin",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIO_TogglePin",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void GPIO_TogglePin(GPIO_Type *, uint8_t)",
-    "location": {
-      "column": "6",
-      "line": "66",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
-    },
-    "name": "GPIO_TogglePin",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIO_ReadPin",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "uint8_t GPIO_ReadPin(GPIO_Type *, uint8_t)",
-    "location": {
-      "column": "9",
-      "line": "78",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
-    },
-    "name": "GPIO_ReadPin",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@GPIO_ReadPin",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "uint8_t GPIO_ReadPin(GPIO_Type *, uint8_t)",
-    "location": {
-      "column": "9",
-      "line": "78",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\GPIO.h"
-    },
-    "name": "GPIO_ReadPin",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:PIT.h@27@macro@__PIT_H__",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__PIT_H__",
-    "location": {
-      "column": "9",
-      "line": "2",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-    },
-    "name": "__PIT_H__",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:PIT.h@545@macro@BUS_CLOCK_DIV",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "BUS_CLOCK_DIV",
-    "location": {
-      "column": "9",
-      "line": "22",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-    },
-    "name": "BUS_CLOCK_DIV",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:PIT.h@T@PIT_ISRType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "void (*)(uint8_t)",
-    "location": {
-      "column": "16",
-      "line": "24",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-    },
-    "name": "PIT_ISRType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@EA@PIT_ChannelType",
-    "What": "Enum",
-    "defdec": "Def",
-    "display": "",
-    "fields": [
-      {
-        "ID": "c:@EA@PIT_ChannelType@PIT_CHANNEL_0",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "PIT_CHANNEL_0",
-        "location": {
-          "column": "3",
-          "line": "29",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-        },
-        "name": "PIT_CHANNEL_0",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@PIT_ChannelType@PIT_CHANNEL_1",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "PIT_CHANNEL_1",
-        "location": {
-          "column": "3",
-          "line": "30",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-        },
-        "name": "PIT_CHANNEL_1",
-        "origin": "user_include",
-        "scope": null
-      }
-    ],
-    "location": {
-      "column": "9",
-      "line": "27",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-    },
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@PIT_ChannelType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "enum PIT_ChannelType",
-    "location": {
-      "column": "3",
-      "line": "31",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-    },
-    "name": "PIT_ChannelType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@EA@PIT_ModeType",
-    "What": "Enum",
-    "defdec": "Def",
-    "display": "",
-    "fields": [
-      {
-        "ID": "c:@EA@PIT_ModeType@PIT_MODE_RUN",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "PIT_MODE_RUN",
-        "location": {
-          "column": "3",
-          "line": "35",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-        },
-        "name": "PIT_MODE_RUN",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@PIT_ModeType@PIT_MODE_FREEZE",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "PIT_MODE_FREEZE",
-        "location": {
-          "column": "3",
-          "line": "36",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-        },
-        "name": "PIT_MODE_FREEZE",
-        "origin": "user_include",
-        "scope": null
-      }
-    ],
-    "location": {
-      "column": "9",
-      "line": "33",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-    },
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@PIT_ModeType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "enum PIT_ModeType",
-    "location": {
-      "column": "3",
-      "line": "37",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-    },
-    "name": "PIT_ModeType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@EA@PIT_IntType",
-    "What": "Enum",
-    "defdec": "Def",
-    "display": "",
-    "fields": [
-      {
-        "ID": "c:@EA@PIT_IntType@PIT_INTERRUPT_DISABLE",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "PIT_INTERRUPT_DISABLE",
-        "location": {
-          "column": "3",
-          "line": "41",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-        },
-        "name": "PIT_INTERRUPT_DISABLE",
-        "origin": "user_include",
-        "scope": null
-      },
-      {
-        "ID": "c:@EA@PIT_IntType@PIT_INTERRUPT_ENABLE",
-        "What": "Enumerator",
-        "defdec": "Def",
-        "display": "PIT_INTERRUPT_ENABLE",
-        "location": {
-          "column": "3",
-          "line": "42",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-        },
-        "name": "PIT_INTERRUPT_ENABLE",
-        "origin": "user_include",
-        "scope": null
-      }
-    ],
-    "location": {
-      "column": "9",
-      "line": "39",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-    },
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@PIT_IntType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "enum PIT_IntType",
-    "location": {
-      "column": "3",
-      "line": "43",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-    },
-    "name": "PIT_IntType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@SA@PIT_ConfigType",
-    "What": "Struct",
-    "defdec": "Def",
-    "display": "",
-    "location": {
-      "column": "9",
-      "line": "45",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-    },
-    "members": [
-      {
-        "ID": "c:@SA@PIT_ConfigType@FI@Channel",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "Channel",
-        "location": {
-          "column": "25",
-          "line": "47",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-        },
-        "name": "Channel",
-        "origin": "user_include",
-        "scope": "_anonymous_PIT_h_45_9"
-      },
-      {
-        "ID": "c:@SA@PIT_ConfigType@FI@FreezeMode",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "FreezeMode",
-        "location": {
-          "column": "25",
-          "line": "48",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-        },
-        "name": "FreezeMode",
-        "origin": "user_include",
-        "scope": "_anonymous_PIT_h_45_9"
-      },
-      {
-        "ID": "c:@SA@PIT_ConfigType@FI@PeriodTime",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "PeriodTime",
-        "location": {
-          "column": "25",
-          "line": "49",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-        },
-        "name": "PeriodTime",
-        "origin": "user_include",
-        "scope": "_anonymous_PIT_h_45_9"
-      },
-      {
-        "ID": "c:@SA@PIT_ConfigType@FI@IntEnable",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "IntEnable",
-        "location": {
-          "column": "25",
-          "line": "50",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-        },
-        "name": "IntEnable",
-        "origin": "user_include",
-        "scope": "_anonymous_PIT_h_45_9"
-      },
-      {
-        "ID": "c:@SA@PIT_ConfigType@FI@Callback",
-        "What": "FieldDecl",
-        "defdec": "Def",
-        "display": "Callback",
-        "location": {
-          "column": "25",
-          "line": "51",
-          "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-        },
-        "name": "Callback",
-        "origin": "user_include",
-        "scope": "_anonymous_PIT_h_45_9"
-      }
-    ],
-    "name": "",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@T@PIT_ConfigType",
-    "What": "Typedef",
-    "defdec": "Def",
-    "display": "struct PIT_ConfigType",
-    "location": {
-      "column": "3",
-      "line": "52",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-    },
-    "name": "PIT_ConfigType",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@PIT_Init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void PIT_Init(PIT_ConfigType *)",
-    "location": {
-      "column": "6",
-      "line": "63",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-    },
-    "name": "PIT_Init",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@PIT_Init",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void PIT_Init(PIT_ConfigType *)",
-    "location": {
-      "column": "6",
-      "line": "63",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-    },
-    "name": "PIT_Init",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@PIT_TimerControl",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void PIT_TimerControl(PIT_ChannelType, uint8_t)",
-    "location": {
-      "column": "6",
-      "line": "76",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-    },
-    "name": "PIT_TimerControl",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@PIT_TimerControl",
-    "What": "Function",
-    "defdec": "Dec",
-    "display": "void PIT_TimerControl(PIT_ChannelType, uint8_t)",
-    "location": {
-      "column": "6",
-      "line": "76",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\PIT.h"
-    },
-    "name": "PIT_TimerControl",
-    "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:core_cmInstr.h@2265@macro@__CORE_CMINSTR_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__CORE_CMINSTR_H",
-    "location": {
-      "column": "9",
-      "line": "42",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\CMSIS\\Include\\core_cmInstr.h"
-    },
-    "name": "__CORE_CMINSTR_H",
     "origin": "user_include",
     "scope": null
   },
@@ -91930,20 +92184,6 @@
     },
     "name": "main",
     "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:core_cmFunc.h@2260@macro@__CORE_CMFUNC_H",
-    "What": "MacroDef",
-    "defdec": "Def",
-    "display": "__CORE_CMFUNC_H",
-    "location": {
-      "column": "9",
-      "line": "42",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\CMSIS\\Include\\core_cmFunc.h"
-    },
-    "name": "__CORE_CMFUNC_H",
-    "origin": "user_include",
     "scope": null
   },
   {
@@ -92017,6 +92257,34 @@
     "scope": null
   },
   {
+    "ID": "c:core_cmInstr.h@2265@macro@__CORE_CMINSTR_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__CORE_CMINSTR_H",
+    "location": {
+      "column": "9",
+      "line": "42",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\CMSIS\\Include\\core_cmInstr.h"
+    },
+    "name": "__CORE_CMINSTR_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
+    "ID": "c:core_cmFunc.h@2260@macro@__CORE_CMFUNC_H",
+    "What": "MacroDef",
+    "defdec": "Def",
+    "display": "__CORE_CMFUNC_H",
+    "location": {
+      "column": "9",
+      "line": "42",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\CMSIS\\Include\\core_cmFunc.h"
+    },
+    "name": "__CORE_CMFUNC_H",
+    "origin": "user_include",
+    "scope": null
+  },
+  {
     "ID": "c:DLib_Config_Normal.h@105@macro@_DLIB_CONFIG_H",
     "What": "MacroDef",
     "defdec": "Def",
@@ -92051,7 +92319,7 @@
     "display": "void myTimer_Handler(uint8_t)",
     "location": {
       "column": "13",
-      "line": "20",
+      "line": "19",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.c"
     },
     "name": "myTimer_Handler",
@@ -92065,7 +92333,7 @@
     "display": "void myUART_Handler(void)",
     "location": {
       "column": "13",
-      "line": "22",
+      "line": "21",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.c"
     },
     "name": "myUART_Handler",
@@ -92079,7 +92347,7 @@
     "display": "UserConfig_PortA1",
     "location": {
       "column": "24",
-      "line": "24",
+      "line": "23",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.c"
     },
     "name": "UserConfig_PortA1",
@@ -92093,7 +92361,7 @@
     "display": "UserConfig_PortA2",
     "location": {
       "column": "24",
-      "line": "29",
+      "line": "28",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.c"
     },
     "name": "UserConfig_PortA2",
@@ -92107,7 +92375,7 @@
     "display": "UserConfig_PortC3",
     "location": {
       "column": "24",
-      "line": "34",
+      "line": "33",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.c"
     },
     "name": "UserConfig_PortC3",
@@ -92121,7 +92389,7 @@
     "display": "UserConfig_PortD5",
     "location": {
       "column": "24",
-      "line": "40",
+      "line": "39",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.c"
     },
     "name": "UserConfig_PortD5",
@@ -92135,7 +92403,7 @@
     "display": "UserConfig_PortE29",
     "location": {
       "column": "24",
-      "line": "44",
+      "line": "43",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.c"
     },
     "name": "UserConfig_PortE29",
@@ -92149,7 +92417,7 @@
     "display": "UserConfig_PIT",
     "location": {
       "column": "16",
-      "line": "48",
+      "line": "47",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.c"
     },
     "name": "UserConfig_PIT",
@@ -92163,7 +92431,7 @@
     "display": "Userconfig_UART",
     "location": {
       "column": "17",
-      "line": "56",
+      "line": "55",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.c"
     },
     "name": "Userconfig_UART",
@@ -92177,10 +92445,38 @@
     "display": "void myTimer_Handler(uint8_t)",
     "location": {
       "column": "13",
-      "line": "78",
+      "line": "77",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.c"
     },
     "name": "myTimer_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@a",
+    "What": "Variable",
+    "defdec": "Dec",
+    "display": "a",
+    "location": {
+      "column": "18",
+      "line": "95",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.c"
+    },
+    "name": "a",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@index",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "index",
+    "location": {
+      "column": "19",
+      "line": "96",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.c"
+    },
+    "name": "index",
     "origin": "project_file",
     "scope": null
   },
@@ -92191,10 +92487,66 @@
     "display": "void myUART_Handler(void)",
     "location": {
       "column": "13",
-      "line": "96",
+      "line": "98",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.c"
     },
     "name": "myUART_Handler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Middleware.c@2512@F@myUART_Handler@data",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "data",
+    "location": {
+      "column": "11",
+      "line": "101",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.c"
+    },
+    "name": "data",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@PORTC_PORTD_IRQHandler",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void PORTC_PORTD_IRQHandler(void)",
+    "location": {
+      "column": "6",
+      "line": "112",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.c"
+    },
+    "name": "PORTC_PORTD_IRQHandler",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Middleware.c@2843@F@PORTC_PORTD_IRQHandler@count",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "count",
+    "location": {
+      "column": "14",
+      "line": "121",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.c"
+    },
+    "name": "count",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:Middleware.c@2958@F@PORTC_PORTD_IRQHandler@i",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "i",
+    "location": {
+      "column": "16",
+      "line": "127",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.c"
+    },
+    "name": "i",
     "origin": "project_file",
     "scope": null
   },
@@ -92205,7 +92557,7 @@
     "display": "void RED_LED_Config(void)",
     "location": {
       "column": "6",
-      "line": "121",
+      "line": "138",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.c"
     },
     "name": "RED_LED_Config",
@@ -92219,7 +92571,7 @@
     "display": "void BLUE_LED_Config(void)",
     "location": {
       "column": "6",
-      "line": "135",
+      "line": "152",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.c"
     },
     "name": "BLUE_LED_Config",
@@ -92233,7 +92585,7 @@
     "display": "void BTN1_Config(void)",
     "location": {
       "column": "6",
-      "line": "149",
+      "line": "166",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.c"
     },
     "name": "BTN1_Config",
@@ -92247,7 +92599,7 @@
     "display": "uint8_t READ_BTN1(void)",
     "location": {
       "column": "9",
-      "line": "163",
+      "line": "183",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.c"
     },
     "name": "READ_BTN1",
@@ -92261,7 +92613,7 @@
     "display": "void PIT_Config_5s(void)",
     "location": {
       "column": "6",
-      "line": "170",
+      "line": "190",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.c"
     },
     "name": "PIT_Config_5s",
@@ -92275,7 +92627,7 @@
     "display": "void UART_User_Config(void)",
     "location": {
       "column": "6",
-      "line": "179",
+      "line": "199",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\Middleware.c"
     },
     "name": "UART_User_Config",
@@ -92423,6 +92775,174 @@
     "scope": null
   },
   {
+    "ID": "c:@F@initQueue",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void initQueue(Queue *)",
+    "location": {
+      "column": "6",
+      "line": "28",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.c"
+    },
+    "name": "initQueue",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@isQueueEmpty",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint8_t isQueueEmpty(Queue *)",
+    "location": {
+      "column": "9",
+      "line": "33",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.c"
+    },
+    "name": "isQueueEmpty",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@isQueueFull",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint8_t isQueueFull(Queue *)",
+    "location": {
+      "column": "9",
+      "line": "37",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.c"
+    },
+    "name": "isQueueFull",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@enqueue",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void enqueue(Queue *, uint8_t *)",
+    "location": {
+      "column": "6",
+      "line": "41",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.c"
+    },
+    "name": "enqueue",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@dequeue",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "uint8_t * dequeue(Queue *)",
+    "location": {
+      "column": "10",
+      "line": "51",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.c"
+    },
+    "name": "dequeue",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:queue.c@1518@F@dequeue@value",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "value",
+    "location": {
+      "column": "12",
+      "line": "57",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.c"
+    },
+    "name": "value",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@size",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "int size(Queue *)",
+    "location": {
+      "column": "5",
+      "line": "62",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\queue.c"
+    },
+    "name": "size",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@SystemCoreClock",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "SystemCoreClock",
+    "location": {
+      "column": "10",
+      "line": "108",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.c"
+    },
+    "name": "SystemCoreClock",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SystemInit",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SystemInit(void)",
+    "location": {
+      "column": "6",
+      "line": "114",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.c"
+    },
+    "name": "SystemInit",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:@F@SystemCoreClockUpdate",
+    "What": "Function",
+    "defdec": "Def",
+    "display": "void SystemCoreClockUpdate(void)",
+    "location": {
+      "column": "6",
+      "line": "128",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.c"
+    },
+    "name": "SystemCoreClockUpdate",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:system_MKL46Z4.c@5616@F@SystemCoreClockUpdate@MCGOUTClock",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "MCGOUTClock",
+    "location": {
+      "column": "12",
+      "line": "130",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.c"
+    },
+    "name": "MCGOUTClock",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
+    "ID": "c:system_MKL46Z4.c@5721@F@SystemCoreClockUpdate@Divider",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "Divider",
+    "location": {
+      "column": "12",
+      "line": "131",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.c"
+    },
+    "name": "Divider",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:UART.c@sCallback_UART",
     "What": "Variable",
     "defdec": "Dec",
@@ -92482,7 +93002,7 @@
     "ID": "c:@F@UART_SendString",
     "What": "Function",
     "defdec": "Def",
-    "display": "void UART_SendString(uint8_t *, uint8_t)",
+    "display": "void UART_SendString(char *, uint8_t)",
     "location": {
       "column": "6",
       "line": "109",
@@ -92493,7 +93013,7 @@
     "scope": null
   },
   {
-    "ID": "c:UART.c@2907@F@UART_SendString@i",
+    "ID": "c:UART.c@2904@F@UART_SendString@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
@@ -92521,7 +93041,7 @@
     "scope": null
   },
   {
-    "ID": "c:UART.c@3387@F@UART_Receive@Data",
+    "ID": "c:UART.c@3384@F@UART_Receive@Data",
     "What": "Variable",
     "defdec": "Def",
     "display": "Data",
@@ -102682,76 +103202,6 @@
     },
     "name": "FSL_FEATURE_USB_ENDPT_COUNT",
     "origin": "user_include",
-    "scope": null
-  },
-  {
-    "ID": "c:@SystemCoreClock",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "SystemCoreClock",
-    "location": {
-      "column": "10",
-      "line": "108",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.c"
-    },
-    "name": "SystemCoreClock",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SystemInit",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SystemInit(void)",
-    "location": {
-      "column": "6",
-      "line": "114",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.c"
-    },
-    "name": "SystemInit",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:@F@SystemCoreClockUpdate",
-    "What": "Function",
-    "defdec": "Def",
-    "display": "void SystemCoreClockUpdate(void)",
-    "location": {
-      "column": "6",
-      "line": "128",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.c"
-    },
-    "name": "SystemCoreClockUpdate",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:system_MKL46Z4.c@5616@F@SystemCoreClockUpdate@MCGOUTClock",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "MCGOUTClock",
-    "location": {
-      "column": "12",
-      "line": "130",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.c"
-    },
-    "name": "MCGOUTClock",
-    "origin": "project_file",
-    "scope": null
-  },
-  {
-    "ID": "c:system_MKL46Z4.c@5721@F@SystemCoreClockUpdate@Divider",
-    "What": "Variable",
-    "defdec": "Def",
-    "display": "Divider",
-    "location": {
-      "column": "12",
-      "line": "131",
-      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\MKL46Z\\system_MKL46Z4.c"
-    },
-    "name": "Divider",
-    "origin": "project_file",
     "scope": null
   },
   {

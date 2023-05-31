@@ -1,6 +1,6 @@
 /*
-* @file TempSensor.c
-* @brief TempSensor.c support read temperature of enviroment by Internal Temperature Sensor in
+* @file BootLoader.c
+* @brief BootLoader.c support software loading and selecting to run
 KL46
 */
 /********************************************************************
@@ -30,12 +30,13 @@ KL46
 
 void main()
 {
+  SystemCoreClockUpdate();
   RED_LED_Config();
   BLUE_LED_Config();
   BTN1_Config();
   PIT_Config_5s();
   UART_User_Config();
-  UART_SendChar('H');
+  UART_SendChar('F');
 
   while(1)
   {

@@ -1,7 +1,6 @@
 /*
 * @file Middleware.c
-* @brief Middleware lib support user config to red, blue led, button 1, read input logic button 1 of MKL46Z4
-* config core clock and delay 200ms funtion 
+* @brief Middleware lib support user config to red, blue led, button 1, read input logic button 1 of MKL46Z4, ...
 */
 /********************************************************************
  * Include Library
@@ -93,27 +92,45 @@ static void myTimer_Handler(uint8_t Channel)
 
 
 
+volatile uint8_t a[10000];
+volatile uint32_t index = 0;
+
 static void myUART_Handler()
 {
-//  // Read data
-//  data = UART0->D;
-//  
-//  uint8_t index;
-//  
-//  if (data == 0x55)
-//  {
-//    char buffer[6u];
-//    
-//    for (index = 0; index < ADC_READ_BUFFER_SIZE; index++)
-//    {
-//      floatToCharArray(temperature[index], buffer, sizeof(buffer));
-//      
-//      // char 'Space'
-//      buffer[5] = 0x20;
-//
-//      UART_SendString(buffer, 6u);
-//    }
-//}
+  // Read data
+  uint8_t data = UART0->D;
+  if (index > 1000u)
+  {
+    return;
+  }
+  a[index] = data;
+  index++;
+  }
+
+
+
+void PORTC_PORTD_IRQHandler(void)
+{
+  // Check if interupt from Port C.3 
+  if ((PORTC->ISFR & (1 << 3)) != 0)
+  {
+    // Clear ISF flag
+    PORT_EXTI_ClearFlag (PORTC, 3);
+  
+    // Delay for debouncing
+    uint32_t count = 4000;
+    while(--count);
+
+    // Check button state
+    if (READ_BTN1() == 0) 
+    {
+      uint32_t i;
+      for (i=0; i<1000; i++)
+      {
+        UART_SendChar(a[i]);
+      }
+    }
+  }
 }
 
 
@@ -156,6 +173,9 @@ void BTN1_Config(void)
   
   // PinC.3 = Input
   GPIO_Init(GPIOC, 3, GPIO_IO_INPUT);
+  
+  // Setup interupt for Port C & Port D, priority lever = 1
+  PORT_EXTI_Config(PORTC_PORTD_IRQn, 1);
 }
 
 
@@ -171,7 +191,7 @@ void PIT_Config_5s()
 {
   PIT_Init(&UserConfig_PIT);
   NVIC_EnableIRQ(PIT_IRQn);
-  NVIC_SetPriority(PIT_IRQn, 2);
+  NVIC_SetPriority(PIT_IRQn, 1);
 }
 
 
@@ -202,7 +222,7 @@ void UART_User_Config()
   NVIC_EnableIRQ(UART0_IRQn);
   
   // NVIC Set Priority
-  NVIC_SetPriority(UART0_IRQn, 3);
+  NVIC_SetPriority(UART0_IRQn, 0);
 }
 
 
