@@ -1,53 +1,70 @@
+#include <stdint.h>
 #include "queue.h"
 
+static Queue q;
 
-void initQueue(Queue* q) {
-    q->front = 0;
-    q->rear = 0;
+void initQueue() {
+    q.front = 0;
+    q.rear = 0;
 }
 
-uint8_t isQueueEmpty(Queue* q) {
-  	return (q->front == q->rear);
+uint8_t isQueueEmpty() {
+  	return (q.front == q.rear);
 }
 
-uint8_t isQueueFull(Queue* q) {
-  return ((q->rear + 1) % QUEUE_SIZE == q->front);
+uint8_t isQueueFull() {
+  return ((q.rear + 1) % QUEUE_SIZE == q.front);
 }
 
-void enqueue(Queue* q, uint8_t value) {
-    if (isQueueFull(q)) {
+void enqueue(uint8_t value) {
+    if (isQueueFull()) {
         // Queue is full
         return;
     }
 
-    q->data[q->rear] = value;
-    q->rear = (q->rear + 1) % QUEUE_SIZE;
+    q.data[q.rear] = value;
+    q.rear = (q.rear + 1) % QUEUE_SIZE;
 }
 
-uint8_t dequeue(Queue* q) {
-    if (isQueueEmpty(q)) {
+uint8_t dequeue() {
+    if (isQueueEmpty()) {
         // Queue is empty
         return 0; // Or any other appropriate value
     }
     
-    uint8_t value = q->data[q->front];
-    q->front = (q->front + 1) % QUEUE_SIZE;
+    uint8_t value = q.data[q.front];
+    q.front = (q.front + 1) % QUEUE_SIZE;
     return value;
 }
 
-uint8_t front(Queue* q) {
-    if (isQueueEmpty(q)) {
+uint8_t front() {
+    if (isQueueEmpty()) {
         // Queue is empty
         return 0; // Or any other appropriate value
     }
     
-    return q->data[q->front];
+    return q.data[q.front];
 }
 
-uint8_t queueSize(Queue* q) {
-    if (q->rear >= q->front) {
-        return q->rear - q->front;
+uint8_t queueSize() {
+    if (q.rear >= q.front) {
+        return q.rear - q.front;
     } else {
-        return QUEUE_SIZE - (q->front - q->rear);
+        return QUEUE_SIZE - (q.front - q.rear);
     }
 }
+
+//void display() {
+//    if (isQueueEmpty()) {
+//        // Queue is empty
+//        printf("Queue is empty.\n");
+//        return;
+//    }
+//
+//    uint8_t i = q.front;
+//    while (i != q.rear) {
+//        printf("%u ", q.data[i]);
+//        i = (i + 1) % QUEUE_SIZE;
+//    }
+//    printf("\n");
+//}

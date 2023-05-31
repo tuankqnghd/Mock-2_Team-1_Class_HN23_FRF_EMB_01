@@ -37,7 +37,7 @@ void main()
   PIT_Config_5s();
   UART_User_Config();
   UART_SendChar('F');
-
+  initQueue();
   while(1)
   {
 
