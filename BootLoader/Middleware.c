@@ -92,21 +92,13 @@ static void myTimer_Handler(uint8_t Channel)
 
 
 
-volatile uint8_t a[10000];
-
-volatile uint32_t index = 0;
-
 static void myUART_Handler()
 {
   // Read data
   uint8_t data = UART0->D;
-  if (index > 1000u)
-  {
-    return;
-  }
-  a[index] = data;
-  index++;
-  }
+  
+  enqueue(data);
+}
 
 
 
@@ -126,9 +118,10 @@ void PORTC_PORTD_IRQHandler(void)
     if (READ_BTN1() == 0) 
     {
       uint32_t i;
-      for (i=0; i<1000; i++)
+      for (i=0; i<256; i++)
       {
-        UART_SendChar(a[i]);
+        uint8_t data = dequeue();
+        UART_SendChar(data);
       }
     }
   }

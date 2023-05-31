@@ -38,6 +38,7 @@ void main()
   UART_User_Config();
   UART_SendChar('F');
   initQueue();
+  
   while(1)
   {
 
