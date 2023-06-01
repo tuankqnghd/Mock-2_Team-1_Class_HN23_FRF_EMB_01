@@ -106,5 +106,5 @@ uint8 queueSize();
 
 //void display();
 
-#endif
+#endif /* __QUEUE_H__ */
 

@@ -12,9 +12,15 @@
  * Definition
 ********************************************************************/
 
+#define VECTOR_TABLE_FLASH_ADDRESS  ((uint32*)0x00000000u)
+#define VECTOR_TABLE_RAM_ADDRESS    ((uint32*)0x20004000u)
+#define VECTOR_TABLE_SIZE           (256u)
+
 /*********************************************************************
 * Variable
 *********************************************************************/
+
+uint32 vectorTable[VECTOR_TABLE_SIZE] = {0};
 
 static void myTimer_Handler(uint8 Channel);
 
@@ -125,6 +131,29 @@ void PORTC_PORTD_IRQHandler(void)
       }
     }
   }
+}
+
+
+
+void Copy_Vector_Table_SetVTOR(void)
+{
+  uint32 i = 0;
+  // Copy vector table from flash to vectorTable[256] (RAM)
+  for (i = 0; i < VECTOR_TABLE_SIZE; i++) 
+  {
+    VECTOR_TABLE_RAM_ADDRESS[i] = VECTOR_TABLE_FLASH_ADDRESS[i];
+  }
+  
+  // Set new VTOR
+  SCB->VTOR = (uint32)VECTOR_TABLE_RAM_ADDRESS;
+}
+
+
+
+void ReturnVTOR(void)
+{
+  // return VTOR
+  SCB->VTOR = (uint32)VECTOR_TABLE_FLASH_ADDRESS;
 }
 
 

@@ -111,4 +111,4 @@ uint8 UART_Receive();
 
 
 
-#endif /* __PIT_H__ */
+#endif /* __UART_H__ */

@@ -16,7 +16,7 @@
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>
     </PEMicroDriver>
     <DebugChecksum>
-        <Checksum>2109028259</Checksum>
+        <Checksum>3036901055</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -33,6 +33,12 @@
         <LogFile>_ "$PROJ_DIR$\LogFile1.log"</LogFile>
         <Category2>_ 2</Category2>
     </LogFile>
+    <array_types>
+        <Fmt0>uint32[256]	4	0</Fmt0>
+    </array_types>
+    <watch_formats>
+        <Fmt0>{W}42:vectorTable	4	5</Fmt0>
+    </watch_formats>
     <DisassembleMode>
         <mode>0</mode>
     </DisassembleMode>

@@ -82,4 +82,4 @@ uint8 GPIO_ReadPin (GPIO_Type * GPIOx, uint8 pin);
 
 
 
-#endif
+#endif /* __GPIO_H__ */

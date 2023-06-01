@@ -90,4 +90,4 @@ void PORT_EXTI_ClearFlag (PORT_Type * PORTx, uint8 pin);
 
 
 
-#endif
+#endif /* __PORT_H__ */

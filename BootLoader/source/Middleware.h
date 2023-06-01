@@ -18,6 +18,22 @@
  * API
 ********************************************************************/
 
+/*
+* @brief copy vector table to RAM and set VTOR to new vector table
+*
+*@return void
+*/
+void Copy_Vector_Table_SetVTOR(void);
+
+
+
+/*
+* @brief return VTOR to 0x00000000
+*
+*@return void
+*/
+void ReturnVTOR(void);
+
 
 
 /*
@@ -74,4 +90,4 @@ void UART_User_Config();
 
 
 
-#endif
+#endif /* __MIDDLEWARE_H__ */
