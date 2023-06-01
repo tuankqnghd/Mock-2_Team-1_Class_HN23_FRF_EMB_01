@@ -6,6 +6,7 @@
 ********************************************************************/
 
 #include "MKL46Z4.h"
+#include "types.h"
 
 /********************************************************************
  * API
@@ -86,7 +87,7 @@ void UART_Init(UART_ConfigType * UserConfig);
 *
 *@return void
 */
-void UART_SendChar(uint8_t Data);
+void UART_SendChar(uint8 Data);
 
 
 
@@ -97,7 +98,7 @@ void UART_SendChar(uint8_t Data);
 *
 *@return void
 */
-void UART_SendString(char * String, uint8_t len);
+void UART_SendString(char * String, uint8 len);
 
 
 
@@ -106,7 +107,8 @@ void UART_SendString(char * String, uint8_t len);
 *
 *@return data
 */
-uint8_t UART_Receive();
+uint8 UART_Receive();
+
 
 
 #endif /* __PIT_H__ */

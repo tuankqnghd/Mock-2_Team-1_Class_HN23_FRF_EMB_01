@@ -5,6 +5,7 @@
 /********************************************************************
  * Include Library
 ********************************************************************/
+
 #include "PIT.h"
 
 /********************************************************************
@@ -73,7 +74,7 @@ void PIT_Init(PIT_ConfigType * UserConfig)
 
 
 
-void PIT_TimerControl(PIT_ChannelType Channel, uint8_t EnorDis)
+void PIT_TimerControl(PIT_ChannelType Channel, uint8 EnorDis)
 {
   if ( 0 == EnorDis )
   {

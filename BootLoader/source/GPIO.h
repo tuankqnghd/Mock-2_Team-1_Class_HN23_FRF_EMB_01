@@ -4,7 +4,10 @@
 /********************************************************************
  * Include Library
 ********************************************************************/
+
 #include "MKL46Z4.h"
+#include "types.h"
+
 /********************************************************************
  * API
 ********************************************************************/
@@ -27,7 +30,7 @@ typedef enum
 *
 *@return void
 */
-void GPIO_Init(GPIO_Type * GPIOx, uint8_t pin, GPIO_IO_Type IO_Type);
+void GPIO_Init(GPIO_Type * GPIOx, uint8 pin, GPIO_IO_Type IO_Type);
 
 
 
@@ -39,7 +42,7 @@ void GPIO_Init(GPIO_Type * GPIOx, uint8_t pin, GPIO_IO_Type IO_Type);
 *
 *@return void
 */
-void GPIO_SetPin (GPIO_Type * GPIOx, uint8_t pin);
+void GPIO_SetPin (GPIO_Type * GPIOx, uint8 pin);
 
 
 
@@ -51,7 +54,7 @@ void GPIO_SetPin (GPIO_Type * GPIOx, uint8_t pin);
 *
 *@return void
 */
-void GPIO_ClearPin (GPIO_Type * GPIOx, uint8_t pin);
+void GPIO_ClearPin (GPIO_Type * GPIOx, uint8 pin);
 
 
 
@@ -63,7 +66,7 @@ void GPIO_ClearPin (GPIO_Type * GPIOx, uint8_t pin);
 *
 *@return void
 */
-void GPIO_TogglePin (GPIO_Type * GPIOx, uint8_t pin);
+void GPIO_TogglePin (GPIO_Type * GPIOx, uint8 pin);
 
 
 
@@ -75,7 +78,7 @@ void GPIO_TogglePin (GPIO_Type * GPIOx, uint8_t pin);
 *
 *@return logic input: 0 is logic 0; 1 is logic 1
 */
-uint8_t GPIO_ReadPin (GPIO_Type * GPIOx, uint8_t pin);
+uint8 GPIO_ReadPin (GPIO_Type * GPIOx, uint8 pin);
 
 
 

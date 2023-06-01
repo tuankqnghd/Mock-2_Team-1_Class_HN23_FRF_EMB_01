@@ -5,6 +5,7 @@
 /********************************************************************
  * Include Library
 ********************************************************************/
+
 #include "MKL46Z4.h"
 #include "GPIO.h"
 
@@ -28,7 +29,7 @@
 
 
 
-void GPIO_Init(GPIO_Type * GPIOx, uint8_t pin, GPIO_IO_Type IO_Type)
+void GPIO_Init(GPIO_Type * GPIOx, uint8 pin, GPIO_IO_Type IO_Type)
 {
   // Check pin number
   if (pin > 31) 
@@ -55,7 +56,7 @@ void GPIO_Init(GPIO_Type * GPIOx, uint8_t pin, GPIO_IO_Type IO_Type)
 
 
 
-void GPIO_SetPin (GPIO_Type * GPIOx, uint8_t pin)
+void GPIO_SetPin (GPIO_Type * GPIOx, uint8 pin)
 {
   // Check pin number
   if (pin > 31) 
@@ -68,7 +69,7 @@ void GPIO_SetPin (GPIO_Type * GPIOx, uint8_t pin)
 
 
 
-void GPIO_ClearPin (GPIO_Type * GPIOx, uint8_t pin)
+void GPIO_ClearPin (GPIO_Type * GPIOx, uint8 pin)
 {
   // Check pin number
   if (pin > 31) 
@@ -81,7 +82,7 @@ void GPIO_ClearPin (GPIO_Type * GPIOx, uint8_t pin)
 
 
 
-void GPIO_TogglePin (GPIO_Type * GPIOx, uint8_t pin)
+void GPIO_TogglePin (GPIO_Type * GPIOx, uint8 pin)
 {
   // Check pin number
   if (pin > 31) 
@@ -94,7 +95,7 @@ void GPIO_TogglePin (GPIO_Type * GPIOx, uint8_t pin)
 
 
 
-uint8_t GPIO_ReadPin (GPIO_Type * GPIOx, uint8_t pin)
+uint8 GPIO_ReadPin (GPIO_Type * GPIOx, uint8 pin)
 {
   // Check pin number
   if (pin > 31) 

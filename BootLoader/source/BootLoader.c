@@ -6,8 +6,10 @@ KL46
 /********************************************************************
  * Include Library
 ********************************************************************/
+
 #include "MKL46Z4.h"
 #include "Middleware.h"
+#include "types.h"
 
 /********************************************************************
  * Definition
@@ -36,7 +38,6 @@ void main()
   BTN1_Config();
   PIT_Config_5s();
   UART_User_Config();
-  UART_SendChar('F');
   initQueue();
   
   while(1)

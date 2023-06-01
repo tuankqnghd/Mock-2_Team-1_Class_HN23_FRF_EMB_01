@@ -4,7 +4,9 @@
 /********************************************************************
  * Include Library
 ********************************************************************/
+
 #include "MKL46Z4.h"
+#include "types.h"
 
 /********************************************************************
  * API
@@ -19,9 +21,9 @@
   - Chain Mode (Not used now)
 */
 
-#define BUS_CLOCK_DIV   (uint8_t)(((SIM->CLKDIV1 & SIM_CLKDIV1_OUTDIV4_MASK) >> SIM_CLKDIV1_OUTDIV4_SHIFT) +1)
+#define BUS_CLOCK_DIV   (uint8)(((SIM->CLKDIV1 & SIM_CLKDIV1_OUTDIV4_MASK) >> SIM_CLKDIV1_OUTDIV4_SHIFT) +1)
 
-typedef void (*PIT_ISRType)(uint8_t);
+typedef void (*PIT_ISRType)(uint8);
 
 /* User defined data types */
 typedef enum
@@ -73,6 +75,6 @@ void PIT_Init(PIT_ConfigType * UserConfig);
 *
 *@return void
 */
-void PIT_TimerControl(PIT_ChannelType Channel, uint8_t EnorDis);
+void PIT_TimerControl(PIT_ChannelType Channel, uint8 EnorDis);
 
 #endif /* __PIT_H__ */

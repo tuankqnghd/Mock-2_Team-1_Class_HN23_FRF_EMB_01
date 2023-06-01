@@ -5,6 +5,7 @@
 /********************************************************************
  * Include Library
 ********************************************************************/
+
 #include "MKL46Z4.h"
 #include "Port.h"
 
@@ -26,7 +27,7 @@
 * Global function 
 *********************************************************************/
 
-void PORT_Init(PORT_Type * PORTx, uint8_t pin,const Port_ConfigType* UserConfig)
+void PORT_Init(PORT_Type * PORTx, uint8 pin,const Port_ConfigType* UserConfig)
 { 
   // Check pin number
   if (pin > 31) 
@@ -91,7 +92,7 @@ void PORT_EXTI_Config(IRQn_Type IRQn, uint8_t priority_lever)
 
 
 
-void PORT_EXTI_ClearFlag (PORT_Type * PORTx, uint8_t pin)
+void PORT_EXTI_ClearFlag (PORT_Type * PORTx, uint8 pin)
 {
   // Check pin number
   if (pin > 31) 

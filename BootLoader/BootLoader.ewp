@@ -345,7 +345,7 @@
                     <name>CCIncludePath2</name>
                     <state>$PROJ_DIR$\CMSIS\Include</state>
                     <state>$PROJ_DIR$\MKL46Z</state>
-                    <state>$PROJ_DIR$</state>
+                    <state>$PROJ_DIR$\source</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -2146,49 +2146,52 @@
     <group>
         <name>source</name>
         <file>
-            <name>$PROJ_DIR$\ADC.c</name>
+            <name>$PROJ_DIR$\source\BootLoader.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\ADC.h</name>
+            <name>$PROJ_DIR$\source\Flash.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\BootLoader.c</name>
+            <name>$PROJ_DIR$\source\Flash.h</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\GPIO.c</name>
+            <name>$PROJ_DIR$\source\GPIO.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\GPIO.h</name>
+            <name>$PROJ_DIR$\source\GPIO.h</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\Middleware.c</name>
+            <name>$PROJ_DIR$\source\Middleware.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\Middleware.h</name>
+            <name>$PROJ_DIR$\source\Middleware.h</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\PIT.c</name>
+            <name>$PROJ_DIR$\source\PIT.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\PIT.h</name>
+            <name>$PROJ_DIR$\source\PIT.h</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\Port.c</name>
+            <name>$PROJ_DIR$\source\Port.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\Port.h</name>
+            <name>$PROJ_DIR$\source\Port.h</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\queue.c</name>
+            <name>$PROJ_DIR$\source\queue.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\queue.h</name>
+            <name>$PROJ_DIR$\source\queue.h</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\UART.c</name>
+            <name>$PROJ_DIR$\source\types.h</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\UART.h</name>
+            <name>$PROJ_DIR$\source\UART.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\source\UART.h</name>
         </file>
     </group>
     <group>

@@ -4,12 +4,15 @@
 /********************************************************************
  * Include Library
 ********************************************************************/
+
 #include "MKL46Z4.h"
 #include "Port.h"
 #include "GPIO.h"
 #include "UART.h"
 #include "PIT.h"
+#include "Flash.h"
 #include "queue.h"
+#include "types.h"
 
 /********************************************************************
  * API
@@ -49,7 +52,7 @@ void BTN1_Config(void);
 *
 *@return input logic of button 1: 0 is logic 0, 1 is logic 1
 */
-uint8_t READ_BTN1();
+uint8 READ_BTN1();
 
 
 

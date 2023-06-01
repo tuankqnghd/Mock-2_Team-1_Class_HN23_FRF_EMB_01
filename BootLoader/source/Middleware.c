@@ -16,7 +16,7 @@
 * Variable
 *********************************************************************/
 
-static void myTimer_Handler(uint8_t Channel);
+static void myTimer_Handler(uint8 Channel);
 
 static void myUART_Handler();
 
@@ -74,7 +74,7 @@ UART_ConfigType Userconfig_UART = {
 
 
 
-static void myTimer_Handler(uint8_t Channel)
+static void myTimer_Handler(uint8 Channel)
 {
 //  if (Channel == 0)
 //  {
@@ -111,16 +111,16 @@ void PORTC_PORTD_IRQHandler(void)
     PORT_EXTI_ClearFlag (PORTC, 3);
   
     // Delay for debouncing
-    uint32_t count = 4000;
+    uint32 count = 4000;
     while(--count);
 
     // Check button state
     if (READ_BTN1() == 0) 
     {
-      uint32_t i;
+      uint32 i;
       for (i=0; i<256; i++)
       {
-        uint8_t data = dequeue();
+        uint8 data = dequeue();
         UART_SendChar(data);
       }
     }
@@ -174,7 +174,7 @@ void BTN1_Config(void)
 
 
 
-uint8_t READ_BTN1()
+uint8 READ_BTN1()
 {
   return ((FGPIOC->PDIR & (1 << 3)) >> 3);
 }

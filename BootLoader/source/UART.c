@@ -86,7 +86,7 @@ void UART0_IRQHandler(void)
 
 
 
-void UART_SendChar(uint8_t Data)
+void UART_SendChar(uint8 Data)
 {
   // Enable Transmit 
   UART0->C2 |= UART0_C2_TE(1u);
@@ -106,9 +106,9 @@ void UART_SendChar(uint8_t Data)
 
 
 
-void UART_SendString(char * String, uint8_t len)
+void UART_SendString(char * String, uint8 len)
 {
-  uint8_t i;
+  uint8 i;
   
   // Enable Transmit 
   UART0->C2 |= UART0_C2_TE(1u);
@@ -130,7 +130,7 @@ void UART_SendString(char * String, uint8_t len)
     
     
     
-uint8_t UART_Receive()
+uint8 UART_Receive()
 {
   uint8_t Data;
   // Enable Receive
