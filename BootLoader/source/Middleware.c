@@ -102,7 +102,7 @@ volatile uint32 ByteCount = 0;
 
 volatile uint32 DataByteCount = 0;
 
-volatile uint8 FlagCheck[] = {0, 0, 0, 0, 0, 0, 0};
+volatile uint8 FlagCheck[] = {0, 0, 0, 0, 0, 0, 0, 0};
 
 volatile uint32 data[256];
 
@@ -110,17 +110,19 @@ volatile uint32 address[256];
 
 #define START_SREC                  (0u)
 
-#define START_STYPE                 (1u)
+#define STOP_SREC                   (1u)
 
-#define START_BYTECOUNT             (2u)
+#define START_STYPE                 (2u)
 
-#define ADDRESS_BYTECOUNT           (3u)
+#define START_BYTECOUNT             (3u)
 
-#define START_ADDRESS               (4u)
+#define ADDRESS_BYTECOUNT           (4u)
 
-#define DATA_BYTECOUNT              (5u)
+#define START_ADDRESS               (5u)
 
-#define START_DATA                  (6u)
+#define DATA_BYTECOUNT              (6u)
+
+#define START_DATA                  (7u)
 
 uint8 DataShift[] = {4, 0, 12, 8, 20, 16, 28, 24};
 
@@ -142,7 +144,7 @@ static void myUART_Handler()
     }
     if ((ReceiveData == '7') || (ReceiveData == '8') || (ReceiveData == '9'))    // S7/S8/S9
     {
-      FlagCheck[START_SREC] = 0;
+      FlagCheck[STOP_SREC] = 1;
     }
     else if (ReceiveData == '1')   // S1
     {
@@ -390,11 +392,18 @@ uint8 ChartoHex(char c)
 
 void FirmwaretoFlash(void)
 {
-  while (isQueueEmpty());
-  FlashData a = dequeue();
-  while (!Flash_IsReady());
-  Flash_WriteWord(a.address, a.data);
-  return;
+  if (FlagCheck[START_SREC] == 1)
+  {
+    while (isQueueEmpty());
+    FlashData a = dequeue();
+    while (!Flash_IsReady());
+    Flash_WriteWord(a.address, a.data);
+    if (FlagCheck[STOP_SREC] == 1 && (isQueueEmpty() == 1))
+    {
+      FlagCheck[STOP_SREC] == 0;
+      FlagCheck[START_SREC] == 0;
+    }
+  }
 }
 
 
