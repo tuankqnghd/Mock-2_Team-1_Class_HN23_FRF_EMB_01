@@ -104,9 +104,9 @@ volatile uint32 DataByteCount = 0;
 
 volatile uint8 FlagCheck[] = {0, 0, 0, 0, 0, 0, 0, 0};
 
-volatile uint32 data[256];
-
-volatile uint32 address[256];
+//volatile uint32 data[256];
+//
+//volatile uint32 address[256];
 
 #define START_SREC                  (0u)
 
@@ -127,7 +127,7 @@ volatile uint32 address[256];
 uint8 DataShift[] = {4, 0, 12, 8, 20, 16, 28, 24};
 
 
-static void myUART_Handler()
+void myUART_Handler()
 {
   // Read data
   uint8 ReceiveData = UART0->D;
@@ -228,31 +228,31 @@ static void myUART_Handler()
 
 void PORTC_PORTD_IRQHandler(void)
 {
-  // Check if interupt from Port C.3 
-  if ((PORTC->ISFR & (1 << 3)) != 0)
-  {
-    // Clear ISF flag
-    PORT_EXTI_ClearFlag (PORTC, 3);
-  
-    // Delay for debouncing
-    uint32 count = 4000;
-    while(--count);
-
-    // Check button state
-    if (READ_BTN1() == 0) 
-    {
-      uint32 i;
-      for (i=0; i<256; i++)
-      {
-        FlashData a = dequeue();
-        uint32 b = a.address;
-        address[i] = b;
-        uint32 c = a.data;
-        data[i] = c;
-        UART_SendChar(c);
-      }
-    }
-  }
+//  // Check if interupt from Port C.3 
+//  if ((PORTC->ISFR & (1 << 3)) != 0)
+//  {
+//    // Clear ISF flag
+//    PORT_EXTI_ClearFlag (PORTC, 3);
+//  
+//    // Delay for debouncing
+//    uint32 count = 4000;
+//    while(--count);
+//
+//    // Check button state
+//    if (READ_BTN1() == 0) 
+//    {
+//      uint32 i;
+//      for (i=0; i<256; i++)
+//      {
+//        FlashData a = dequeue();
+//        uint32 b = a.address;
+//        address[i] = b;
+//        uint32 c = a.data;
+//        data[i] = c;
+//        UART_SendChar(c);
+//      }
+//    }
+//  }
 }
 
 
@@ -400,8 +400,8 @@ void FirmwaretoFlash(void)
     Flash_WriteWord(a.address, a.data);
     if (FlagCheck[STOP_SREC] == 1 && (isQueueEmpty() == 1))
     {
-      FlagCheck[STOP_SREC] == 0;
-      FlagCheck[START_SREC] == 0;
+      FlagCheck[STOP_SREC] = 0;
+      FlagCheck[START_SREC] = 0;
     }
   }
 }

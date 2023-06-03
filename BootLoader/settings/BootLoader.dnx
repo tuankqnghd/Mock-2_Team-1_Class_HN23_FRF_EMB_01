@@ -16,7 +16,7 @@
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>
     </PEMicroDriver>
     <DebugChecksum>
-        <Checksum>2291574674</Checksum>
+        <Checksum>2748027728</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -28,11 +28,6 @@
     <CallStack>
         <ShowArgs>0</ShowArgs>
     </CallStack>
-    <LogFile>
-        <LoggingEnabled>_ 0</LoggingEnabled>
-        <LogFile>_ "$PROJ_DIR$\LogFile1.log"</LogFile>
-        <Category2>_ 2</Category2>
-    </LogFile>
     <array_types>
         <Fmt0>uint32 (volatile)[100]	4	0</Fmt0>
         <Fmt1>uint32 (volatile)[200]	4	0</Fmt1>
@@ -41,11 +36,17 @@
         <Fmt4>uint32[256]	4	0</Fmt4>
     </array_types>
     <watch_formats>
-        <Fmt0>{W}42:Address	4	0</Fmt0>
-        <Fmt1>{W}42:address	4	0</Fmt1>
-        <Fmt2>{W}42:data	4	0</Fmt2>
-        <Fmt3>{W}42:vectorTable	4	5</Fmt3>
+        <Fmt0>{W}1:Address	4	0</Fmt0>
+        <Fmt1>{W}42:Address	4	0</Fmt1>
+        <Fmt2>{W}42:address	4	0</Fmt2>
+        <Fmt3>{W}42:data	4	0</Fmt3>
+        <Fmt4>{W}42:vectorTable	4	5</Fmt4>
     </watch_formats>
+    <LogFile>
+        <LoggingEnabled>_ 0</LoggingEnabled>
+        <LogFile>_ "$PROJ_DIR$\LogFile1.log"</LogFile>
+        <Category2>_ 2</Category2>
+    </LogFile>
     <DisassembleMode>
         <mode>0</mode>
     </DisassembleMode>
