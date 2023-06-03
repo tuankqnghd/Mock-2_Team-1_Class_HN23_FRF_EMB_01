@@ -28,63 +28,63 @@ static Queue q;
 
 
 
-void initQueue() {
+void initQueue() 
+{
   q.front = 0;
   q.rear = 0;
 }
 
 
 
-uint8_t isQueueEmpty() {
+uint8 isQueueEmpty() 
+{
   return (q.front == q.rear);
 }
 
 
 
-uint8_t isQueueFull() {
+uint8 isQueueFull() 
+{
   return ((q.rear + 1) % QUEUE_SIZE == q.front);
 }
 
 
 
-void enqueue(uint8_t value) {
-  if (isQueueFull()) {
+void enqueue(uint32 address, uint32 data) 
+{
+  if (isQueueFull()) 
+  {
     // Queue is full
     return;
   }
-
-  q.data[q.rear] = value;
+  q.flashdata[q.rear].address = address;
+  q.flashdata[q.rear].data = data;
   q.rear = (q.rear + 1) % QUEUE_SIZE;
 }
 
 
 
-uint8 dequeue() {
-  if (isQueueEmpty()) {
+FlashData dequeue() {
+  FlashData value;
+  if (isQueueEmpty())
+  {
+    value.address = 0;
+    value.data = 0;
     // Queue is empty
-    return 0; // Or any other appropriate value
+    return value; // Or any other appropriate value
   }
     
-  uint8_t value = q.data[q.front];
+  value = q.flashdata[q.front];
   q.front = (q.front + 1) % QUEUE_SIZE;
   return value;
 }
 
 
 
-uint8 front() {
-  if (isQueueEmpty()) {
-    // Queue is empty
-    return 0; // Or any other appropriate value
-  }
-    
-  return q.data[q.front];
-}
-
-
-
-uint8 queueSize() {
-  if (q.rear >= q.front) {
+uint8 queueSize() 
+{
+  if (q.rear >= q.front) 
+  {
     return q.rear - q.front;
   } else {
     return QUEUE_SIZE - (q.front - q.rear);
@@ -100,9 +100,9 @@ uint8 queueSize() {
 //        return;
 //    }
 //
-//    uint8_t i = q.front;
+//    uint8 i = q.front;
 //    while (i != q.rear) {
-//        printf("%u ", q.data[i]);
+//        printf("%u %u ", q.flashdata[i].address, q.flashdata[i].data);
 //        i = (i + 1) % QUEUE_SIZE;
 //    }
 //    printf("\n");

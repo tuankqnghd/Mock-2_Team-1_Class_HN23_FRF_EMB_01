@@ -15,9 +15,14 @@
 #define QUEUE_SIZE (256u)
 
 typedef struct {
-    uint8 data[QUEUE_SIZE];
-    uint8 front;
-    uint8 rear;
+  uint32 address;
+  uint32 data;
+} FlashData;
+
+typedef struct {
+  FlashData flashdata[QUEUE_SIZE];
+  uint8 front;
+  uint8 rear;
 } Queue;
 
 /*********************************************************************
@@ -67,31 +72,20 @@ uint8 isQueueFull();
 /*
 * @brief enter a data to last of queue
 *
-*@param value is data need to enter queue
+*@param is adddresss and data need to enter queue
 *
 *@return void
 */
-void enqueue(uint8 value);
+void enqueue(uint32_t address, uint32_t data);
 
 
 
 /*
 * @brief take the first data of queue
 *
-*@param value is data need to enter queue
-*
-*@return void
+*@return struct FlashData 
 */
-uint8 dequeue();
-
-
-
-/*
-* @brief check position of front data in queue
-*
-*@return index of front data
-*/
-uint8 front();
+FlashData dequeue();
 
 
 

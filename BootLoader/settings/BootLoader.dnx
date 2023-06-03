@@ -16,7 +16,7 @@
         <LeaveTargetRunning>_ 0</LeaveTargetRunning>
     </PEMicroDriver>
     <DebugChecksum>
-        <Checksum>3036901055</Checksum>
+        <Checksum>2608471719</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
@@ -34,10 +34,17 @@
         <Category2>_ 2</Category2>
     </LogFile>
     <array_types>
-        <Fmt0>uint32[256]	4	0</Fmt0>
+        <Fmt0>uint32 (volatile)[100]	4	0</Fmt0>
+        <Fmt1>uint32 (volatile)[200]	4	0</Fmt1>
+        <Fmt2>uint32 (volatile)[256]	4	0</Fmt2>
+        <Fmt3>uint32 (volatile)[400]	4	0</Fmt3>
+        <Fmt4>uint32[256]	4	0</Fmt4>
     </array_types>
     <watch_formats>
-        <Fmt0>{W}42:vectorTable	4	5</Fmt0>
+        <Fmt0>{W}42:Address	4	0</Fmt0>
+        <Fmt1>{W}42:address	4	0</Fmt1>
+        <Fmt2>{W}42:data	4	0</Fmt2>
+        <Fmt3>{W}42:vectorTable	4	5</Fmt3>
     </watch_formats>
     <DisassembleMode>
         <mode>0</mode>

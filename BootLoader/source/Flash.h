@@ -47,4 +47,9 @@ void Flash_EraseSector(uint32 address);
 uint32 Flash_Read(uint32 address);
 
 
+
+uint8 Flash_IsReady();
+
+
+
 #endif /* __FLASH_H__ */

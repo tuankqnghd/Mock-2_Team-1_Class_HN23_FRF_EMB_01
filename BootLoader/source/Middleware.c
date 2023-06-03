@@ -20,8 +20,6 @@
 * Variable
 *********************************************************************/
 
-uint32 vectorTable[VECTOR_TABLE_SIZE] = {0};
-
 static void myTimer_Handler(uint8 Channel);
 
 static void myUART_Handler();
@@ -42,13 +40,13 @@ const Port_ConfigType  UserConfig_PortC3 = {
   .IRQ = PORT_IRQ_EDGE_FALLING,
 };
 
-const Port_ConfigType  UserConfig_PortD5 = {
-  .Mux = PORT_MUX_GPIO, 
-};
-
-const Port_ConfigType  UserConfig_PortE29 = {
-  .Mux = PORT_MUX_GPIO, 
-};
+//const Port_ConfigType  UserConfig_PortD5 = {
+//  .Mux = PORT_MUX_GPIO, 
+//};
+//
+//const Port_ConfigType  UserConfig_PortE29 = {
+//  .Mux = PORT_MUX_GPIO, 
+//};
 
 PIT_ConfigType UserConfig_PIT = {
   .Channel      = PIT_CHANNEL_0,
@@ -96,14 +94,132 @@ static void myTimer_Handler(uint8 Channel)
 //  }
 }
 
+volatile uint32 Address = 0;
+
+volatile uint32 Data = 0; 
+
+volatile uint32 ByteCount = 0; 
+
+volatile uint32 DataByteCount = 0;
+
+volatile uint8 FlagCheck[] = {0, 0, 0, 0, 0, 0, 0};
+
+volatile uint32 data[256];
+
+volatile uint32 address[256];
+
+#define START_SREC                  (0u)
+
+#define START_STYPE                 (1u)
+
+#define START_BYTECOUNT             (2u)
+
+#define ADDRESS_BYTECOUNT           (3u)
+
+#define START_ADDRESS               (4u)
+
+#define DATA_BYTECOUNT              (5u)
+
+#define START_DATA                  (6u)
+
+uint8 DataShift[] = {4, 0, 12, 8, 20, 16, 28, 24};
 
 
 static void myUART_Handler()
 {
   // Read data
-  uint8_t data = UART0->D;
+  uint8 ReceiveData = UART0->D;
   
-  enqueue(data);
+  if (ReceiveData == 'S')
+  {
+    FlagCheck[START_STYPE] = 1;
+  }
+  else if (FlagCheck[START_STYPE] == 1)
+  {
+    if (ReceiveData == '0')         // S0
+    {
+      FlagCheck[START_SREC] = 1;
+    }
+    if ((ReceiveData == '7') || (ReceiveData == '8') || (ReceiveData == '9'))    // S7/S8/S9
+    {
+      FlagCheck[START_SREC] = 0;
+    }
+    else if (ReceiveData == '1')   // S1
+    {
+      FlagCheck[START_BYTECOUNT] = 1;
+      FlagCheck[ADDRESS_BYTECOUNT] = 2;
+    }
+    else if (ReceiveData == '2')   // S2
+    {
+      FlagCheck[START_BYTECOUNT] = 1;
+      FlagCheck[ADDRESS_BYTECOUNT] = 3;
+    }
+    else if (ReceiveData == '3')   // S3
+    {
+      FlagCheck[START_BYTECOUNT] = 1;
+      FlagCheck[ADDRESS_BYTECOUNT] = 4;
+    }
+    // Return START_STYPE
+    FlagCheck[START_STYPE] = 0;
+    }
+    else if (FlagCheck[START_BYTECOUNT] == 1)
+    {
+      // Bytecount = 0x13;
+      ByteCount = ChartoHex(ReceiveData) << 4;
+      FlagCheck[START_BYTECOUNT] = 2;
+    }
+    else if (FlagCheck[START_BYTECOUNT] == 2)
+    {
+      ByteCount += ChartoHex(ReceiveData);
+      FlagCheck[START_BYTECOUNT] = 0;
+      FlagCheck[START_ADDRESS] = 1;
+      
+      // Return Address = 0
+      Address = 0;
+      
+      DataByteCount = ByteCount - 1u - FlagCheck[ADDRESS_BYTECOUNT];
+    }
+    else if (FlagCheck[START_ADDRESS] != 0)
+    {
+      Address += ChartoHex(ReceiveData) << ((FlagCheck[ADDRESS_BYTECOUNT] << 3) - (FlagCheck[START_ADDRESS] << 2));
+        
+      FlagCheck[START_ADDRESS]++;
+      if (FlagCheck[START_ADDRESS] == (FlagCheck[ADDRESS_BYTECOUNT] << 1) + 1)
+      {
+        FlagCheck[START_ADDRESS] = 0;
+        FlagCheck[START_DATA] = 1;
+      }
+    }
+    else if (FlagCheck[START_DATA] != 0)
+    {
+      // character -> all bytes data
+      Data += ChartoHex(ReceiveData) << DataShift[(FlagCheck[START_DATA] - 1)];
+      FlagCheck[START_DATA] = FlagCheck[START_DATA] + 1;
+      FlagCheck[DATA_BYTECOUNT] = FlagCheck[DATA_BYTECOUNT] + 1;
+      if (FlagCheck[DATA_BYTECOUNT] >= (DataByteCount*2))
+      {
+        // enque
+        enqueue(Address + (FlagCheck[DATA_BYTECOUNT]-8)/2, Data);
+        
+        // Return flag
+        FlagCheck[DATA_BYTECOUNT] = 0;
+        FlagCheck[START_DATA] = 0;
+        
+        // Return Data
+        Data = 0;
+      }
+      if (FlagCheck[START_DATA] > 8)
+      {
+        // enque
+        enqueue(Address + (FlagCheck[DATA_BYTECOUNT]-8)/2, Data);
+        
+        // Return START_DATA flag to read more data
+        FlagCheck[START_DATA] = 1;
+        
+        // Return Data
+        Data = 0;
+      }
+    }
 }
 
 
@@ -126,8 +242,12 @@ void PORTC_PORTD_IRQHandler(void)
       uint32 i;
       for (i=0; i<256; i++)
       {
-        uint8 data = dequeue();
-        UART_SendChar(data);
+        FlashData a = dequeue();
+        uint32 b = a.address;
+        address[i] = b;
+        uint32 c = a.data;
+        data[i] = c;
+        UART_SendChar(c);
       }
     }
   }
@@ -158,31 +278,31 @@ void ReturnVTOR(void)
 
 
 
-void RED_LED_Config(void)
-{
-  // Enable clock for PORTE, GPIOE
-  SIM->SCGC5 |= SIM_SCGC5_PORTE(1);  
-  
-  // Config Port E
-  PORT_Init(PORTE, 29, &UserConfig_PortE29);
-  
-  // PinE.29 = Output
-  GPIO_Init(GPIOE, 29, GPIO_IO_OUTPUT);
-}
-
-
-
-void BLUE_LED_Config(void)
-{
-  // Enable clock for PORTD, GPIOD
-  SIM->SCGC5 |= SIM_SCGC5_PORTD(1);  
-  
-  // Config Port D
-  PORT_Init(PORTD, 5, &UserConfig_PortD5);
-  
-  // PinD.5 = Output
-  GPIO_Init(GPIOD, 5, GPIO_IO_OUTPUT);
-}
+//void RED_LED_Config(void)
+//{
+//  // Enable clock for PORTE, GPIOE
+//  SIM->SCGC5 |= SIM_SCGC5_PORTE(1);  
+//  
+//  // Config Port E
+//  PORT_Init(PORTE, 29, &UserConfig_PortE29);
+//  
+//  // PinE.29 = Output
+//  GPIO_Init(GPIOE, 29, GPIO_IO_OUTPUT);
+//}
+//
+//
+//
+//void BLUE_LED_Config(void)
+//{
+//  // Enable clock for PORTD, GPIOD
+//  SIM->SCGC5 |= SIM_SCGC5_PORTD(1);  
+//  
+//  // Config Port D
+//  PORT_Init(PORTD, 5, &UserConfig_PortD5);
+//  
+//  // PinD.5 = Output
+//  GPIO_Init(GPIOD, 5, GPIO_IO_OUTPUT);
+//}
 
 
 
@@ -247,6 +367,39 @@ void UART_User_Config()
   // NVIC Set Priority
   NVIC_SetPriority(UART0_IRQn, 0);
 }
+
+
+
+uint8 ChartoHex(char c)
+{
+  if ((48<=c)&&(c<=57))
+  {
+    return (c-48);
+  }
+  else if ((65<=c)&&(c<=70))
+  {
+    return (c-55);
+  }
+  else 
+  {
+    return 255u;
+  }
+}
+
+
+
+void FirmwaretoFlash(void)
+{
+  while (isQueueEmpty());
+  FlashData a = dequeue();
+  while (!Flash_IsReady());
+  Flash_WriteWord(a.address, a.data);
+  return;
+}
+
+
+
+
 
 
 

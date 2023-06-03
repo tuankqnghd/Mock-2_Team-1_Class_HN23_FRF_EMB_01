@@ -36,21 +36,21 @@ void ReturnVTOR(void);
 
 
 
-/*
-* @brief config for RED Led of MKL46Z4
-*
-*@return void
-*/
-void RED_LED_Config(void);
+///*
+//* @brief config for RED Led of MKL46Z4
+//*
+//*@return void
+//*/
+//void RED_LED_Config(void);
 
 
 
-/*
-* @brief config for BLUE Led of MKL46Z4
-*
-*@return void
-*/
-void BLUE_LED_Config(void);
+///*
+//* @brief config for BLUE Led of MKL46Z4
+//*
+//*@return void
+//*/
+//void BLUE_LED_Config(void);
 
 
 
@@ -87,6 +87,17 @@ void PIT_Config_5s();
 *@return void
 */
 void UART_User_Config();
+
+
+
+/*
+* @brief covert char to hex
+*
+*@return hex
+*/
+uint8 ChartoHex(char c);
+
+void FirmwaretoFlash(void);
 
 
 

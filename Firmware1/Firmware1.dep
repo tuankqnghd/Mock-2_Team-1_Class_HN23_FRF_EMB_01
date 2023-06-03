@@ -5,133 +5,64 @@
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$PROJ_DIR$\MKL46Z\system_MKL46Z4.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\source\Firmware1.o</file>
-            <file>$PROJ_DIR$\MKL46Z\system_MKL46Z4.c</file>
-            <file>$TOOLKIT_DIR$\inc\c\aarch32\cmsis_iar.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\source\PIT.o</file>
-            <file>$PROJ_DIR$\MKL46Z\fsl_device_registers.h</file>
-            <file>$TOOLKIT_DIR$\config\linker\NXP\MKL46Z256xxx4.icf</file>
-            <file>$TOOLKIT_DIR$\lib\dl6M_tln.a</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\source\Port.o</file>
-            <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\source\Middleware.o</file>
-            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-            <file>$PROJ_DIR$\Debug\Obj\source\GPIO.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-            <file>$PROJ_DIR$\CMSIS\Include\core_cmFunc.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\Firmware1.out</file>
             <file>$PROJ_DIR$\Debug\List\Firmware1.map</file>
             <file>$PROJ_DIR$\MKL46Z\MKL46Z4.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\startup\startup_MKL46Z4.o</file>
-            <file>$PROJ_DIR$\MKL46Z\MKL46Z4_features.h</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
             <file>$PROJ_DIR$\Debug\Obj\startup\system_MKL46Z4.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-            <file>$PROJ_DIR$\Debug\Exe\Firmware1.srec</file>
-            <file>$PROJ_DIR$\CMSIS\Include\core_cmInstr.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\aarch32\iccarm_builtin.h</file>
-            <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
-            <file>$PROJ_DIR$\Debug\Exe\Firmware1.out</file>
             <file>$PROJ_DIR$\CMSIS\Include\core_cm0plus.h</file>
-            <file>$PROJ_DIR$\Firmware1.c</file>
-            <file>$PROJ_DIR$\GPIO.h</file>
-            <file>$PROJ_DIR$\Middleware.c</file>
-            <file>$PROJ_DIR$\PIT.c</file>
-            <file>$PROJ_DIR$\GPIO.c</file>
-            <file>$PROJ_DIR$\Middleware.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup\startup_MKL46Z4.o</file>
+            <file>$PROJ_DIR$\Debug\Exe\Firmware1.srec</file>
+            <file>$TOOLKIT_DIR$\inc\c\aarch32\iccarm_builtin.h</file>
+            <file>$TOOLKIT_DIR$\config\linker\NXP\MKL46Z256xxx4.icf</file>
+            <file>$PROJ_DIR$\CMSIS\Include\core_cmFunc.h</file>
+            <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$PROJ_DIR$\MKL46Z\MKL46Z4_features.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\source\GPIO.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\source\Port.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\MKL46Z\fsl_device_registers.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\aarch32\cmsis_iar.h</file>
+            <file>$PROJ_DIR$\CMSIS\Include\core_cmInstr.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\source\PIT.o</file>
+            <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\source\Firmware1.o</file>
+            <file>$TOOLKIT_DIR$\lib\dl6M_tln.a</file>
             <file>$PROJ_DIR$\PIT.h</file>
+            <file>$PROJ_DIR$\GPIO.c</file>
+            <file>$PROJ_DIR$\Middleware.c</file>
             <file>$PROJ_DIR$\Port.c</file>
             <file>$PROJ_DIR$\Port.h</file>
+            <file>$PROJ_DIR$\GPIO.h</file>
             <file>$PROJ_DIR$\MKL46Z\startup_MKL46Z4.s</file>
+            <file>$PROJ_DIR$\MKL46Z\system_MKL46Z4.c</file>
+            <file>$PROJ_DIR$\MKL46Z\system_MKL46Z4.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\source\Middleware.o</file>
+            <file>$PROJ_DIR$\Firmware1.c</file>
+            <file>$PROJ_DIR$\Middleware.h</file>
+            <file>$PROJ_DIR$\PIT.c</file>
         </outputs>
-        <file>
-            <name>$PROJ_DIR$\MKL46Z\system_MKL46Z4.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 23</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 9 1 20 16 24 12 6 19 30 26 4 27 17 0 22</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>[ROOT_NODE]</name>
-            <outputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 29 18</file>
-                </tool>
-            </outputs>
-        </file>
         <file>
             <name>$PROJ_DIR$\Debug\Exe\Firmware1.out</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 18</file>
+                    <file> 1</file>
                 </tool>
                 <tool>
                     <name>OBJCOPY</name>
-                    <file> 25</file>
+                    <file> 7</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 7 2 15 13 5 10 21 23 14 28 11 8</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\Firmware1.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 2</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 19 30 9 1 20 16 24 12 26 4 27 17 0 36 39 32 37</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\Middleware.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 13</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 19 30 9 1 20 16 24 12 26 4 27 17 0 36 39 32 37</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\PIT.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 5</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 37 19 30 9 1 20 16 24 12 26 4 27 17 0</file>
+                    <file> 9 26 17 37 24 18 6 4 3 25 11 27</file>
                 </tool>
             </inputs>
         </file>
@@ -140,13 +71,28 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 15</file>
+                    <file> 17</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 19 30 9 1 20 16 24 12 26 4 27 17 0 32</file>
+                    <file> 2 5 16 15 20 19 12 14 23 22 8 10 36 33</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Middleware.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 37</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2 5 16 15 20 19 12 14 23 22 8 10 36 39 32 33 28</file>
                 </tool>
             </inputs>
         </file>
@@ -155,13 +101,13 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 10</file>
+                    <file> 18</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 19 30 9 1 20 16 24 12 26 4 27 17 0 39</file>
+                    <file> 2 5 16 15 20 19 12 14 23 22 8 10 36 32</file>
                 </tool>
             </inputs>
         </file>
@@ -170,7 +116,61 @@
             <outputs>
                 <tool>
                     <name>AARM</name>
-                    <file> 21</file>
+                    <file> 6</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\MKL46Z\system_MKL46Z4.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 4</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 16 15 20 19 12 14 21 2 5 23 22 8 10 36 13</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\Firmware1.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 26</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 2 5 16 15 20 19 12 14 23 22 8 10 36 39 32 33 28</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\PIT.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 24</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 28 2 5 16 15 20 19 12 14 23 22 8 10 36</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 0 1</file>
                 </tool>
             </outputs>
         </file>

@@ -92,6 +92,17 @@ void UART_SendChar(uint8 Data);
 
 
 /*
+* @brief send a uint32 data by UART
+*
+*@param Data is data need to send
+*
+*@return void
+*/
+void UART_SendUint32(uint32 Data);
+
+
+
+/*
 * @brief send string by UART
 *
 *@param String is adress of string need to send

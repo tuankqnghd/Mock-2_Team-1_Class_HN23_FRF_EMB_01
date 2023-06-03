@@ -28,6 +28,10 @@
 
 void Flash_WriteWord(uint32 address, uint32 data)
 {
+  if ( (0x00000400 <= address) && (0x0000040F >= address))
+  {
+    return;
+  }
   // Wait previous command complete
   while ((FTFA->FSTAT & FTFA_FSTAT_CCIF_MASK) == 0);
   
@@ -85,4 +89,11 @@ void Flash_EraseSector(uint32 address)
 uint32 Flash_Read(uint32 address)
 {
   return *(uint32 *)address;
+}
+
+
+
+uint8 Flash_IsReady()
+{
+  return ((FTFA->FSTAT & FTFA_FSTAT_CCIF_MASK) >> FTFA_FSTAT_CCIF_SHIFT);
 }

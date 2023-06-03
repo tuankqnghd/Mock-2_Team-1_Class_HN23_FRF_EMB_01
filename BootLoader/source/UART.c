@@ -106,6 +106,16 @@ void UART_SendChar(uint8 Data)
 
 
 
+void UART_SendUint32(uint32 Data)
+{
+  UART_SendChar((uint8)(Data >> 24));
+  UART_SendChar((uint8)(Data >> 16));
+  UART_SendChar((uint8)(Data >> 8));
+  UART_SendChar((uint8)(Data >> 0));
+}
+
+
+
 void UART_SendString(char * String, uint8 len)
 {
   uint8 i;
