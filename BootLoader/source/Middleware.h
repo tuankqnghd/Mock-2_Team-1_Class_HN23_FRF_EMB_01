@@ -55,11 +55,11 @@ void ReturnVTOR(void);
 
 
 /*
-* @brief config for button 1 of MKL46Z4
+* @brief config for button 1 & 2 of MKL46Z4
 *
 *@return void
 */
-void BTN1_Config(void);
+void BTN_Config(void);
 
 
 
@@ -69,6 +69,15 @@ void BTN1_Config(void);
 *@return input logic of button 1: 0 is logic 0, 1 is logic 1
 */
 uint8 READ_BTN1();
+
+
+
+/*
+* @brief read logic input of button 2
+*
+*@return input logic of button 2: 0 is logic 0, 1 is logic 1
+*/
+uint8 READ_BTN2();
 
 
 

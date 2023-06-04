@@ -32,7 +32,7 @@ KL46
 
 void main()
 {
-  BTN1_Config();
+  BTN_Config();
   
   // Config PIT interupt after 5s
   PIT_Config_5s();
@@ -46,36 +46,11 @@ void main()
   // Set new Vector Table
   Copy_Vector_Table_SetVTOR();
   
-//  Flash_WriteWord(0x00001000u, 0xABCDEF12u);
-//  
-//  Flash_WriteWord(0x00001004u, 0xABCDEF12u);
-//  
-//  Flash_WriteWord(0x00001400u, 0xABCDEF12u);
- 
-  Flash_EraseSector(0x00001400u);
-  
-  Flash_EraseSector(0x00001800u);
-  
-  Flash_EraseSector(0x00001C00u);
-  
-  Flash_EraseSector(0x00002000u);
-  
-  Flash_EraseSector(0x00002400u);
-    
-  Flash_EraseSector(0x00002800u);
-  
-  Flash_EraseSector(0x00002C00u);
-  
-  Flash_EraseSector(0x00003000u);
-  
-  Flash_EraseSector(0x00003400u);
-  
-  Flash_EraseSector(0x00003800u);
-  
-  Flash_EraseSector(0x00003C00u);
-  
   while(1)
   {
-    FirmwaretoFlash();
+    if (!isQueueEmpty())
+    {
+      FirmwaretoFlash();
+    }
   }
 }

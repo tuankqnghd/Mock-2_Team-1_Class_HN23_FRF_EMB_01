@@ -40,6 +40,13 @@ const Port_ConfigType  UserConfig_PortC3 = {
   .IRQ = PORT_IRQ_EDGE_FALLING,
 };
 
+const Port_ConfigType  UserConfig_PortC12 = {
+  .Mux = PORT_MUX_GPIO, 
+  .pull = PULL_UP,
+  .IRQ = PORT_IRQ_EDGE_FALLING,
+};
+
+
 //const Port_ConfigType  UserConfig_PortD5 = {
 //  .Mux = PORT_MUX_GPIO, 
 //};
@@ -102,7 +109,7 @@ volatile uint32 ByteCount = 0;
 
 volatile uint32 DataByteCount = 0;
 
-volatile uint8 FlagCheck[] = {0, 0, 0, 0, 0, 0, 0, 0};
+volatile uint8 FlagCheck[] = {0, 0, 0, 0, 0, 0, 0};
 
 //volatile uint32 data[256];
 //
@@ -110,19 +117,17 @@ volatile uint8 FlagCheck[] = {0, 0, 0, 0, 0, 0, 0, 0};
 
 #define START_SREC                  (0u)
 
-#define STOP_SREC                   (1u)
+#define START_STYPE                 (1u)
 
-#define START_STYPE                 (2u)
+#define START_BYTECOUNT             (2u)
 
-#define START_BYTECOUNT             (3u)
+#define ADDRESS_BYTECOUNT           (3u)
 
-#define ADDRESS_BYTECOUNT           (4u)
+#define START_ADDRESS               (4u)
 
-#define START_ADDRESS               (5u)
+#define DATA_BYTECOUNT              (5u)
 
-#define DATA_BYTECOUNT              (6u)
-
-#define START_DATA                  (7u)
+#define START_DATA                  (6u)
 
 uint8 DataShift[] = {4, 0, 12, 8, 20, 16, 28, 24};
 
@@ -142,9 +147,9 @@ void myUART_Handler()
     {
       FlagCheck[START_SREC] = 1;
     }
-    if ((ReceiveData == '7') || (ReceiveData == '8') || (ReceiveData == '9'))    // S7/S8/S9
+    else if ((ReceiveData == '7') || (ReceiveData == '8') || (ReceiveData == '9'))    // S7/S8/S9
     {
-      FlagCheck[STOP_SREC] = 1;
+      FlagCheck[START_SREC] = 0;
     }
     else if (ReceiveData == '1')   // S1
     {
@@ -228,31 +233,42 @@ void myUART_Handler()
 
 void PORTC_PORTD_IRQHandler(void)
 {
-//  // Check if interupt from Port C.3 
-//  if ((PORTC->ISFR & (1 << 3)) != 0)
-//  {
-//    // Clear ISF flag
-//    PORT_EXTI_ClearFlag (PORTC, 3);
-//  
-//    // Delay for debouncing
-//    uint32 count = 4000;
-//    while(--count);
-//
-//    // Check button state
-//    if (READ_BTN1() == 0) 
-//    {
-//      uint32 i;
-//      for (i=0; i<256; i++)
-//      {
-//        FlashData a = dequeue();
-//        uint32 b = a.address;
-//        address[i] = b;
-//        uint32 c = a.data;
-//        data[i] = c;
-//        UART_SendChar(c);
-//      }
-//    }
-//  }
+  // Check if interupt from Port C.3 
+  if ((PORTC->ISFR & (1 << 3)) != 0)
+  {
+    // Clear ISF flag
+    PORT_EXTI_ClearFlag (PORTC, 3);
+  
+    // Delay for debouncing
+    uint32 count = 4000;
+    while(--count);
+
+    // Check button state
+    if (READ_BTN1() == 0) 
+    {
+    }
+  }
+  
+  // Check if interupt from Port C.12 
+  if ((PORTC->ISFR & (1 << 12)) != 0)
+  {
+    // Clear ISF flag
+    PORT_EXTI_ClearFlag (PORTC, 12);
+  
+    // Delay for debouncing
+    uint32 count = 4000;
+    while(--count);
+    uint8 i = 0;
+    
+    // Check button state
+    if (READ_BTN2() == 0) 
+    {
+      for (i = 0; i < 11; i++)
+      {
+        Flash_EraseSector(0x00001400u + i*0x400);
+      }
+    }
+  }
 }
 
 
@@ -308,16 +324,18 @@ void ReturnVTOR(void)
 
 
 
-void BTN1_Config(void)
+void BTN_Config(void)
 {
   // Enable Clock for Port C
   SIM->SCGC5 |= SIM_SCGC5_PORTC(1);
   
   // Config Port C
   PORT_Init(PORTC, 3, &UserConfig_PortC3);
+  PORT_Init(PORTC, 12, &UserConfig_PortC3);
   
   // PinC.3 = Input
   GPIO_Init(GPIOC, 3, GPIO_IO_INPUT);
+  GPIO_Init(GPIOC, 12, GPIO_IO_INPUT);
   
   // Setup interupt for Port C & Port D, priority lever = 1
   PORT_EXTI_Config(PORTC_PORTD_IRQn, 1);
@@ -328,6 +346,13 @@ void BTN1_Config(void)
 uint8 READ_BTN1()
 {
   return ((FGPIOC->PDIR & (1 << 3)) >> 3);
+}
+
+
+
+uint8 READ_BTN2()
+{
+  return ((FGPIOC->PDIR & (1 << 12)) >> 12);
 }
 
 
@@ -392,18 +417,10 @@ uint8 ChartoHex(char c)
 
 void FirmwaretoFlash(void)
 {
-  if (FlagCheck[START_SREC] == 1)
-  {
     while (isQueueEmpty());
     FlashData a = dequeue();
     while (!Flash_IsReady());
     Flash_WriteWord(a.address, a.data);
-    if (FlagCheck[STOP_SREC] == 1 && (isQueueEmpty() == 1))
-    {
-      FlagCheck[STOP_SREC] = 0;
-      FlagCheck[START_SREC] = 0;
-    }
-  }
 }
 
 
