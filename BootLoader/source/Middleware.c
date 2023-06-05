@@ -23,9 +23,23 @@
 #define DATA_BYTECOUNT              (5u)
 #define START_DATA                  (6u)
 
-/*********************************************************************
-* Variable
-*********************************************************************/
+#define FIRNWARE1_MODE              (1u)
+#define FIRNWARE2_MODE              (2u)
+#define BOOTLOADER_MODE             (3u)
+typedef void (*Reset_Handeler_Ptr)(void);
+
+Reset_Handeler_Ptr func_ptr = 0;
+
+uint32 FIRMWARE1_START_ADD   =  0x1400;
+uint32 FIRMWARE2_START_ADD  =  0x2800;
+
+volatile uint8 ModeSelection = 1u;
+
+
+
+volatile uint8 IsButton1Clicked = 0u;
+
+volatile uint8 IsButton2Clicked = 0u;
 
 volatile uint32 Address = 0;
 
@@ -37,11 +51,13 @@ volatile uint32 DataByteCount = 0;
 
 volatile uint8 FlagCheck[] = {0, 0, 0, 0, 0, 0, 0};
 
-static void myTimer_Handler(uint8 Channel);
-
-static void myUART_Handler();
-
 uint8 DataShift[] = {4, 0, 12, 8, 20, 16, 28, 24};
+
+/*********************************************************************
+* Variable
+*********************************************************************/
+
+static void myUART_Handler(void);
 
 const Port_ConfigType  UserConfig_PortA1 = {
   .Mux = PORT_MUX_ALT2, 
@@ -74,14 +90,6 @@ const Port_ConfigType  UserConfig_PortC12 = {
 //  .Mux = PORT_MUX_GPIO, 
 //};
 
-PIT_ConfigType UserConfig_PIT = {
-  .Channel      = PIT_CHANNEL_0,
-  .FreezeMode   = PIT_MODE_RUN,
-  .IntEnable    = PIT_INTERRUPT_ENABLE,
-  .PeriodTime   = 5000u,  // 1000ms
-  .Callback     = &myTimer_Handler,
-};
-
 UART_ConfigType Userconfig_UART = {
   .Mode         = UART_MODE_8BIT,
   .Parity       = UART_PARITY_DISABLE,
@@ -101,26 +109,6 @@ UART_ConfigType Userconfig_UART = {
 /*********************************************************************
 * Global function 
 *********************************************************************/
-
-
-
-static void myTimer_Handler(uint8 Channel)
-{
-//  if (Channel == 0)
-//  {
-//    // Toggle Green LED
-//    Toggle_GREEN_LED();
-//    
-//    // Trigger for ADC conversion
-//    ADC_Trigger_Conversion(ADC_CHANNEL_A, 26);
-//  }
-//  if (Channel == 1)
-//  {
-//    
-//  }
-}
-
-
 
 void myUART_Handler()
 {
@@ -193,7 +181,7 @@ void myUART_Handler()
       Data += ChartoHex(ReceiveData) << DataShift[(FlagCheck[START_DATA] - 1)];
       FlagCheck[START_DATA] = FlagCheck[START_DATA] + 1;
       FlagCheck[DATA_BYTECOUNT] = FlagCheck[DATA_BYTECOUNT] + 1;
-      if (FlagCheck[DATA_BYTECOUNT] >= (DataByteCount*2))
+      if (FlagCheck[DATA_BYTECOUNT] >= (DataByteCount*2))       //Check byte count
       {
         // enque
         enqueue(Address + (FlagCheck[DATA_BYTECOUNT]-8)/2, Data);
@@ -236,6 +224,7 @@ void PORTC_PORTD_IRQHandler(void)
     // Check button state
     if (READ_BTN1() == 0) 
     {
+      ModeSelection = FIRNWARE2_MODE;
     }
   }
   
@@ -253,6 +242,8 @@ void PORTC_PORTD_IRQHandler(void)
     // Check button state
     if (READ_BTN2() == 0) 
     {
+      ModeSelection = BOOTLOADER_MODE;
+      
       for (i = 0; i < 11; i++)
       {
         Flash_EraseSector(0x00001400u + i*0x400);
@@ -347,11 +338,39 @@ uint8 READ_BTN2()
 
 
 
-void PIT_Config_5s()
+void Systick_Init(void)
 {
-  PIT_Init(&UserConfig_PIT);
-  NVIC_EnableIRQ(PIT_IRQn);
-  NVIC_SetPriority(PIT_IRQn, 1);
+ // Select Core Clock
+  SysTick->CTRL |= (1<<2);
+
+}  
+
+void Systick_Delay_ms(uint32 timedelay)
+{
+  SysTick->VAL = 0u; // Clear Current Value
+ 
+  SystemCoreClockUpdate();
+  SysTick->LOAD = (timedelay * (SystemCoreClock/1000) );
+      
+  // Start Counter => Set bit[0] ENABLE =1
+  SysTick->CTRL |= (1<<0);
+  
+  //Wait CountFlag =1 
+  while(0 == (SysTick->CTRL & SysTick_CTRL_COUNTFLAG_Msk) ); 
+  
+  // Stop systic
+  SysTick->CTRL &= ~(1<<0);
+}
+
+
+
+void Systick_Delay_5s()
+{
+  uint8 count = 0;
+  for(count = 0; count<10; count++)
+  {
+    Systick_Delay_ms(500);
+  }
 }
 
 
@@ -407,13 +426,71 @@ uint8 ChartoHex(char c)
 
 void FirmwaretoFlash(void)
 {
-    while (isQueueEmpty());
-    FlashData a = dequeue();
-    while (!Flash_IsReady());
-    Flash_WriteWord(a.address, a.data);
+  while (isQueueEmpty());
+  FlashData a = dequeue();
+  while (!Flash_IsReady());
+  Flash_WriteWord(a.address, a.data);
 }
 
+void Dis_Intterupt(void)
+{
+  __disable_irq();
+}
 
+void Dis_SystickTimer(void)
+{
+  SysTick->CTRL = 0;
+  SysTick->LOAD = 0;
+}
+
+void Dis_Fault_Hander(void)
+{
+  NVIC->ICPR[0] = 0xFFFFFFFF;
+}
+
+void Jump_To_App(uint32 Add)      
+{
+  // Turn off  all interrupts and Systick Timers
+  Dis_Intterupt();
+  Dis_SystickTimer();
+
+  // Disable Fault Hander
+  Dis_Fault_Hander();  // khong chac
+
+  // Set main stack pointer
+  __DMB();
+  __set_MSP(*(volatile uint32*)Add);
+  __DSB();
+
+  // Get addres to jump to application
+  SCB->VTOR = Add;
+  
+  // Set program is new reset handler
+  uint32_t Jumpaddress = *((uint32_t *)(Add + 4));
+  /*void (*Reset_Handler)(void) = ( void(*)(void) )Jumpaddress; */
+
+  /* Funtion pointer  = Jumpaddress 
+    - Go to new Reset Handler by funtion pointer 
+  */
+  func_ptr = (void(*)(void))Jumpaddress;
+  func_ptr();
+}
+
+void Mode_Selection (void)
+{
+  if(ModeSelection == FIRNWARE1_MODE)
+  {
+    Jump_To_App(FIRMWARE1_START_ADD);
+  }
+ else if(ModeSelection == FIRNWARE2_MODE)
+ {
+   Jump_To_App(FIRMWARE2_START_ADD);
+ }
+ else
+ {
+   return;
+ }
+}
 
 
 

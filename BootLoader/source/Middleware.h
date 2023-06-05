@@ -18,6 +18,7 @@
  * API
 ********************************************************************/
 
+   
 /*
 * @brief copy vector table to RAM and set VTOR to new vector table
 *
@@ -82,11 +83,31 @@ uint8 READ_BTN2();
 
 
 /*
-* @brief config for PIT 
+* @brief config for Systick
 *
 *@return void
 */
-void PIT_Config_5s();
+void Systick_Init(void);
+
+
+
+/*
+* @brief delay ms by systick
+*
+*@param timedelay is time to delay (ms) 
+*
+*@return void
+*/
+void Systick_Delay_ms(uint32 timedelay);
+
+
+
+/*
+* @brief delay 5s by systick timer 
+*
+*@return void
+*/
+void Systick_Delay_5s(void);
 
 
 
@@ -102,11 +123,67 @@ void UART_User_Config();
 /*
 * @brief covert char to hex
 *
+*@param c is char need to convert to hex 
+*
 *@return hex
 */
 uint8 ChartoHex(char c);
 
+
+
+/*
+* @brief load firmware to flash
+*
+*@return void
+*/
 void FirmwaretoFlash(void);
+
+
+
+/*
+* @brief disable all interupt
+*
+*@return void
+*/
+void Dis_Intterupt(void);
+                         
+                         
+                         
+/*
+* @brief turn off Systick Timer
+*
+*@return void
+*/
+void Dis_SystickTimer(void);
+
+
+
+/*
+* @brief Clear  pending interupt request
+*
+*@return void
+*/
+void Dis_Fault_Hander(void);
+
+
+
+/*
+* @brief Jump to new firmware
+*
+*@param Add is address of firmware reset handler
+*
+*@return void
+*/
+void Jump_To_App(uint32 Add);
+
+
+
+/*
+* @brief select firmware to jump
+*
+*@return void
+*/
+void Mode_Selection (void);
 
 
 
