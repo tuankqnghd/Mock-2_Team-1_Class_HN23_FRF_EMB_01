@@ -23,6 +23,7 @@
 #define START_ADDRESS               (4u)
 #define DATA_BYTECOUNT              (5u)
 #define START_DATA                  (6u)
+uint8 DataShift[] = {4, 0, 12, 8, 20, 16, 28, 24};
 
 /*********************************************************************
 * Variable
@@ -37,8 +38,6 @@ volatile uint32 ByteCount = 0;
 volatile uint32 DataByteCount = 0;
 
 volatile uint8 FlagCheck[] = {0, 0, 0, 0, 0, 0, 0};
-
-uint8 DataShift[] = {4, 0, 12, 8, 20, 16, 28, 24};
 
 static void myTimer_Handler(uint8 Channel);
 
@@ -65,6 +64,7 @@ const Port_ConfigType  UserConfig_PortC12 = {
   .pull = PULL_UP,
   .IRQ = PORT_IRQ_EDGE_FALLING,
 };
+
 
 //const Port_ConfigType  UserConfig_PortD5 = {
 //  .Mux = PORT_MUX_GPIO, 
@@ -122,12 +122,11 @@ static void myTimer_Handler(uint8 Channel)
 
 
 
-static void myUART_Handler()
+void myUART_Handler()
 {
   // Read data
   uint8 ReceiveData = UART0->D;
   
-  // Enqueue
   if (ReceiveData == 'S')
   {
     FlagCheck[START_STYPE] = 1;

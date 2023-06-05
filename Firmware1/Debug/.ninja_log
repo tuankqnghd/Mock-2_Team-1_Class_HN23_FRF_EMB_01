@@ -91,3 +91,12 @@
 470	605	7074866208676352	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/Obj/source/Port.o	5dfb97e565972e38
 608	661	7074866209244830	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/Exe/Firmware1.out	738445db09999e48
 665	675	7074866209435707	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/Exe/Firmware1.srec	f6eca219f15dc0c
+3	49	7076420498572804	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/Obj/startup/startup_MKL46Z4.o	7101d8c5dc6030e7
+7	207	7076420500078782	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/Obj/source/Firmware1.o	a6a5a917545dd5c6
+22	215	7076420500118685	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/Obj/source/GPIO.o	bd02db67380d1d28
+13	255	7076420500527590	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/Obj/source/Middleware.o	2bb858a68624e4cc
+53	265	7076420500607362	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/Obj/startup/system_MKL46Z4.o	c8691f4a2d69e6b1
+209	341	7076420501451976	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/Obj/source/PIT.o	19057982e0f5c66c
+218	354	7076420501571665	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/Obj/source/Port.o	5dfb97e565972e38
+356	418	7076420502210240	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/Exe/Firmware1.out	738445db09999e48
+420	447	7076420502573156	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/Exe/Firmware1.srec	f6eca219f15dc0c
