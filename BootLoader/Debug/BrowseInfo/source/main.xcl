@@ -1,13 +1,13 @@
-"D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\BootLoader\source\BootLoader.c"
+"D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\BootLoader\source\main.c"
 -std=c11
 -ferror-limit=0
 -fbracket-depth=512
 -funsigned-char
 -MD
 -MF
-D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\BootLoader\Debug\BrowseInfo\source\BootLoader.pbi.dep
+D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\BootLoader\Debug\BrowseInfo\source\main.pbi.dep
 -o
-D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\BootLoader\Debug\BrowseInfo\source\BootLoader.pbi
+D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\BootLoader\Debug\BrowseInfo\source\main.pbi
 -I
 D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\BootLoader\source
 -I

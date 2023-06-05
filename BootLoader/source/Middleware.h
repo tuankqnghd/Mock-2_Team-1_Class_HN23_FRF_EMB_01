@@ -108,6 +108,6 @@ uint8 ChartoHex(char c);
 
 void FirmwaretoFlash(void);
 
-
+void myUART_Handler();
 
 #endif /* __MIDDLEWARE_H__ */

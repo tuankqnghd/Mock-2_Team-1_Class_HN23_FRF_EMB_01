@@ -2854,9 +2854,6 @@
     <group>
         <name>source</name>
         <file>
-            <name>$PROJ_DIR$\source\BootLoader.c</name>
-        </file>
-        <file>
             <name>$PROJ_DIR$\source\Flash.c</name>
         </file>
         <file>
@@ -2867,6 +2864,9 @@
         </file>
         <file>
             <name>$PROJ_DIR$\source\GPIO.h</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\source\main.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\source\Middleware.c</name>
