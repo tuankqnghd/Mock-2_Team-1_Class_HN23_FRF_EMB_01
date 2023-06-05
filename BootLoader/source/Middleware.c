@@ -16,28 +16,9 @@
 #define VECTOR_TABLE_RAM_ADDRESS    ((uint32*)0x20004000u)
 #define VECTOR_TABLE_SIZE           (256u)
 
-#define START_SREC                  (0u)
-#define START_STYPE                 (1u)
-#define START_BYTECOUNT             (2u)
-#define ADDRESS_BYTECOUNT           (3u)
-#define START_ADDRESS               (4u)
-#define DATA_BYTECOUNT              (5u)
-#define START_DATA                  (6u)
-uint8 DataShift[] = {4, 0, 12, 8, 20, 16, 28, 24};
-
 /*********************************************************************
 * Variable
 *********************************************************************/
-
-volatile uint32 Address = 0;
-
-volatile uint32 Data = 0; 
-
-volatile uint32 ByteCount = 0; 
-
-volatile uint32 DataByteCount = 0;
-
-volatile uint8 FlagCheck[] = {0, 0, 0, 0, 0, 0, 0};
 
 static void myTimer_Handler(uint8 Channel);
 
@@ -120,6 +101,35 @@ static void myTimer_Handler(uint8 Channel)
 //  }
 }
 
+volatile uint32 Address = 0;
+
+volatile uint32 Data = 0; 
+
+volatile uint32 ByteCount = 0; 
+
+volatile uint32 DataByteCount = 0;
+
+volatile uint8 FlagCheck[] = {0, 0, 0, 0, 0, 0, 0};
+
+//volatile uint32 data[256];
+//
+//volatile uint32 address[256];
+
+#define START_SREC                  (0u)
+
+#define START_STYPE                 (1u)
+
+#define START_BYTECOUNT             (2u)
+
+#define ADDRESS_BYTECOUNT           (3u)
+
+#define START_ADDRESS               (4u)
+
+#define DATA_BYTECOUNT              (5u)
+
+#define START_DATA                  (6u)
+
+uint8 DataShift[] = {4, 0, 12, 8, 20, 16, 28, 24};
 
 
 void myUART_Handler()
