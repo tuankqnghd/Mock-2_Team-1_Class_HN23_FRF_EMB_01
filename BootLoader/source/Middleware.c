@@ -426,16 +426,18 @@ uint8 ChartoHex(char c)
 
 void FirmwaretoFlash(void)
 {
-  while (isQueueEmpty());
   FlashData a = dequeue();
-  while (!Flash_IsReady());
   Flash_WriteWord(a.address, a.data);
 }
+
+
 
 void Dis_Intterupt(void)
 {
   __disable_irq();
 }
+
+
 
 void Dis_SystickTimer(void)
 {
@@ -443,10 +445,14 @@ void Dis_SystickTimer(void)
   SysTick->LOAD = 0;
 }
 
+
+
 void Dis_Fault_Hander(void)
 {
   NVIC->ICPR[0] = 0xFFFFFFFF;
 }
+
+
 
 void Jump_To_App(uint32 Add)      
 {
@@ -475,6 +481,8 @@ void Jump_To_App(uint32 Add)
   func_ptr = (void(*)(void))Jumpaddress;
   func_ptr();
 }
+
+
 
 void Mode_Selection (void)
 {
