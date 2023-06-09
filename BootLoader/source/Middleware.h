@@ -18,7 +18,16 @@
  * API
 ********************************************************************/
 
+
+/*
+* @brief erase flash memory for load firmware to flash
+*
+*@return void
+*/
+void Erase_Flash_Memory(void);
    
+
+
 /*
 * @brief copy vector table to RAM and set VTOR to new vector table
 *
@@ -60,7 +69,7 @@ void ReturnVTOR(void);
 *
 *@return void
 */
-void BTN_Config(void);
+void BTN_Init(void);
 
 
 
@@ -116,7 +125,7 @@ void Systick_Delay_5s(void);
 *
 *@return void
 */
-void UART_User_Config();
+void UART_User_Init();
 
 
 

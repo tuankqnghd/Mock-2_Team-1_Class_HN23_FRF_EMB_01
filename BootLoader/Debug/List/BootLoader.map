@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V9.32.2.340/W64 for ARM                  09/Jun/2023  21:02:11
+# IAR ELF Linker V9.32.2.340/W64 for ARM                  10/Jun/2023  06:40:18
 # Copyright 2007-2023 IAR Systems AB.
 #
 #    Output file  =
@@ -86,49 +86,51 @@ No sections matched the following patterns:
   FlashConfig        ro code        0x400   0x10  startup_MKL46Z4.o [2]
                                   - 0x410   0x10
 
-"P1", part 2 of 2:                         0xd48
-  .text              ro code        0x410  0x558  Middleware.o [1]
-  .text              ro code        0x968   0xbc  queue.o [1]
-  .text              ro code        0xa24  0x1d2  Port.o [1]
-  .text              ro code        0xbf8   0xb0  Flash.o [1]
-  .text              ro code        0xca8   0x38  GPIO.o [1]
-  .text              ro code        0xce0  0x184  system_MKL46Z4.o [2]
-  .text              ro code        0xe64   0xf8  UART.o [1]
-  .text              ro code        0xf5c    0x2  IntDivZer.o [4]
-  .text              ro code        0xf5e    0x2  startup_MKL46Z4.o [2]
-  .text              ro code        0xf60   0x46  BootLoader.o [1]
-  .text              ro code        0xfa6   0x3c  zero_init3.o [4]
-  .text              ro code        0xfe2   0x30  copy_init3.o [4]
-  .text              ro code       0x1012    0x2  startup_MKL46Z4.o [2]
-  .text              ro code       0x1014   0x28  data_init.o [4]
-  .text              ro code       0x103c   0x24  startup_MKL46Z4.o [2]
-  .iar.init_table    const         0x1060   0x24  - Linker created -
-  .text              ro code       0x1084   0x1e  cmain.o [4]
-  .text              ro code       0x10a2    0x4  low_level_init.o [3]
-  .text              ro code       0x10a6    0x8  exit.o [3]
-  .text              ro code       0x10ae    0x2  startup_MKL46Z4.o [2]
-  .text              ro code       0x10b0    0xa  cexit.o [4]
-  .text              ro code       0x10ba    0x2  startup_MKL46Z4.o [2]
-  .text              ro code       0x10bc   0x14  exit.o [5]
-  .text              ro code       0x10d0   0x1c  cstartup_M.o [4]
-  .text              ro code       0x10ec    0x8  startup_MKL46Z4.o [2]
-  .text              ro code       0x10f4    0x8  startup_MKL46Z4.o [2]
-  .text              ro code       0x10fc    0x8  startup_MKL46Z4.o [2]
-  .text              ro code       0x1104    0x8  startup_MKL46Z4.o [2]
-  .text              ro code       0x110c    0x8  startup_MKL46Z4.o [2]
-  .text              ro code       0x1114    0x8  startup_MKL46Z4.o [2]
-  .text              ro code       0x111c    0x8  startup_MKL46Z4.o [2]
-  .text              ro code       0x1124    0x8  startup_MKL46Z4.o [2]
-  .text              ro code       0x112c    0x8  startup_MKL46Z4.o [2]
-  .text              ro code       0x1134    0x8  startup_MKL46Z4.o [2]
-  .text              ro code       0x113c    0x8  startup_MKL46Z4.o [2]
-  .text              ro code       0x1144    0x8  startup_MKL46Z4.o [2]
-  .rodata            const         0x114c    0x4  Middleware.o [1]
-  .rodata            const         0x1150    0x4  Middleware.o [1]
-  .rodata            const         0x1154    0x4  Middleware.o [1]
-  .rodata            const         0x1158    0x0  zero_init3.o [4]
-  .rodata            const         0x1158    0x0  copy_init3.o [4]
-                                 - 0x1158  0xd48
+"P1", part 2 of 2:                         0xe28
+  .text              ro code        0x410  0x5fc  Middleware.o [1]
+  .text              ro code        0xa0c   0xbc  queue.o [1]
+  .text              ro code        0xac8  0x1d2  Port.o [1]
+  .text              ro code        0xc9c   0xb0  Flash.o [1]
+  .text              ro code        0xd4c   0x38  GPIO.o [1]
+  .text              ro code        0xd84  0x184  system_MKL46Z4.o [2]
+  .text              ro code        0xf08   0xf8  UART.o [1]
+  .text              ro code       0x1000   0x32  ABImemset.o [4]
+  .text              ro code       0x1032    0x2  startup_MKL46Z4.o [2]
+  .text              ro code       0x1034    0x2  IntDivZer.o [4]
+  .text              ro code       0x1036    0x2  startup_MKL46Z4.o [2]
+  .text              ro code       0x1038   0x4a  BootLoader.o [1]
+  .text              ro code       0x1082   0x3c  zero_init3.o [4]
+  .text              ro code       0x10be   0x30  copy_init3.o [4]
+  .text              ro code       0x10ee    0x2  startup_MKL46Z4.o [2]
+  .text              ro code       0x10f0   0x28  data_init.o [4]
+  .text              ro code       0x1118   0x24  startup_MKL46Z4.o [2]
+  .iar.init_table    const         0x113c   0x24  - Linker created -
+  .text              ro code       0x1160   0x1e  cmain.o [4]
+  .text              ro code       0x117e    0x4  low_level_init.o [3]
+  .text              ro code       0x1182    0x8  exit.o [3]
+  .text              ro code       0x118a    0x2  startup_MKL46Z4.o [2]
+  .text              ro code       0x118c    0xa  cexit.o [4]
+  .text              ro code       0x1198   0x14  exit.o [5]
+  .text              ro code       0x11ac   0x1c  cstartup_M.o [4]
+  .text              ro code       0x11c8    0x8  startup_MKL46Z4.o [2]
+  .text              ro code       0x11d0    0x8  startup_MKL46Z4.o [2]
+  .text              ro code       0x11d8    0x8  startup_MKL46Z4.o [2]
+  .text              ro code       0x11e0    0x8  startup_MKL46Z4.o [2]
+  .text              ro code       0x11e8    0x8  startup_MKL46Z4.o [2]
+  .text              ro code       0x11f0    0x8  startup_MKL46Z4.o [2]
+  .text              ro code       0x11f8    0x8  startup_MKL46Z4.o [2]
+  .text              ro code       0x1200    0x8  startup_MKL46Z4.o [2]
+  .text              ro code       0x1208    0x8  startup_MKL46Z4.o [2]
+  .text              ro code       0x1210    0x8  startup_MKL46Z4.o [2]
+  .text              ro code       0x1218    0x8  startup_MKL46Z4.o [2]
+  .text              ro code       0x1220    0x8  startup_MKL46Z4.o [2]
+  .rodata            const         0x1228    0x4  Middleware.o [1]
+  .rodata            const         0x122c    0x4  Middleware.o [1]
+  .rodata            const         0x1230    0x4  Middleware.o [1]
+  .rodata            const         0x1234    0x4  Middleware.o [1]
+  .rodata            const         0x1238    0x0  zero_init3.o [4]
+  .rodata            const         0x1238    0x0  copy_init3.o [4]
+                                 - 0x1238  0xe28
 
 "P3", part 1 of 3:                          0x28
   P3 s0                       0x1fff'e000   0x28  <Init block>
@@ -162,7 +164,7 @@ Unused ranges:
          From           To      Size
          ----           --      ----
         0x1cc        0x3ff     0x234
-       0x1158     0x3'ffff  0x3'eea8
+       0x1238     0x3'ffff  0x3'edc8
   0x1fff'e890  0x1fff'ffff    0x1770
   0x2000'0000  0x2000'5fff    0x6000
 
@@ -196,15 +198,15 @@ command line/config:
     Total:
 
 D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\BootLoader\Debug\Obj\source: [1]
-    BootLoader.o            70
+    BootLoader.o            74
     Flash.o                176
     GPIO.o                  56
-    Middleware.o         1'368       45       62
+    Middleware.o         1'532       49       62
     Port.o                 466
     UART.o                 248                 4
     queue.o                188                68
     --------------------------------------------
-    Total:               2'572       45      134
+    Total:               2'740       49      134
 
 D:\Study\Github\Mock-2_Team-1_Class_HN23_FRF_EMB_01\Mock-2_Team-1_Class_HN23_FRF_EMB_01\BootLoader\Debug\Obj\startup: [2]
     startup_MKL46Z4.o      350
@@ -219,6 +221,7 @@ dl6M_tln.a: [3]
     Total:                  12
 
 rt6M_tl.a: [4]
+    ABImemset.o             50
     I32DivModFast.o        224
     IntDivZer.o              2
     cexit.o                 10
@@ -228,17 +231,17 @@ rt6M_tl.a: [4]
     data_init.o             40
     zero_init3.o            60
     --------------------------------------------
-    Total:                 442
+    Total:                 492
 
 shb_l.a: [5]
     exit.o                  20
     --------------------------------------------
     Total:                  20
 
-    Gaps                     2
+    Gaps                     4
     Linker created                   41    2'048
 ------------------------------------------------
-    Grand Total:         3'786       90    2'186
+    Grand Total:         4'006       94    2'186
 
 
 *******************************************************************************
@@ -247,137 +250,142 @@ shb_l.a: [5]
 
 Entry                       Address   Size  Type      Object
 -----                       -------   ----  ----      ------
-.iar.init_table$$Base        0x1060          --   Gb  - Linker created -
-.iar.init_table$$Limit       0x1084          --   Gb  - Linker created -
-?main                        0x1085         Code  Gb  cmain.o [4]
-ADC0_IRQHandler              0x1145         Code  Wk  startup_MKL46Z4.o [2]
+.iar.init_table$$Base        0x113c          --   Gb  - Linker created -
+.iar.init_table$$Limit       0x1160          --   Gb  - Linker created -
+?main                        0x1161         Code  Gb  cmain.o [4]
+ADC0_IRQHandler              0x1221         Code  Wk  startup_MKL46Z4.o [2]
 Address                 0x1fff'e078    0x4  Data  Gb  Middleware.o [1]
-BTN_Config                    0x6dd   0x46  Code  Gb  Middleware.o [1]
+BTN_Init                      0x6dd   0x46  Code  Gb  Middleware.o [1]
 ByteCount               0x1fff'e080    0x4  Data  Gb  Middleware.o [1]
-CMP0_IRQHandler              0x1145         Code  Wk  startup_MKL46Z4.o [2]
+CMP0_IRQHandler              0x1221         Code  Wk  startup_MKL46Z4.o [2]
 CSTACK$$Base            0x1fff'e090          --   Gb  - Linker created -
 CSTACK$$Limit           0x1fff'e890          --   Gb  - Linker created -
-ChartoHex                     0x849   0x26  Code  Gb  Middleware.o [1]
+ChartoHex                     0x8e5   0x26  Code  Gb  Middleware.o [1]
 Copy_Vector_Table_SetVTOR
-                              0x6b5   0x22  Code  Gb  Middleware.o [1]
-DAC0_IRQHandler              0x1145         Code  Wk  startup_MKL46Z4.o [2]
-DMA0_DriverIRQHandler        0x1145         Code  Wk  startup_MKL46Z4.o [2]
-DMA0_IRQHandler              0x10ed         Code  Wk  startup_MKL46Z4.o [2]
-DMA1_DriverIRQHandler        0x1145         Code  Wk  startup_MKL46Z4.o [2]
-DMA1_IRQHandler              0x10f5         Code  Wk  startup_MKL46Z4.o [2]
-DMA2_DriverIRQHandler        0x1145         Code  Wk  startup_MKL46Z4.o [2]
-DMA2_IRQHandler              0x10fd         Code  Wk  startup_MKL46Z4.o [2]
-DMA3_DriverIRQHandler        0x1145         Code  Wk  startup_MKL46Z4.o [2]
-DMA3_IRQHandler              0x1105         Code  Wk  startup_MKL46Z4.o [2]
+                              0x6b7   0x22  Code  Gb  Middleware.o [1]
+DAC0_IRQHandler              0x1221         Code  Wk  startup_MKL46Z4.o [2]
+DMA0_DriverIRQHandler        0x1221         Code  Wk  startup_MKL46Z4.o [2]
+DMA0_IRQHandler              0x11c9         Code  Wk  startup_MKL46Z4.o [2]
+DMA1_DriverIRQHandler        0x1221         Code  Wk  startup_MKL46Z4.o [2]
+DMA1_IRQHandler              0x11d1         Code  Wk  startup_MKL46Z4.o [2]
+DMA2_DriverIRQHandler        0x1221         Code  Wk  startup_MKL46Z4.o [2]
+DMA2_IRQHandler              0x11d9         Code  Wk  startup_MKL46Z4.o [2]
+DMA3_DriverIRQHandler        0x1221         Code  Wk  startup_MKL46Z4.o [2]
+DMA3_IRQHandler              0x11e1         Code  Wk  startup_MKL46Z4.o [2]
 Data                    0x1fff'e07c    0x4  Data  Gb  Middleware.o [1]
 DataByteCount           0x1fff'e084    0x4  Data  Gb  Middleware.o [1]
 DataShift               0x1fff'e010    0x8  Data  Gb  Middleware.o [1]
-DefaultISR                   0x1145         Code  Wk  startup_MKL46Z4.o [2]
-Dis_Fault_Hander              0x891    0xa  Code  Gb  Middleware.o [1]
-Dis_Intterupt                 0x881    0x4  Code  Gb  Middleware.o [1]
-Dis_SystickTimer              0x885    0xc  Code  Gb  Middleware.o [1]
+DefaultISR                   0x1221         Code  Wk  startup_MKL46Z4.o [2]
+Dis_Fault_Hander              0x92d    0xa  Code  Gb  Middleware.o [1]
+Dis_Intterupt                 0x91d    0x4  Code  Gb  Middleware.o [1]
+Dis_SystickTimer              0x921    0xc  Code  Gb  Middleware.o [1]
+Erase_Flash_Memory            0x695   0x22  Code  Gb  Middleware.o [1]
 FIRMWARE1_START_ADD     0x1fff'e018    0x4  Data  Gb  Middleware.o [1]
 FIRMWARE2_START_ADD     0x1fff'e01c    0x4  Data  Gb  Middleware.o [1]
-FTFA_IRQHandler              0x1145         Code  Wk  startup_MKL46Z4.o [2]
-FirmwaretoFlash               0x86f   0x12  Code  Gb  Middleware.o [1]
+FTFA_IRQHandler              0x1221         Code  Wk  startup_MKL46Z4.o [2]
+FirmwaretoFlash               0x90b   0x12  Code  Gb  Middleware.o [1]
 FlagCheck               0x1fff'e06c    0x8  Data  Gb  Middleware.o [1]
-Flash_EraseSector             0xc45   0x36  Code  Gb  Flash.o [1]
-Flash_WriteWord               0xbf9   0x4c  Code  Gb  Flash.o [1]
-GPIO_Init                     0xca9   0x38  Code  Gb  GPIO.o [1]
-HardFault_Handler             0xf5f         Code  Wk  startup_MKL46Z4.o [2]
-I2C0_DriverIRQHandler        0x1145         Code  Wk  startup_MKL46Z4.o [2]
-I2C0_IRQHandler              0x110d         Code  Wk  startup_MKL46Z4.o [2]
-I2C1_DriverIRQHandler        0x1145         Code  Wk  startup_MKL46Z4.o [2]
-I2C1_IRQHandler              0x1115         Code  Wk  startup_MKL46Z4.o [2]
-I2S0_DriverIRQHandler        0x1145         Code  Wk  startup_MKL46Z4.o [2]
-I2S0_IRQHandler              0x113d         Code  Wk  startup_MKL46Z4.o [2]
-Jump_To_App                   0x8a5   0x30  Code  Gb  Middleware.o [1]
-LCD_IRQHandler               0x1145         Code  Wk  startup_MKL46Z4.o [2]
-LLWU_IRQHandler              0x1145         Code  Wk  startup_MKL46Z4.o [2]
-LPTMR0_IRQHandler            0x1145         Code  Wk  startup_MKL46Z4.o [2]
-LVD_LVW_IRQHandler           0x1145         Code  Wk  startup_MKL46Z4.o [2]
-MCG_IRQHandler               0x1145         Code  Wk  startup_MKL46Z4.o [2]
+Flash_EraseSector             0xce9   0x36  Code  Gb  Flash.o [1]
+Flash_WriteWord               0xc9d   0x4c  Code  Gb  Flash.o [1]
+GPIO_Init                     0xd4d   0x38  Code  Gb  GPIO.o [1]
+HardFault_Handler            0x1033         Code  Wk  startup_MKL46Z4.o [2]
+I2C0_DriverIRQHandler        0x1221         Code  Wk  startup_MKL46Z4.o [2]
+I2C0_IRQHandler              0x11e9         Code  Wk  startup_MKL46Z4.o [2]
+I2C1_DriverIRQHandler        0x1221         Code  Wk  startup_MKL46Z4.o [2]
+I2C1_IRQHandler              0x11f1         Code  Wk  startup_MKL46Z4.o [2]
+I2S0_DriverIRQHandler        0x1221         Code  Wk  startup_MKL46Z4.o [2]
+I2S0_IRQHandler              0x1219         Code  Wk  startup_MKL46Z4.o [2]
+Jump_To_App                   0x941   0x34  Code  Gb  Middleware.o [1]
+LCD_IRQHandler               0x1221         Code  Wk  startup_MKL46Z4.o [2]
+LLWU_IRQHandler              0x1221         Code  Wk  startup_MKL46Z4.o [2]
+LPTMR0_IRQHandler            0x1221         Code  Wk  startup_MKL46Z4.o [2]
+LVD_LVW_IRQHandler           0x1221         Code  Wk  startup_MKL46Z4.o [2]
+MCG_IRQHandler               0x1221         Code  Wk  startup_MKL46Z4.o [2]
 ModeSelection           0x1fff'e024    0x1  Data  Gb  Middleware.o [1]
-Mode_Selection                0x8d9   0x26  Code  Gb  Middleware.o [1]
+Mode_Selection                0x979   0x26  Code  Gb  Middleware.o [1]
 NMI_Handler                   0x1a1         Code  Wk  startup_MKL46Z4.o [2]
-NVIC_ClearPendingIRQ          0xa33    0xe  Code  Lc  Port.o [1]
-NVIC_DisableIRQ               0xf61    0xe  Code  Lc  BootLoader.o [1]
+NVIC_ClearPendingIRQ          0xad7    0xe  Code  Lc  Port.o [1]
+NVIC_DisableIRQ              0x1039    0xe  Code  Lc  BootLoader.o [1]
 NVIC_EnableIRQ                0x411    0xe  Code  Lc  Middleware.o [1]
-NVIC_EnableIRQ                0xa25    0xe  Code  Lc  Port.o [1]
+NVIC_EnableIRQ                0xac9    0xe  Code  Lc  Port.o [1]
 NVIC_SetPriority              0x41f   0x72  Code  Lc  Middleware.o [1]
-NVIC_SetPriority              0xa41   0x72  Code  Lc  Port.o [1]
-PIT_IRQHandler               0x1145         Code  Wk  startup_MKL46Z4.o [2]
-PORTA_IRQHandler             0x1145         Code  Wk  startup_MKL46Z4.o [2]
-PORTC_PORTD_IRQHandler        0x637   0x7e  Code  Gb  Middleware.o [1]
-PORT_EXTI_ClearFlag           0xbd1   0x26  Code  Gb  Port.o [1]
-PORT_EXTI_Config              0xba9   0x28  Code  Gb  Port.o [1]
-PORT_Init                     0xab3   0xde  Code  Gb  Port.o [1]
-PendSV_Handler               0x10af         Code  Wk  startup_MKL46Z4.o [2]
+NVIC_SetPriority              0xae5   0x72  Code  Lc  Port.o [1]
+PIT_IRQHandler               0x1221         Code  Wk  startup_MKL46Z4.o [2]
+PORTA_IRQHandler             0x1221         Code  Wk  startup_MKL46Z4.o [2]
+PORTC_PORTD_IRQHandler        0x637   0x5e  Code  Gb  Middleware.o [1]
+PORT_EXTI_ClearFlag           0xc75   0x26  Code  Gb  Port.o [1]
+PORT_EXTI_Config              0xc4d   0x28  Code  Gb  Port.o [1]
+PORT_Init                     0xb57   0xde  Code  Gb  Port.o [1]
+PendSV_Handler               0x10ef         Code  Wk  startup_MKL46Z4.o [2]
 READ_BTN1                     0x723    0xe  Code  Gb  Middleware.o [1]
-READ_BTN2                     0x735    0xe  Code  Gb  Middleware.o [1]
-RTC_IRQHandler               0x1145         Code  Wk  startup_MKL46Z4.o [2]
-RTC_Seconds_IRQHandler       0x1145         Code  Wk  startup_MKL46Z4.o [2]
-Region$$Table$$Base          0x1060          --   Gb  - Linker created -
-Region$$Table$$Limit         0x1084          --   Gb  - Linker created -
-Reserved20_IRQHandler        0x1145         Code  Wk  startup_MKL46Z4.o [2]
-Reset_Handler                0x103d         Code  Wk  startup_MKL46Z4.o [2]
-SPI0_DriverIRQHandler        0x1145         Code  Wk  startup_MKL46Z4.o [2]
-SPI0_IRQHandler              0x111d         Code  Wk  startup_MKL46Z4.o [2]
-SPI1_DriverIRQHandler        0x1145         Code  Wk  startup_MKL46Z4.o [2]
-SPI1_IRQHandler              0x1125         Code  Wk  startup_MKL46Z4.o [2]
-SVC_Handler                  0x1013         Code  Wk  startup_MKL46Z4.o [2]
-SysTick_Handler              0x10bb         Code  Wk  startup_MKL46Z4.o [2]
+READ_BTN2                     0x739    0xe  Code  Gb  Middleware.o [1]
+RTC_IRQHandler               0x1221         Code  Wk  startup_MKL46Z4.o [2]
+RTC_Seconds_IRQHandler       0x1221         Code  Wk  startup_MKL46Z4.o [2]
+Region$$Table$$Base          0x113c          --   Gb  - Linker created -
+Region$$Table$$Limit         0x1160          --   Gb  - Linker created -
+Reserved20_IRQHandler        0x1221         Code  Wk  startup_MKL46Z4.o [2]
+Reset_Config                  0x855   0x8c  Code  Gb  Middleware.o [1]
+Reset_Handler                0x1119         Code  Wk  startup_MKL46Z4.o [2]
+SPI0_DriverIRQHandler        0x1221         Code  Wk  startup_MKL46Z4.o [2]
+SPI0_IRQHandler              0x11f9         Code  Wk  startup_MKL46Z4.o [2]
+SPI1_DriverIRQHandler        0x1221         Code  Wk  startup_MKL46Z4.o [2]
+SPI1_IRQHandler              0x1201         Code  Wk  startup_MKL46Z4.o [2]
+SVC_Handler                  0x1037         Code  Wk  startup_MKL46Z4.o [2]
+SysTick_Handler              0x118b         Code  Wk  startup_MKL46Z4.o [2]
 SystemCoreClock         0x1fff'e020    0x4  Data  Gb  system_MKL46Z4.o [2]
-SystemCoreClockUpdate         0xce9  0x146  Code  Gb  system_MKL46Z4.o [2]
-SystemInit                    0xce1    0x8  Code  Gb  system_MKL46Z4.o [2]
+SystemCoreClockUpdate         0xd8d  0x146  Code  Gb  system_MKL46Z4.o [2]
+SystemInit                    0xd85    0x8  Code  Gb  system_MKL46Z4.o [2]
 Systick_Delay_5s              0x7b1   0x1c  Code  Gb  Middleware.o [1]
 Systick_Delay_ms              0x75d   0x42  Code  Gb  Middleware.o [1]
-Systick_Init                  0x749    0xc  Code  Gb  Middleware.o [1]
+Systick_Init                  0x747    0xc  Code  Gb  Middleware.o [1]
 Systick_Off             0x1fff'e08c    0x1  Data  Gb  Middleware.o [1]
-TPM0_IRQHandler              0x1145         Code  Wk  startup_MKL46Z4.o [2]
-TPM1_IRQHandler              0x1145         Code  Wk  startup_MKL46Z4.o [2]
-TPM2_IRQHandler              0x1145         Code  Wk  startup_MKL46Z4.o [2]
-TSI0_IRQHandler              0x1145         Code  Wk  startup_MKL46Z4.o [2]
-UART0_DriverIRQHandler       0x1145         Code  Wk  startup_MKL46Z4.o [2]
-UART0_IRQHandler              0xf21   0x1a  Code  Gb  UART.o [1]
-UART1_DriverIRQHandler       0x1145         Code  Wk  startup_MKL46Z4.o [2]
-UART1_IRQHandler             0x112d         Code  Wk  startup_MKL46Z4.o [2]
-UART2_DriverIRQHandler       0x1145         Code  Wk  startup_MKL46Z4.o [2]
-UART2_IRQHandler             0x1135         Code  Wk  startup_MKL46Z4.o [2]
-UART_Init                     0xe65   0xbc  Code  Gb  UART.o [1]
-UART_User_Config              0x7cd   0x78  Code  Gb  Middleware.o [1]
-USB0_IRQHandler              0x1145         Code  Wk  startup_MKL46Z4.o [2]
-UserConfig_PortA1            0x114c    0x4  Data  Gb  Middleware.o [1]
-UserConfig_PortA2            0x1150    0x4  Data  Gb  Middleware.o [1]
-UserConfig_PortC3            0x1154    0x4  Data  Gb  Middleware.o [1]
+TPM0_IRQHandler              0x1221         Code  Wk  startup_MKL46Z4.o [2]
+TPM1_IRQHandler              0x1221         Code  Wk  startup_MKL46Z4.o [2]
+TPM2_IRQHandler              0x1221         Code  Wk  startup_MKL46Z4.o [2]
+TSI0_IRQHandler              0x1221         Code  Wk  startup_MKL46Z4.o [2]
+UART0_DriverIRQHandler       0x1221         Code  Wk  startup_MKL46Z4.o [2]
+UART0_IRQHandler              0xfc5   0x1a  Code  Gb  UART.o [1]
+UART1_DriverIRQHandler       0x1221         Code  Wk  startup_MKL46Z4.o [2]
+UART1_IRQHandler             0x1209         Code  Wk  startup_MKL46Z4.o [2]
+UART2_DriverIRQHandler       0x1221         Code  Wk  startup_MKL46Z4.o [2]
+UART2_IRQHandler             0x1211         Code  Wk  startup_MKL46Z4.o [2]
+UART_Init                     0xf09   0xbc  Code  Gb  UART.o [1]
+UART_User_Init                0x7cd   0x78  Code  Gb  Middleware.o [1]
+USB0_IRQHandler              0x1221         Code  Wk  startup_MKL46Z4.o [2]
+UserConfig_PortA1            0x1228    0x4  Data  Gb  Middleware.o [1]
+UserConfig_PortA2            0x122c    0x4  Data  Gb  Middleware.o [1]
+UserConfig_PortC3            0x1230    0x4  Data  Gb  Middleware.o [1]
 Userconfig_UART         0x1fff'e000   0x10  Data  Gb  Middleware.o [1]
 __Vectors                       0x0          --   Gb  startup_MKL46Z4.o [2]
 __Vectors_End                  0xc0         Data  Gb  startup_MKL46Z4.o [2]
 __Vectors_Size {Abs}           0xc0          --   Gb  startup_MKL46Z4.o [2]
 __aeabi_idiv                   0xed         Code  Gb  I32DivModFast.o [4]
-__aeabi_idiv0                 0xf5d         Code  Gb  IntDivZer.o [4]
+__aeabi_idiv0                0x1035         Code  Gb  IntDivZer.o [4]
 __aeabi_idivmod                0xed         Code  Gb  I32DivModFast.o [4]
+__aeabi_memclr4              0x1001         Code  Gb  ABImemset.o [4]
+__aeabi_memclr8              0x1001         Code  Gb  ABImemset.o [4]
 __aeabi_uidiv                  0xf3         Code  Gb  I32DivModFast.o [4]
 __aeabi_uidivmod               0xf3         Code  Gb  I32DivModFast.o [4]
-__cmain                      0x1085         Code  Gb  cmain.o [4]
-__exit                       0x10bd   0x14  Code  Gb  exit.o [5]
-__iar_copy_init3              0xfe3   0x30  Code  Gb  copy_init3.o [4]
-__iar_data_init3             0x1015   0x28  Code  Gb  data_init.o [4]
-__iar_program_start          0x10d1         Code  Gb  cstartup_M.o [4]
-__iar_zero_init3              0xfa7   0x3c  Code  Gb  zero_init3.o [4]
-__low_level_init             0x10a3    0x4  Code  Gb  low_level_init.o [3]
+__cmain                      0x1161         Code  Gb  cmain.o [4]
+__exit                       0x1199   0x14  Code  Gb  exit.o [5]
+__iar_Memset4_word           0x1005         Code  Gb  ABImemset.o [4]
+__iar_copy_init3             0x10bf   0x30  Code  Gb  copy_init3.o [4]
+__iar_data_init3             0x10f1   0x28  Code  Gb  data_init.o [4]
+__iar_program_start          0x11ad         Code  Gb  cstartup_M.o [4]
+__iar_zero_init3             0x1083   0x3c  Code  Gb  zero_init3.o [4]
+__low_level_init             0x117f    0x4  Code  Gb  low_level_init.o [3]
 __vector_table                  0x0         Data  Gb  startup_MKL46Z4.o [2]
 __vector_table_0x1c            0x1c         Data  Gb  startup_MKL46Z4.o [2]
-_call_main                   0x1091         Code  Gb  cmain.o [4]
-_exit                        0x10b1         Code  Gb  cexit.o [4]
-dequeue                       0x9e3   0x3c  Code  Gb  queue.o [1]
-enqueue                       0x9b1   0x32  Code  Gb  queue.o [1]
-exit                         0x10a7    0x8  Code  Gb  exit.o [3]
+_call_main                   0x116d         Code  Gb  cmain.o [4]
+_exit                        0x118d         Code  Gb  cexit.o [4]
+dequeue                       0xa87   0x3c  Code  Gb  queue.o [1]
+enqueue                       0xa55   0x32  Code  Gb  queue.o [1]
+exit                         0x1183    0x8  Code  Gb  exit.o [3]
 func_ptr                0x1fff'e074    0x4  Data  Gb  Middleware.o [1]
-initQueue                     0x969    0xe  Code  Gb  queue.o [1]
-isQueueEmpty                  0x977   0x1a  Code  Gb  queue.o [1]
-isQueueFull                   0x991   0x20  Code  Gb  queue.o [1]
-main                          0xf75   0x32  Code  Gb  BootLoader.o [1]
+initQueue                     0xa0d    0xe  Code  Gb  queue.o [1]
+isQueueEmpty                  0xa1b   0x1a  Code  Gb  queue.o [1]
+isQueueFull                   0xa35   0x20  Code  Gb  queue.o [1]
+main                         0x104d   0x36  Code  Gb  BootLoader.o [1]
 myUART_Handler                0x491  0x1a6  Code  Lc  Middleware.o [1]
 q                       0x1fff'e028   0x44  Data  Lc  queue.o [1]
 sCallback_UART          0x1fff'e088    0x4  Data  Lc  UART.o [1]
@@ -389,8 +397,8 @@ sCallback_UART          0x1fff'e088    0x4  Data  Lc  UART.o [1]
 [4] = rt6M_tl.a
 [5] = shb_l.a
 
-  3'786 bytes of readonly  code memory
-     90 bytes of readonly  data memory
+  4'006 bytes of readonly  code memory
+     94 bytes of readonly  data memory
   2'186 bytes of readwrite data memory
 
 Errors: none

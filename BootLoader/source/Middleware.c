@@ -240,7 +240,6 @@ void PORTC_PORTD_IRQHandler(void)
     // Delay for debouncing
     uint32 count = 4000;
     while(--count);
-    uint8 i = 0;
 
     // Check button state
     if (READ_BTN2() == 0) 
@@ -249,11 +248,18 @@ void PORTC_PORTD_IRQHandler(void)
       
       // Stop Systick counter
       Systick_Off = 1u;
-      for (i = 0; i < 11; i++)
-      {
-        Flash_EraseSector(0x00001400u + i*0x400);
-      }
     }
+  }
+}
+
+
+
+void Erase_Flash_Memory(void)
+{
+  uint8 i;
+  for (i = 0; i < 11; i++)
+  {
+    Flash_EraseSector(0x00001400u + i*0x400);
   }
 }
 
@@ -310,7 +316,7 @@ void ReturnVTOR(void)
 
 
 
-void BTN_Config(void)
+void BTN_Init(void)
 {
   // Enable Clock for Port C
   SIM->SCGC5 |= SIM_SCGC5_PORTC(1);
@@ -380,7 +386,7 @@ void Systick_Delay_5s()
 
 
 
-void UART_User_Config()
+void UART_User_Init()
 {
   // Clock for Baudrate - MCGIRCLK 2Mhz
   MCG->C1 |= MCG_C1_IRCLKEN(1u);
@@ -407,6 +413,52 @@ void UART_User_Config()
   
   // NVIC Set Priority
   NVIC_SetPriority(UART0_IRQn, 0);
+}
+
+
+
+void Reset_Config(void)
+{
+  Port_ConfigType  Port_Reset_Config = {
+  .Mux = PORT_MUX_ANALOG, 
+  .pull = PULL_DISABLE,
+  .IRQ = PORT_IRQ_DISABLE,
+  };
+  
+  // Reset for Button 1, buttton 2 and UART_Tx, UART_Ux pin
+  PORT_Init(PORTA, 1, &Port_Reset_Config);
+  PORT_Init(PORTA, 2, &Port_Reset_Config);
+  PORT_Init(PORTC, 3, &Port_Reset_Config);
+  PORT_Init(PORTC, 12, &Port_Reset_Config);
+  
+  // Enable Clock for Port A
+  SIM->SCGC5 &= ~SIM_SCGC5_PORTA_MASK;
+  // Enable Clock for Port C
+  SIM->SCGC5 &= ~SIM_SCGC5_PORTC_MASK;
+  
+  // Disable rceived for UART
+  UART0->C2 &= ~UART0_C2_RE_MASK;
+  
+  UART_ConfigType UART_Reset_Config = {
+  .Mode         = UART_MODE_8BIT,
+  .Parity       = UART_PARITY_DISABLE,
+  .Stopbit      = UART_STOPBIT_ONE,
+  .OSR          = 0u,
+  .SBR          = 0u,
+  .RIEINT       = UART_RIEINT_DISABLE,
+  .Callback     = 0u,
+  };
+  
+  // Reset comfig for UART
+  UART_Init(&UART_Reset_Config);
+  
+  // Reset Clock config for baudrate
+  MCG->C1 &= ~MCG_C1_IRCLKEN_MASK;
+  MCG->C2 &= ~MCG_C2_IRCS_MASK;
+  
+  // Turn off clock for UART0
+  SIM->SCGC4 &= ~SIM_SCGC4_UART0_MASK;
+  SIM->SOPT2 &= ~SIM_SOPT2_UART0SRC_MASK;
 }
 
 
@@ -461,6 +513,9 @@ void Dis_Fault_Hander(void)
 
 void Jump_To_App(uint32 Add)      
 {
+  // Reset all config
+  Reset_Config();
+  
   // Turn off  all interrupts and Systick Timers
   Dis_Intterupt();
   Dis_SystickTimer();
@@ -504,7 +559,6 @@ void Mode_Selection (void)
    return;
  }
 }
-
 
 
 

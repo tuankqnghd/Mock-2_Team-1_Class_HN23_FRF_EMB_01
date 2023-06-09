@@ -37,13 +37,13 @@ to run
 void main()
 {
   // Config Button 1 & 2
-  BTN_Config();
+  BTN_Init();
       
   // Config Systick
   Systick_Init();
   
   // Config UART for load program
-  UART_User_Config();
+  UART_User_Init();
 
   // Init Queue
   initQueue();
@@ -60,7 +60,10 @@ void main()
   // If Bootloader mode init for load program to flash
   // Set new Vector Table
   Copy_Vector_Table_SetVTOR();
-   
+  
+  // Erase Flash Memory to load new Firmware
+  Erase_Flash_Memory();
+  
   while(1)
   {
     if (!isQueueEmpty())

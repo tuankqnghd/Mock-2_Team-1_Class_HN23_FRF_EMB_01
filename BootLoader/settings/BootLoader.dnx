@@ -12,11 +12,11 @@
         <ByteLimit>50</ByteLimit>
     </Stack>
     <PEMicroDriver>
-        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
         <CStepIntDis>_ 0</CStepIntDis>
+        <LeaveTargetRunning>_ 0</LeaveTargetRunning>
     </PEMicroDriver>
     <DebugChecksum>
-        <Checksum>3395586946</Checksum>
+        <Checksum>3453257831</Checksum>
     </DebugChecksum>
     <Exceptions>
         <StopOnUncaught>_ 0</StopOnUncaught>
