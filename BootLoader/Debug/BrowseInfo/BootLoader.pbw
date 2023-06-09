@@ -91527,7 +91527,7 @@
     "scope": null
   },
   {
-    "ID": "c:queue.h@24@macro@QUEUE_H",
+    "ID": "c:queue.h@25@macro@QUEUE_H",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "QUEUE_H",
@@ -91541,7 +91541,7 @@
     "scope": null
   },
   {
-    "ID": "c:queue.h@397@macro@QUEUE_SIZE",
+    "ID": "c:queue.h@411@macro@QUEUE_SIZE",
     "What": "MacroDef",
     "defdec": "Def",
     "display": "QUEUE_SIZE",
@@ -92427,6 +92427,20 @@
     "scope": null
   },
   {
+    "ID": "c:@Systick_Off",
+    "What": "Variable",
+    "defdec": "Def",
+    "display": "Systick_Off",
+    "location": {
+      "column": "16",
+      "line": "38",
+      "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\source\\Middleware.c"
+    },
+    "name": "Systick_Off",
+    "origin": "project_file",
+    "scope": null
+  },
+  {
     "ID": "c:@IsButton1Clicked",
     "What": "Variable",
     "defdec": "Def",
@@ -92637,7 +92651,7 @@
     "scope": null
   },
   {
-    "ID": "c:Middleware.c@3150@F@myUART_Handler@ReceiveData",
+    "ID": "c:Middleware.c@3182@F@myUART_Handler@ReceiveData",
     "What": "Variable",
     "defdec": "Def",
     "display": "ReceiveData",
@@ -92665,7 +92679,7 @@
     "scope": null
   },
   {
-    "ID": "c:Middleware.c@6068@F@PORTC_PORTD_IRQHandler@count",
+    "ID": "c:Middleware.c@6100@F@PORTC_PORTD_IRQHandler@count",
     "What": "Variable",
     "defdec": "Def",
     "display": "count",
@@ -92679,13 +92693,13 @@
     "scope": null
   },
   {
-    "ID": "c:Middleware.c@6412@F@PORTC_PORTD_IRQHandler@count",
+    "ID": "c:Middleware.c@6508@F@PORTC_PORTD_IRQHandler@count",
     "What": "Variable",
     "defdec": "Def",
     "display": "count",
     "location": {
       "column": "12",
-      "line": "238",
+      "line": "241",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\source\\Middleware.c"
     },
     "name": "count",
@@ -92693,13 +92707,13 @@
     "scope": null
   },
   {
-    "ID": "c:Middleware.c@6459@F@PORTC_PORTD_IRQHandler@i",
+    "ID": "c:Middleware.c@6555@F@PORTC_PORTD_IRQHandler@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "11",
-      "line": "240",
+      "line": "243",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\source\\Middleware.c"
     },
     "name": "i",
@@ -92713,7 +92727,7 @@
     "display": "void Copy_Vector_Table_SetVTOR(void)",
     "location": {
       "column": "6",
-      "line": "257",
+      "line": "262",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\source\\Middleware.c"
     },
     "name": "Copy_Vector_Table_SetVTOR",
@@ -92721,13 +92735,13 @@
     "scope": null
   },
   {
-    "ID": "c:Middleware.c@6754@F@Copy_Vector_Table_SetVTOR@i",
+    "ID": "c:Middleware.c@6902@F@Copy_Vector_Table_SetVTOR@i",
     "What": "Variable",
     "defdec": "Def",
     "display": "i",
     "location": {
       "column": "10",
-      "line": "259",
+      "line": "264",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\source\\Middleware.c"
     },
     "name": "i",
@@ -92741,7 +92755,7 @@
     "display": "void ReturnVTOR(void)",
     "location": {
       "column": "6",
-      "line": "272",
+      "line": "277",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\source\\Middleware.c"
     },
     "name": "ReturnVTOR",
@@ -92755,7 +92769,7 @@
     "display": "void BTN_Config(void)",
     "location": {
       "column": "6",
-      "line": "308",
+      "line": "313",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\source\\Middleware.c"
     },
     "name": "BTN_Config",
@@ -92769,7 +92783,7 @@
     "display": "uint8 READ_BTN1(void)",
     "location": {
       "column": "7",
-      "line": "327",
+      "line": "332",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\source\\Middleware.c"
     },
     "name": "READ_BTN1",
@@ -92783,7 +92797,7 @@
     "display": "uint8 READ_BTN2(void)",
     "location": {
       "column": "7",
-      "line": "334",
+      "line": "339",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\source\\Middleware.c"
     },
     "name": "READ_BTN2",
@@ -92797,7 +92811,7 @@
     "display": "void Systick_Init(void)",
     "location": {
       "column": "6",
-      "line": "341",
+      "line": "346",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\source\\Middleware.c"
     },
     "name": "Systick_Init",
@@ -92811,7 +92825,7 @@
     "display": "void Systick_Delay_ms(uint32)",
     "location": {
       "column": "6",
-      "line": "348",
+      "line": "353",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\source\\Middleware.c"
     },
     "name": "Systick_Delay_ms",
@@ -92825,7 +92839,7 @@
     "display": "void Systick_Delay_5s(void)",
     "location": {
       "column": "6",
-      "line": "367",
+      "line": "372",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\source\\Middleware.c"
     },
     "name": "Systick_Delay_5s",
@@ -92833,13 +92847,13 @@
     "scope": null
   },
   {
-    "ID": "c:Middleware.c@8791@F@Systick_Delay_5s@count",
+    "ID": "c:Middleware.c@8959@F@Systick_Delay_5s@count",
     "What": "Variable",
     "defdec": "Def",
     "display": "count",
     "location": {
       "column": "9",
-      "line": "369",
+      "line": "374",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\source\\Middleware.c"
     },
     "name": "count",
@@ -92853,7 +92867,7 @@
     "display": "void UART_User_Config(void)",
     "location": {
       "column": "6",
-      "line": "378",
+      "line": "383",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\source\\Middleware.c"
     },
     "name": "UART_User_Config",
@@ -92867,7 +92881,7 @@
     "display": "uint8 ChartoHex(char)",
     "location": {
       "column": "7",
-      "line": "409",
+      "line": "414",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\source\\Middleware.c"
     },
     "name": "ChartoHex",
@@ -92881,7 +92895,7 @@
     "display": "void FirmwaretoFlash(void)",
     "location": {
       "column": "6",
-      "line": "427",
+      "line": "432",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\source\\Middleware.c"
     },
     "name": "FirmwaretoFlash",
@@ -92889,13 +92903,13 @@
     "scope": null
   },
   {
-    "ID": "c:Middleware.c@9876@F@FirmwaretoFlash@a",
+    "ID": "c:Middleware.c@10044@F@FirmwaretoFlash@a",
     "What": "Variable",
     "defdec": "Def",
     "display": "a",
     "location": {
       "column": "13",
-      "line": "429",
+      "line": "434",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\source\\Middleware.c"
     },
     "name": "a",
@@ -92909,7 +92923,7 @@
     "display": "void Dis_Intterupt(void)",
     "location": {
       "column": "6",
-      "line": "435",
+      "line": "440",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\source\\Middleware.c"
     },
     "name": "Dis_Intterupt",
@@ -92923,7 +92937,7 @@
     "display": "void Dis_SystickTimer(void)",
     "location": {
       "column": "6",
-      "line": "442",
+      "line": "447",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\source\\Middleware.c"
     },
     "name": "Dis_SystickTimer",
@@ -92937,7 +92951,7 @@
     "display": "void Dis_Fault_Hander(void)",
     "location": {
       "column": "6",
-      "line": "450",
+      "line": "455",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\source\\Middleware.c"
     },
     "name": "Dis_Fault_Hander",
@@ -92951,7 +92965,7 @@
     "display": "void Jump_To_App(uint32)",
     "location": {
       "column": "6",
-      "line": "457",
+      "line": "462",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\source\\Middleware.c"
     },
     "name": "Jump_To_App",
@@ -92959,13 +92973,13 @@
     "scope": null
   },
   {
-    "ID": "c:Middleware.c@10564@F@Jump_To_App@Jumpaddress",
+    "ID": "c:Middleware.c@10732@F@Jump_To_App@Jumpaddress",
     "What": "Variable",
     "defdec": "Def",
     "display": "Jumpaddress",
     "location": {
       "column": "12",
-      "line": "475",
+      "line": "480",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\source\\Middleware.c"
     },
     "name": "Jumpaddress",
@@ -92979,7 +92993,7 @@
     "display": "void Mode_Selection(void)",
     "location": {
       "column": "6",
-      "line": "487",
+      "line": "492",
       "path": "D:\\Study\\Github\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\Mock-2_Team-1_Class_HN23_FRF_EMB_01\\BootLoader\\source\\Middleware.c"
     },
     "name": "Mode_Selection",

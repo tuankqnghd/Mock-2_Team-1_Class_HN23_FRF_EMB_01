@@ -12,7 +12,7 @@
  * Definition
 ********************************************************************/
 
-#define QUEUE_SIZE (256u)
+#define QUEUE_SIZE (8u)
 
 typedef struct {
   uint32 address;

@@ -5,127 +5,137 @@
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$PROJ_DIR$\Debug\Exe\BootLoader.srec</file>
-            <file>$PROJ_DIR$\MKL46Z\startup_MKL46Z4.s</file>
-            <file>$PROJ_DIR$\MKL46Z\system_MKL46Z4.c</file>
-            <file>$PROJ_DIR$\source\UART.c</file>
-            <file>$PROJ_DIR$\source\queue.h</file>
-            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-            <file>$PROJ_DIR$\Debug\Obj\source\Port.o</file>
-            <file>$PROJ_DIR$\source\queue.c</file>
-            <file>$PROJ_DIR$\source\UART.h</file>
-            <file>$PROJ_DIR$\source\Port.h</file>
-            <file>$PROJ_DIR$\MKL46Z\system_MKL46Z4.h</file>
-            <file>$PROJ_DIR$\source\Middleware.h</file>
-            <file>$PROJ_DIR$\source\Port.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup\startup_MKL46Z4.o</file>
             <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\source\queue.o</file>
-            <file>$PROJ_DIR$\source\GPIO.h</file>
-            <file>$PROJ_DIR$\CMSIS\Include\core_cmFunc.h</file>
-            <file>$PROJ_DIR$\source\types.h</file>
-            <file>$PROJ_DIR$\source\GPIO.c</file>
-            <file>$PROJ_DIR$\Debug\List\BootLoader.map</file>
-            <file>$PROJ_DIR$\source\Middleware.c</file>
-            <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
-            <file>$TOOLKIT_DIR$\inc\c\aarch32\cmsis_iar.h</file>
-            <file>$PROJ_DIR$\source\PIT.h</file>
-            <file>$TOOLKIT_DIR$\lib\dl6M_tln.a</file>
-            <file>$PROJ_DIR$\Debug\Obj\source\UART.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\source\Middleware.o</file>
+            <file>$TOOLKIT_DIR$\config\linker\NXP\MKL46Z256xxx4.icf</file>
+            <file>$PROJ_DIR$\CMSIS\Include\core_cm0plus.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\source\GPIO.o</file>
+            <file>$PROJ_DIR$\Debug\Exe\BootLoader.srec</file>
+            <file>$PROJ_DIR$\CMSIS\Include\core_cmInstr.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\aarch32\iccarm_builtin.h</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\MKL46Z\MKL46Z4_features.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+            <file>$PROJ_DIR$\Debug\Exe\BootLoader.out</file>
             <file>$PROJ_DIR$\Debug\Obj\source\BootLoader.o</file>
             <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\source\Flash.o</file>
-            <file>$PROJ_DIR$\Debug\Obj\startup\system_MKL46Z4.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\startup\startup_MKL46Z4.o</file>
-            <file>$PROJ_DIR$\MKL46Z\MKL46Z4_features.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-            <file>$PROJ_DIR$\Debug\Exe\BootLoader.out</file>
-            <file>$PROJ_DIR$\CMSIS\Include\core_cm0plus.h</file>
-            <file>$PROJ_DIR$\MKL46Z\fsl_device_registers.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\source\GPIO.o</file>
-            <file>$TOOLKIT_DIR$\config\linker\NXP\MKL46Z256xxx4.icf</file>
-            <file>$PROJ_DIR$\MKL46Z\MKL46Z4.h</file>
-            <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
-            <file>$PROJ_DIR$\CMSIS\Include\core_cmInstr.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\aarch32\iccarm_builtin.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$PROJ_DIR$\source\GPIO.c</file>
+            <file>$PROJ_DIR$\source\GPIO.h</file>
             <file>$PROJ_DIR$\source\BootLoader.c</file>
-            <file>$PROJ_DIR$\source\Flash.c</file>
             <file>$PROJ_DIR$\source\Flash.h</file>
+            <file>$PROJ_DIR$\source\Middleware.c</file>
+            <file>$PROJ_DIR$\source\Flash.c</file>
+            <file>$PROJ_DIR$\source\Port.h</file>
+            <file>$PROJ_DIR$\source\queue.c</file>
+            <file>$PROJ_DIR$\source\queue.h</file>
+            <file>$PROJ_DIR$\source\types.h</file>
+            <file>$PROJ_DIR$\source\Middleware.h</file>
+            <file>$PROJ_DIR$\source\Port.c</file>
+            <file>$PROJ_DIR$\MKL46Z\system_MKL46Z4.h</file>
+            <file>$PROJ_DIR$\MKL46Z\startup_MKL46Z4.s</file>
+            <file>$PROJ_DIR$\CMSIS\Include\core_cmFunc.h</file>
+            <file>$TOOLKIT_DIR$\lib\rt6M_tl.a</file>
+            <file>$TOOLKIT_DIR$\lib\m6M_tl.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\source\Port.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$PROJ_DIR$\MKL46Z\system_MKL46Z4.c</file>
+            <file>$PROJ_DIR$\Debug\List\BootLoader.map</file>
+            <file>$PROJ_DIR$\source\UART.h</file>
+            <file>$PROJ_DIR$\MKL46Z\fsl_device_registers.h</file>
+            <file>$PROJ_DIR$\MKL46Z\MKL46Z4.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\source\queue.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\aarch32\cmsis_iar.h</file>
+            <file>$TOOLKIT_DIR$\lib\dl6M_tln.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\source\Flash.o</file>
+            <file>$PROJ_DIR$\source\PIT.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\startup\system_MKL46Z4.o</file>
+            <file>$PROJ_DIR$\Debug\Obj\source\UART.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$PROJ_DIR$\source\UART.c</file>
+            <file>$PROJ_DIR$\Debug\Obj\source\Middleware.o</file>
         </outputs>
         <file>
-            <name>$PROJ_DIR$\MKL46Z\startup_MKL46Z4.s</name>
+            <name>$PROJ_DIR$\Debug\Exe\BootLoader.out</name>
             <outputs>
                 <tool>
-                    <name>AARM</name>
-                    <file> 32</file>
+                    <name>OBJCOPY</name>
+                    <file> 5</file>
                 </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\MKL46Z\system_MKL46Z4.c</name>
-            <outputs>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 30</file>
+                    <name>ILINK</name>
+                    <file> 34</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
-                    <name>ICCARM</name>
-                    <file> 43 28 31 34 45 13 37 40 36 42 22 44 16 10 33</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\source\UART.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 25</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 8 40 36 43 28 31 34 45 13 42 22 44 16 10 17</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\source\queue.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 14</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 4 40 36 43 28 31 34 45 13 42 22 44 16 10 17</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\source\Port.c</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 6</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 40 36 43 28 31 34 45 13 42 22 44 16 10 9 17</file>
+                    <name>ILINK</name>
+                    <file> 2 12 41 4 48 31 38 0 44 45 8 29 30 40</file>
                 </tool>
             </inputs>
         </file>
         <file>
             <name>$PROJ_DIR$\source\GPIO.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 4</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 37 3 10 13 32 43 46 1 6 39 7 28 26 15 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\source\BootLoader.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 12</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 37 3 10 13 32 43 46 1 6 39 7 28 26 24 20 23 15 35 42 17 22</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\source\Middleware.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 48</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 37 3 10 13 32 43 46 1 6 39 7 28 26 24 20 23 15 35 42 17 22</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\source\Flash.c</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 41</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 17 37 3 10 13 32 43 46 1 6 39 7 28 26 23</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\source\queue.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
@@ -135,41 +145,22 @@
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 40 36 43 28 31 34 45 13 42 22 44 16 10 15 17</file>
+                    <file> 22 37 3 10 13 32 43 46 1 6 39 7 28 26 23</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\source\Middleware.c</name>
+            <name>$PROJ_DIR$\source\Port.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 26</file>
+                    <file> 31</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 40 36 43 28 31 34 45 13 42 22 44 16 10 11 9 17 15 8 23 48 4</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\Debug\Exe\BootLoader.out</name>
-            <outputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 19</file>
-                </tool>
-                <tool>
-                    <name>OBJCOPY</name>
-                    <file> 0</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 39 27 29 38 26 6 14 32 30 25 5 41 21 24</file>
+                    <file> 37 3 10 13 32 43 46 1 6 39 7 28 26 20 23</file>
                 </tool>
             </inputs>
         </file>
@@ -178,37 +169,46 @@
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 35 19</file>
+                    <file> 11 34</file>
                 </tool>
             </outputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\source\BootLoader.c</name>
+            <name>$PROJ_DIR$\MKL46Z\startup_MKL46Z4.s</name>
+            <outputs>
+                <tool>
+                    <name>AARM</name>
+                    <file> 0</file>
+                </tool>
+            </outputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\MKL46Z\system_MKL46Z4.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 27</file>
+                    <file> 44</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 40 36 43 28 31 34 45 13 42 22 44 16 10 11 9 17 15 8 23 48 4</file>
+                    <file> 10 13 32 43 46 1 36 37 3 6 39 7 28 26 9</file>
                 </tool>
             </inputs>
         </file>
         <file>
-            <name>$PROJ_DIR$\source\Flash.c</name>
+            <name>$PROJ_DIR$\source\UART.c</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 29</file>
+                    <file> 45</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 48 40 36 43 28 31 34 45 13 42 22 44 16 10 17</file>
+                    <file> 35 37 3 10 13 32 43 46 1 6 39 7 28 26 23</file>
                 </tool>
             </inputs>
         </file>

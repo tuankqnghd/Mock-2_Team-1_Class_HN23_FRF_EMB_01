@@ -35,7 +35,7 @@ uint32 FIRMWARE2_START_ADD  =  0x2800;
 
 volatile uint8 ModeSelection = 1u;
 
-
+volatile uint8 Systick_Off = 0u;
 
 volatile uint8 IsButton1Clicked = 0u;
 
@@ -225,6 +225,9 @@ void PORTC_PORTD_IRQHandler(void)
     if (READ_BTN1() == 0) 
     {
       ModeSelection = FIRNWARE2_MODE;
+      
+      // Stop Systick counter
+      Systick_Off = 1u;
     }
   }
   
@@ -238,12 +241,14 @@ void PORTC_PORTD_IRQHandler(void)
     uint32 count = 4000;
     while(--count);
     uint8 i = 0;
-    
+
     // Check button state
     if (READ_BTN2() == 0) 
     {
       ModeSelection = BOOTLOADER_MODE;
       
+      // Stop Systick counter
+      Systick_Off = 1u;
       for (i = 0; i < 11; i++)
       {
         Flash_EraseSector(0x00001400u + i*0x400);
@@ -356,7 +361,7 @@ void Systick_Delay_ms(uint32 timedelay)
   SysTick->CTRL |= (1<<0);
   
   //Wait CountFlag =1 
-  while(0 == (SysTick->CTRL & SysTick_CTRL_COUNTFLAG_Msk) ); 
+  while(0 == (SysTick->CTRL & SysTick_CTRL_COUNTFLAG_Msk) && Systick_Off != 1u); 
   
   // Stop systic
   SysTick->CTRL &= ~(1<<0);

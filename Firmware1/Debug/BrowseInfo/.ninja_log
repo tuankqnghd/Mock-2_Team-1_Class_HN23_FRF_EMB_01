@@ -83,3 +83,14 @@
 638	735	7070672258973157	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/BrowseInfo/Firmware1_part2.pbi	2967d8a2823d6f6b
 737	810	7070672259721148	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/BrowseInfo/Firmware1.pbd	1e568da4851fd461
 812	1683	7070672268092168	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/BrowseInfo/Firmware1.pbw	30451d49df1c9538
+124	298	7080133709547715	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/BrowseInfo/source/Middleware.pbi	a90cc1e56056e543
+149	305	7080133709557707	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/BrowseInfo/source/Firmware1.pbi	694d2b3c10fe1f14
+152	312	7080133709647454	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/BrowseInfo/source/GPIO.pbi	f553fee49f0c298
+156	348	7080133709727246	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/BrowseInfo/source/PIT.pbi	1bc88cd66a43143c
+314	426	7080133710854222	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/BrowseInfo/Firmware1_part0.pbi	b14ad16a727f9a5f
+350	452	7080133711103556	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/BrowseInfo/Firmware1_part1.pbi	1c22979bb666b2fb
+300	455	7080133711133480	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/BrowseInfo/source/Port.pbi	f8de2d295b8707d9
+307	507	7080133711662062	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/BrowseInfo/startup/system_MKL46Z4.pbi	49dc09c55a7ba886
+508	635	7080133712941807	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/BrowseInfo/Firmware1_part2.pbi	2967d8a2823d6f6b
+638	752	7080133714109368	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/BrowseInfo/Firmware1.pbd	1e568da4851fd461
+755	1884	7080133725152961	D:/Study/Github/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Mock-2_Team-1_Class_HN23_FRF_EMB_01/Firmware1/Debug/BrowseInfo/Firmware1.pbw	30451d49df1c9538

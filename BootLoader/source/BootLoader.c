@@ -36,10 +36,19 @@ to run
 
 void main()
 {
+  // Config Button 1 & 2
   BTN_Config();
       
   // Config Systick
   Systick_Init();
+  
+  // Config UART for load program
+  UART_User_Config();
+
+  // Init Queue
+  initQueue();
+  
+  // Delay 5s
   Systick_Delay_5s();
 
   // Disable INT for portC_portD 
@@ -49,12 +58,6 @@ void main()
   Mode_Selection();
    
   // If Bootloader mode init for load program to flash
-  // Config UART for load program
-  UART_User_Config();
-
-  // Init Queue
-  initQueue();
-    
   // Set new Vector Table
   Copy_Vector_Table_SetVTOR();
    
